@@ -188,7 +188,7 @@ class DbLoader:
                     inner join brands_types bt 
                     on mp.mp_bt_id = bt.bt_id 
                     where 1 """)
-            # Print Result-set
+            # Print Result-set  Resultado
             for (p_id, p_description) in cur:
                 print(f"Name: {p_description}, admin: {p_id}")
         except mariadb.Error as e:
