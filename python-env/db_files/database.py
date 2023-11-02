@@ -1,6 +1,12 @@
 # Module Imports
 import mariadb
 import sys
+from classes import customers as c
+from classes import employees as em
+from classes import employee_types as emt
+from classes import wharehouses as w
+from classes import brands as b
+from classes import brand_types as bt
 
 
 class DbLoader:
@@ -41,25 +47,29 @@ class DbLoader:
 
     def get_customers(self):
         cur = None
+        resultlist = []
         try:
             cur = self.conn.cursor()
             cur.execute(
-                "SELECT c_sid,c_name_1, c_name_2 FROM customers WHERE c_id>=?",
+                "SELECT c_id, c_sid, c_name_1, c_name_2, c_status FROM customers WHERE c_id>=?",
                 (1,))
             # Print Result-set
-            for (sid, first_name, last_name) in cur:
-                print(f"First Name: {first_name}, Last Name: {last_name}, with dni: {sid}")
+            for (id, sid, name1, name2, status) in cur:
+                resultlist.append(c.Customer(id, sid, name1, name2, status))
+                print(f"First Name: {name2}, Last Name: {name1}, with dni: {sid}")
+
         except mariadb.Error as e:
             print(f"Error connecting to MariaDB Platform: {e}")
         finally:
             if cur is not None:
                 cur.close()
-
-    def create_customers(self, sid, name1, name2):
+        return resultlist
+    
+    def create_customers(self, customer):
         cur = None
         query = "INSERT INTO customers (c_sid,c_name_1,c_name_2) VALUES (%s, %s, %s)"
         #query = f"INSERT INTO customers (c_sid,c_name_1,c_name_2) VALUES ('{sid}', '{name1}', '{name2}')"
-        values = (sid, name1, name2)
+        values = (customer.sid, customer.name_1, customer.name_2)
         id = 0
         try:
             cur = self.conn.cursor()
@@ -73,32 +83,36 @@ class DbLoader:
             if cur is not None:
                 cur.close()
         return id
-
+        
     # Employees
 
     def get_employees(self):
         cur = None
+        resultlist = []
         try:
             cur = self.conn.cursor()
             cur.execute(
-                """select e.e_sid, e.e_surname, e.e_name, et.et_name , et.et_admin 
+                """select e.e_id, e.e_sid, e.e_name, e.e_surname, e.e_status, et.et_name , et.et_admin 
                 from employees e 
                 inner join employees_types et 
                 on e.e_type_id = et.et_id 
                 where 1""")
             # Print Result-set
-            for (e_sid, e_surname, e_name, et_name, et_admin) in cur:
-                print(f"First Name: {e_name}, Last Name: {e_surname}, with dni: {e_sid}")
+            for (id,sid, name1, name2, status, job, admin) in cur:
+                resultlist.append(em.Employee(id, sid, name1, name2, status, job, admin))
+                #print(f"First Name: {e_name}, Last Name: {e_surname}, with dni: {e_sid}")
         except mariadb.Error as e:
             print(f"Error connecting to MariaDB Platform: {e}")
         finally:
             if cur is not None:
                 cur.close()        
 
+        return resultlist
     # Employees types
 
     def get_employees_types(self):
         cur = None
+        resultlist = []
         try:
             cur = self.conn.cursor()
             cur.execute(
@@ -106,18 +120,19 @@ class DbLoader:
                 from employees_types
                 where 1""")
             # Print Result-set
-            for (et_id, et_name, et_admin ) in cur:
-                print(f"Name: {et_name}, admin: {et_admin}")
+            for (id, name, admin ) in cur:
+                resultlist.append(emt.Employee_type(id, name, admin))
         except mariadb.Error as e:
             print(f"Error connecting to MariaDB Platform: {e}")
         finally:
             if cur is not None:
                 cur.close()                
-
+        return resultlist
     #Wharehouse
 
     def get_wharehouses(self):
         cur = None
+        resultlist = []
         try:
             cur = self.conn.cursor()
             cur.execute(
@@ -125,17 +140,19 @@ class DbLoader:
                 from wharehouses
                 where 1""")
             # Print Result-set
-            for (w_id, w_name, w_location ) in cur:
-                print(f"Name: {w_name}, admin: {w_location}")
+            for (id, name, admin) in cur:
+                resultlist.append(w.Wharehouse(id, name, admin))
+                #print(f"Name: {w_name}, admin: {w_location}")
         except mariadb.Error as e:
             print(f"Error connecting to MariaDB Platform: {e}")
         finally:
             if cur is not None:
                 cur.close()   
-
+        return resultlist
     #brands
     def get_brands(self):
         cur = None
+        resultlist = []
         try:
             cur = self.conn.cursor()
             cur.execute(
@@ -143,18 +160,20 @@ class DbLoader:
                 from brands
                 where 1""")
             # Print Result-set
-            for (b_id, b_name) in cur:
-                print(f"Name: {b_name}, admin: {b_id}")
+            for (id, name) in cur:
+                resultlist.append(b.Brand(id, name))
+
         except mariadb.Error as e:
             print(f"Error connecting to MariaDB Platform: {e}")
         finally:
             if cur is not None:
                 cur.close()       
-
+        return resultlist
     #brand types  
 
     def get_brands_types(self):
         cur = None
+        resultlist = []
         try:
             cur = self.conn.cursor()
             cur.execute(
@@ -162,13 +181,15 @@ class DbLoader:
                 from brands_types
                 where 1""")
             # Print Result-set
-            for (bt_id, bt_type) in cur:
-                print(f"Name: {bt_type}, admin: {bt_id}")
+            for (id, name) in cur:
+                resultlist.append(bt.Brand_type(id, name))
+                
         except mariadb.Error as e:
             print(f"Error connecting to MariaDB Platform: {e}")
         finally:
             if cur is not None:
-                cur.close()         
+                cur.close()   
+        return resultlist      
 
     #products - master product - brands - brand types
 

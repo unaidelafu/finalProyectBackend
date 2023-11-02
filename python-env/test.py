@@ -1,7 +1,7 @@
 from db_files import database
-from python-env 
 import sys
 import mariadb
+from classes import customers as c
 
 
 # **********
@@ -22,11 +22,8 @@ db = database.DbLoader(host, port, user, password, db_name)
 try:
     db.connect()
     conn_ok = True
-    db.get_customers()
-    id = db.create_customers("P71872049","Elvira","Granja")
-    if(id > 0):     
-        print(f"Se ha introducido el valor: {id}")
-    else:
-        print(f"No se ha introducido ningun valor")
+    customers = db.get_customers()
+    for customer in customers:
+        print(customer.serialize(), customer.id, customer.sid, customer.name_1, customer.name_2, customer.status)
 except mariadb.Error as e:
     print(f"Error connecting to MariaDB Platform: {e}")
