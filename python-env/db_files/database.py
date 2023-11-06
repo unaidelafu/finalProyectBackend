@@ -7,6 +7,7 @@ from classes import employee_types as emt
 from classes import wharehouses as w
 from classes import brands as b
 from classes import brand_types as bt
+from classes import products as p
 
 
 class DbLoader:
@@ -45,51 +46,112 @@ class DbLoader:
 
     # customers:
 
-    def get_customers(self):
-        cur = None
+    def get_customers(self,id):
+        
+        cur = None      
         resultlist = []
+        wherecon = " WHERE 1"
+        if id is not None:
+            wherecon = f" WHERE c_id = {id}"
         try:
+            self.connect()
             cur = self.conn.cursor()
             cur.execute(
-                "SELECT c_id, c_sid, c_name_1, c_name_2, c_status FROM customers WHERE c_id>=?",
-                (1,))
+                """SELECT c_id, c_sid, c_name_1, c_name_2, c_status FROM customers""" + wherecon)
+            
             # Print Result-set
             for (id, sid, name1, name2, status) in cur:
                 resultlist.append(c.Customer(id, sid, name1, name2, status))
                 print(f"First Name: {name2}, Last Name: {name1}, with dni: {sid}")
 
         except mariadb.Error as e:
-            print(f"Error connecting to MariaDB Platform: {e}")
+            print(f"Error - MariaDB : {e}")
         finally:
             if cur is not None:
                 cur.close()
         return resultlist
     
     def create_customers(self, customer):
+
         cur = None
+        retval = None
+
         query = "INSERT INTO customers (c_sid,c_name_1,c_name_2) VALUES (%s, %s, %s)"
         #query = f"INSERT INTO customers (c_sid,c_name_1,c_name_2) VALUES ('{sid}', '{name1}', '{name2}')"
         values = (customer.sid, customer.name_1, customer.name_2)
-        id = 0
+        #id = 0
         try:
+            self.connect()
             cur = self.conn.cursor()
             cur.execute(query,values)
             self.conn.commit() 
-            id = cur.lastrowid
+            #id = cur.lastrowid
+            retval = cur.lastrowid
             
         except mariadb.Error as e:
-            print(f"Error connecting to MariaDB Platform: {e}")
+            self.conn.rollback()
+            print(f"Error - MariaDB : {e}")
+            retval = f"Error - MariaDB : {e}"
         finally:
             if cur is not None:
                 cur.close()
-        return id
+            self.disconnect()
+        return retval
+
+
+    def update_customer(self, customer):
         
+        cur = None
+        retval = ""
+
+        query = """UPDATE customers
+	                SET c_sid= %s,c_name_1= %s,c_name_2= %s,c_status= %s
+	                WHERE c_id= %s;""" 
+        values = (customer.sid, customer.name_1, customer.name_2,customer.status,customer.id)
+        #id = 0
+        try:
+            self.connect()
+            cur = self.conn.cursor()
+            cur.execute(query,values)
+            self.conn.commit() 
+            #id = cur.lastrowid
+            
+        except mariadb.Error as e:
+            self.conn.rollback()
+            print(f"Error - MariaDB : {e}")
+            retval = f"Error - MariaDB : {e}"
+        finally:
+            if cur is not None:
+                cur.close()
+            self.disconnect
+        return retval
+
+
+    def delete_customer(self,id):
+        
+        cur = None
+        query = f"DELETE FROM customers WHERE c_id= {id} "
+        #values = (id)
+        try:
+            self.connect()
+            cur = self.conn.cursor()
+            cur.execute(query)
+            self.conn.commit() 
+            
+        except mariadb.Error as e:
+            print(f"Error - MariaDB : {e}")
+        finally:
+            if cur is not None:
+                cur.close()      
+
     # Employees
 
     def get_employees(self):
+
         cur = None
         resultlist = []
         try:
+            self.connect()
             cur = self.conn.cursor()
             cur.execute(
                 """select e.e_id, e.e_sid, e.e_name, e.e_surname, e.e_status, et.et_name , et.et_admin 
@@ -102,7 +164,7 @@ class DbLoader:
                 resultlist.append(em.Employee(id, sid, name1, name2, status, job, admin))
                 #print(f"First Name: {e_name}, Last Name: {e_surname}, with dni: {e_sid}")
         except mariadb.Error as e:
-            print(f"Error connecting to MariaDB Platform: {e}")
+            print(f"Error - MariaDB : {e}")
         finally:
             if cur is not None:
                 cur.close()        
@@ -114,6 +176,7 @@ class DbLoader:
         cur = None
         resultlist = []
         try:
+            self.connect()
             cur = self.conn.cursor()
             cur.execute(
                 """select et_id, et_name, et_admin 
@@ -123,7 +186,7 @@ class DbLoader:
             for (id, name, admin ) in cur:
                 resultlist.append(emt.Employee_type(id, name, admin))
         except mariadb.Error as e:
-            print(f"Error connecting to MariaDB Platform: {e}")
+            print(f"Error - MariaDB : {e}")
         finally:
             if cur is not None:
                 cur.close()                
@@ -134,6 +197,7 @@ class DbLoader:
         cur = None
         resultlist = []
         try:
+            self.connect()
             cur = self.conn.cursor()
             cur.execute(
                 """select w_id, w_name, w_location 
@@ -144,7 +208,7 @@ class DbLoader:
                 resultlist.append(w.Wharehouse(id, name, admin))
                 #print(f"Name: {w_name}, admin: {w_location}")
         except mariadb.Error as e:
-            print(f"Error connecting to MariaDB Platform: {e}")
+            print(f"Error - MariaDB : {e}")
         finally:
             if cur is not None:
                 cur.close()   
@@ -154,6 +218,7 @@ class DbLoader:
         cur = None
         resultlist = []
         try:
+            self.connect()
             cur = self.conn.cursor()
             cur.execute(
                 """select b_id, b_name
@@ -164,7 +229,7 @@ class DbLoader:
                 resultlist.append(b.Brand(id, name))
 
         except mariadb.Error as e:
-            print(f"Error connecting to MariaDB Platform: {e}")
+            print(f"Error - MariaDB : {e}")
         finally:
             if cur is not None:
                 cur.close()       
@@ -175,6 +240,7 @@ class DbLoader:
         cur = None
         resultlist = []
         try:
+            self.connect()
             cur = self.conn.cursor()
             cur.execute(
                 """select bt_id, bt_type
@@ -185,7 +251,7 @@ class DbLoader:
                 resultlist.append(bt.Brand_type(id, name))
                 
         except mariadb.Error as e:
-            print(f"Error connecting to MariaDB Platform: {e}")
+            print(f"Error - MariaDB : {e}")
         finally:
             if cur is not None:
                 cur.close()   
@@ -193,14 +259,16 @@ class DbLoader:
 
     #products - master product - brands - brand types
 
-    def get_product_all(self):
+    def get_products_all(self):
         cur = None
+        resultlist = []
         try:
+            self.connect()
             cur = self.conn.cursor()
             cur.execute(
-                """ select p.p_id, p.p_description, p.p_size, 
-                    mp.mp_product_code, mp.mp_product_name, mp.mp_price, mp.mp_img_url, 
-                    b.b_name, bt.bt_type  
+                """ select p.p_id, mp.mp_product_code, mp.mp_product_name, 
+                    p.p_description, p.p_size, 
+                    b.b_name, bt.bt_type, mp.mp_price, mp.mp_img_url  
                     from product p 
                     inner join master_product mp 
                     on p.p_mp_id = mp.mp_id 
@@ -208,12 +276,14 @@ class DbLoader:
                     on mp.mp_brand_id = b.b_id 
                     inner join brands_types bt 
                     on mp.mp_bt_id = bt.bt_id 
-                    where 1 """)
+                    where 1 
+                    order by mp.mp_product_name""")
             # Print Result-set  Resultado
-            for (p_id, p_description) in cur:
-                print(f"Name: {p_description}, admin: {p_id}")
+            for (id, code, name, description, size, b_name, b_type, price, img_url) in cur:
+                resultlist.append(p.product(id, code, name, description, size, b_name, b_type, price, img_url))
         except mariadb.Error as e:
-            print(f"Error connecting to MariaDB Platform: {e}")
+            print(f"Error - MariaDB : {e}")
         finally:
             if cur is not None:
                 cur.close()    
+        return resultlist
