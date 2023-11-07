@@ -1,6 +1,6 @@
 class Employee:
       
-      def __init__(self, id, sid, name_1, name_2, status, job, admin):
+      def __init__(self, id, sid, name_1, name_2, status, job, admin,img_url):
             self.id = id
             self.sid = sid
             self.name_1 =  name_1
@@ -8,6 +8,7 @@ class Employee:
             self.status = status
             self.job = job
             self.admin = admin
+            self.img_url = img_url
 
       #serialize to prepare for json
 
@@ -19,6 +20,7 @@ class Employee:
             'name_2': self.name_2,
             'status': self.status,
             'job': self.job,
-            'admin': self.admin
+            'admin': self.admin,
+            'img_url': self.img_url
         }
       

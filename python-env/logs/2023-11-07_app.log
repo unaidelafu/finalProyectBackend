@@ -1,0 +1,292 @@
+2023-11-07 12:04:12,960 - Admin logged in
+2023-11-07 12:04:13,275 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-07 12:04:13,275 - [33mPress CTRL+C to quit[0m
+2023-11-07 12:04:13,288 -  * Restarting with stat
+2023-11-07 12:04:14,232 - Admin logged in
+2023-11-07 12:04:14,252 -  * Debugger is active!
+2023-11-07 12:04:14,298 -  * Debugger PIN: 593-384-150
+2023-11-07 12:04:48,718 - Hello flask
+2023-11-07 12:04:48,719 - 127.0.0.1 - - [07/Nov/2023 12:04:48] "GET / HTTP/1.1" 200 -
+2023-11-07 12:04:48,816 - 127.0.0.1 - - [07/Nov/2023 12:04:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-11-07 12:04:49,628 - Hello flask
+2023-11-07 12:04:49,628 - 127.0.0.1 - - [07/Nov/2023 12:04:49] "GET / HTTP/1.1" 200 -
+2023-11-07 12:05:46,044 - 127.0.0.1 - - [07/Nov/2023 12:05:46] "PUT /customer/39 HTTP/1.1" 200 -
+2023-11-07 12:05:54,695 - 127.0.0.1 - - [07/Nov/2023 12:05:54] "GET /customer/39 HTTP/1.1" 200 -
+2023-11-07 12:12:00,261 - Admin logged in
+2023-11-07 12:14:09,669 - Admin logged in
+2023-11-07 12:16:04,788 - Admin logged in
+2023-11-07 12:16:04,831 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-07 12:16:04,831 - [33mPress CTRL+C to quit[0m
+2023-11-07 12:16:04,833 -  * Restarting with stat
+2023-11-07 12:16:05,622 - Admin logged in
+2023-11-07 12:16:05,638 -  * Debugger is active!
+2023-11-07 12:16:05,643 -  * Debugger PIN: 593-384-150
+2023-11-07 12:16:11,006 - 127.0.0.1 - - [07/Nov/2023 12:16:11] "[35m[1mGET /employees HTTP/1.1[0m" 500 -
+2023-11-07 12:16:49,180 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-07 12:16:49,350 -  * Restarting with stat
+2023-11-07 12:16:50,178 - Admin logged in
+2023-11-07 12:16:50,194 -  * Debugger is active!
+2023-11-07 12:16:50,199 -  * Debugger PIN: 593-384-150
+2023-11-07 12:17:01,898 - Admin logged in
+2023-11-07 12:17:01,929 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-07 12:17:01,929 - [33mPress CTRL+C to quit[0m
+2023-11-07 12:17:01,931 -  * Restarting with stat
+2023-11-07 12:17:02,748 - Admin logged in
+2023-11-07 12:17:02,764 -  * Debugger is active!
+2023-11-07 12:17:02,769 -  * Debugger PIN: 593-384-150
+2023-11-07 12:17:15,207 - 127.0.0.1 - - [07/Nov/2023 12:17:15] "GET /employees HTTP/1.1" 200 -
+2023-11-07 12:17:25,809 - 127.0.0.1 - - [07/Nov/2023 12:17:25] "GET /employee/6 HTTP/1.1" 200 -
+2023-11-07 12:19:35,271 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-07 12:19:35,423 -  * Restarting with stat
+2023-11-07 12:19:36,514 - Admin logged in
+2023-11-07 12:19:36,532 -  * Debugger is active!
+2023-11-07 12:19:36,537 -  * Debugger PIN: 593-384-150
+2023-11-07 12:21:17,690 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-11-07 12:21:17,830 -  * Restarting with stat
+2023-11-07 12:21:18,963 - Admin logged in
+2023-11-07 12:21:18,982 -  * Debugger is active!
+2023-11-07 12:21:18,987 -  * Debugger PIN: 593-384-150
+2023-11-07 12:21:34,277 - 127.0.0.1 - - [07/Nov/2023 12:21:34] "GET /products HTTP/1.1" 200 -
+2023-11-07 12:21:46,484 - 127.0.0.1 - - [07/Nov/2023 12:21:46] "GET /product/21 HTTP/1.1" 200 -
+2023-11-07 12:23:39,670 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-11-07 12:23:39,822 -  * Restarting with stat
+2023-11-07 12:23:40,748 - Admin logged in
+2023-11-07 12:23:40,773 -  * Debugger is active!
+2023-11-07 12:23:40,780 -  * Debugger PIN: 593-384-150
+2023-11-07 12:27:02,904 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-07 12:27:03,072 -  * Restarting with stat
+2023-11-07 12:27:04,052 - Admin logged in
+2023-11-07 12:27:04,070 -  * Debugger is active!
+2023-11-07 12:27:04,075 -  * Debugger PIN: 593-384-150
+2023-11-07 12:27:05,109 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-11-07 12:27:05,257 -  * Restarting with stat
+2023-11-07 12:27:06,158 - Admin logged in
+2023-11-07 12:27:06,175 -  * Debugger is active!
+2023-11-07 12:27:06,180 -  * Debugger PIN: 593-384-150
+2023-11-07 12:28:43,378 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-07 12:28:43,515 -  * Restarting with stat
+2023-11-07 12:28:44,415 - Admin logged in
+2023-11-07 15:57:49,591 - Admin logged in
+2023-11-07 15:58:18,333 - Admin logged in
+2023-11-07 15:58:58,735 - Admin logged in
+2023-11-07 15:58:58,768 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-07 15:58:58,769 - [33mPress CTRL+C to quit[0m
+2023-11-07 15:58:58,771 -  * Restarting with stat
+2023-11-07 15:58:59,593 - Admin logged in
+2023-11-07 15:58:59,656 -  * Debugger is active!
+2023-11-07 15:58:59,670 -  * Debugger PIN: 593-384-150
+2023-11-07 15:59:03,026 - 127.0.0.1 - - [07/Nov/2023 15:59:03] "GET /customers HTTP/1.1" 200 -
+2023-11-07 15:59:59,968 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-07 16:00:00,100 -  * Restarting with stat
+2023-11-07 16:00:01,034 - Admin logged in
+2023-11-07 16:00:01,068 -  * Debugger is active!
+2023-11-07 16:00:01,073 -  * Debugger PIN: 593-384-150
+2023-11-07 16:01:45,746 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-07 16:01:45,891 -  * Restarting with stat
+2023-11-07 16:01:46,763 - Admin logged in
+2023-11-07 16:01:46,783 -  * Debugger is active!
+2023-11-07 16:01:46,790 -  * Debugger PIN: 593-384-150
+2023-11-07 16:09:12,813 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-07 16:09:13,023 -  * Restarting with stat
+2023-11-07 16:09:14,014 - Admin logged in
+2023-11-07 16:09:14,033 -  * Debugger is active!
+2023-11-07 16:09:14,038 -  * Debugger PIN: 593-384-150
+2023-11-07 16:12:22,616 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\classes\\employees.py', reloading
+2023-11-07 16:12:22,799 -  * Restarting with stat
+2023-11-07 16:12:24,793 - Admin logged in
+2023-11-07 16:12:24,847 -  * Debugger is active!
+2023-11-07 16:12:24,863 -  * Debugger PIN: 593-384-150
+2023-11-07 16:13:14,522 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-07 16:13:14,682 -  * Restarting with stat
+2023-11-07 16:13:16,031 - Admin logged in
+2023-11-07 16:13:16,061 -  * Debugger is active!
+2023-11-07 16:13:16,067 -  * Debugger PIN: 593-384-150
+2023-11-07 16:19:01,805 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-11-07 16:19:01,974 -  * Restarting with stat
+2023-11-07 16:19:03,661 - Admin logged in
+2023-11-07 16:19:03,693 -  * Debugger is active!
+2023-11-07 16:19:03,706 -  * Debugger PIN: 593-384-150
+2023-11-07 16:19:40,255 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-07 16:19:40,433 -  * Restarting with stat
+2023-11-07 16:19:42,236 - Admin logged in
+2023-11-07 16:19:42,255 -  * Debugger is active!
+2023-11-07 16:19:42,260 -  * Debugger PIN: 593-384-150
+2023-11-07 16:19:51,150 - 127.0.0.1 - - [07/Nov/2023 16:19:51] "GET /customers HTTP/1.1" 200 -
+2023-11-07 16:23:25,550 - Hello flask
+2023-11-07 16:23:25,550 - 127.0.0.1 - - [07/Nov/2023 16:23:25] "GET / HTTP/1.1" 200 -
+2023-11-07 16:23:25,627 - 127.0.0.1 - - [07/Nov/2023 16:23:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-11-07 16:26:23,372 - Error - MariaDB : Duplicate entry '714851478L' for key 'customers_un'
+2023-11-07 16:26:23,372 - 127.0.0.1 - - [07/Nov/2023 16:26:23] "POST /employee HTTP/1.1" 200 -
+2023-11-07 16:27:08,382 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-07 16:27:08,541 -  * Restarting with stat
+2023-11-07 16:27:10,028 - Admin logged in
+2023-11-07 16:27:10,057 -  * Debugger is active!
+2023-11-07 16:27:10,063 -  * Debugger PIN: 593-384-150
+2023-11-07 16:27:12,458 - Error - MariaDB : Data truncated for column 'e_status' at row 1
+2023-11-07 16:27:12,459 - 127.0.0.1 - - [07/Nov/2023 16:27:12] "POST /employee HTTP/1.1" 200 -
+2023-11-07 16:28:56,572 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-11-07 16:28:56,719 -  * Restarting with stat
+2023-11-07 16:28:58,636 - Admin logged in
+2023-11-07 16:28:58,691 -  * Debugger is active!
+2023-11-07 16:28:58,715 -  * Debugger PIN: 593-384-150
+2023-11-07 16:30:28,057 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-07 16:30:28,217 -  * Restarting with stat
+2023-11-07 16:30:29,036 - Admin logged in
+2023-11-07 16:30:29,052 -  * Debugger is active!
+2023-11-07 16:30:29,057 -  * Debugger PIN: 593-384-150
+2023-11-07 16:30:36,423 - Error - MariaDB : statement (6) doesn't match the number of data elements (5).
+2023-11-07 16:30:36,423 - 127.0.0.1 - - [07/Nov/2023 16:30:36] "POST /employee HTTP/1.1" 200 -
+2023-11-07 16:30:51,355 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-11-07 16:30:51,514 -  * Restarting with stat
+2023-11-07 16:30:52,400 - Admin logged in
+2023-11-07 16:30:52,421 -  * Debugger is active!
+2023-11-07 16:30:52,426 -  * Debugger PIN: 593-384-150
+2023-11-07 16:30:55,027 - Error - MariaDB : You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'e_img_url)
+            VALUES (?,?,?,?,?)' at line 1
+2023-11-07 16:30:55,028 - 127.0.0.1 - - [07/Nov/2023 16:30:55] "POST /employee HTTP/1.1" 200 -
+2023-11-07 16:32:13,567 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-11-07 16:32:13,729 -  * Restarting with stat
+2023-11-07 16:32:14,683 - Admin logged in
+2023-11-07 16:32:14,703 -  * Debugger is active!
+2023-11-07 16:32:14,709 -  * Debugger PIN: 593-384-150
+2023-11-07 16:32:16,296 - 127.0.0.1 - - [07/Nov/2023 16:32:16] "[35m[1mPOST /employee HTTP/1.1[0m" 500 -
+2023-11-07 16:40:13,833 - Admin logged in
+2023-11-07 16:40:13,885 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-07 16:40:13,885 - [33mPress CTRL+C to quit[0m
+2023-11-07 16:40:13,889 -  * Restarting with stat
+2023-11-07 16:40:16,243 - Admin logged in
+2023-11-07 16:40:16,271 -  * Debugger is active!
+2023-11-07 16:40:16,279 -  * Debugger PIN: 593-384-150
+2023-11-07 16:40:21,905 - 127.0.0.1 - - [07/Nov/2023 16:40:21] "[35m[1mPOST /employee HTTP/1.1[0m" 500 -
+2023-11-07 16:42:28,279 - Admin logged in
+2023-11-07 16:42:28,323 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-07 16:42:28,323 - [33mPress CTRL+C to quit[0m
+2023-11-07 16:42:28,327 -  * Restarting with stat
+2023-11-07 16:42:30,514 - Admin logged in
+2023-11-07 16:42:30,546 -  * Debugger is active!
+2023-11-07 16:42:30,552 -  * Debugger PIN: 593-384-150
+2023-11-07 16:42:40,557 - 127.0.0.1 - - [07/Nov/2023 16:42:40] "POST /employee HTTP/1.1" 200 -
+2023-11-07 16:59:21,776 - Admin logged in
+2023-11-07 16:59:21,823 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-07 16:59:21,824 - [33mPress CTRL+C to quit[0m
+2023-11-07 16:59:21,826 -  * Restarting with stat
+2023-11-07 16:59:22,686 - Admin logged in
+2023-11-07 16:59:22,704 -  * Debugger is active!
+2023-11-07 16:59:22,709 -  * Debugger PIN: 593-384-150
+2023-11-07 16:59:26,492 - 127.0.0.1 - - [07/Nov/2023 16:59:26] "[35m[1mPUT /customer/39 HTTP/1.1[0m" 500 -
+2023-11-07 16:59:59,117 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-07 16:59:59,252 -  * Restarting with stat
+2023-11-07 17:00:00,143 - Admin logged in
+2023-11-07 17:00:00,162 -  * Debugger is active!
+2023-11-07 17:00:00,167 -  * Debugger PIN: 593-384-150
+2023-11-07 17:00:06,434 - 127.0.0.1 - - [07/Nov/2023 17:00:06] "PUT /customer/39 HTTP/1.1" 200 -
+2023-11-07 17:00:43,231 - Error - MariaDB : Data truncated for column 'c_status' at row 1
+2023-11-07 17:00:43,231 - 127.0.0.1 - - [07/Nov/2023 17:00:43] "PUT /customer/39 HTTP/1.1" 200 -
+2023-11-07 17:00:54,358 - 127.0.0.1 - - [07/Nov/2023 17:00:54] "PUT /customer/39 HTTP/1.1" 200 -
+2023-11-07 17:02:37,934 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-07 17:02:38,074 -  * Restarting with stat
+2023-11-07 17:02:38,928 - Admin logged in
+2023-11-07 17:02:38,945 -  * Debugger is active!
+2023-11-07 17:02:38,950 -  * Debugger PIN: 593-384-150
+2023-11-07 17:03:25,561 - 127.0.0.1 - - [07/Nov/2023 17:03:25] "POST /customer HTTP/1.1" 200 -
+2023-11-07 17:03:57,779 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-07 17:03:57,913 -  * Restarting with stat
+2023-11-07 17:03:58,814 - Admin logged in
+2023-11-07 17:03:58,834 -  * Debugger is active!
+2023-11-07 17:03:58,839 -  * Debugger PIN: 593-384-150
+2023-11-07 17:04:37,264 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-07 17:04:37,399 -  * Restarting with stat
+2023-11-07 17:04:38,283 - Admin logged in
+2023-11-07 17:04:38,303 -  * Debugger is active!
+2023-11-07 17:04:38,308 -  * Debugger PIN: 593-384-150
+2023-11-07 17:04:51,040 - 127.0.0.1 - - [07/Nov/2023 17:04:51] "DELETE /customer/41 HTTP/1.1" 200 -
+2023-11-07 17:05:19,418 - 127.0.0.1 - - [07/Nov/2023 17:05:19] "POST /customer HTTP/1.1" 200 -
+2023-11-07 17:07:37,401 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-07 17:07:37,540 -  * Restarting with stat
+2023-11-07 17:07:38,349 - Admin logged in
+2023-11-07 17:07:38,366 -  * Debugger is active!
+2023-11-07 17:07:38,371 -  * Debugger PIN: 593-384-150
+2023-11-07 17:07:58,366 - 127.0.0.1 - - [07/Nov/2023 17:07:58] "POST /customer HTTP/1.1" 200 -
+2023-11-07 17:11:08,719 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-07 17:11:08,863 -  * Restarting with stat
+2023-11-07 17:11:09,738 - Admin logged in
+2023-11-07 17:11:09,754 -  * Debugger is active!
+2023-11-07 17:11:09,759 -  * Debugger PIN: 593-384-150
+2023-11-07 17:11:14,556 - Error - MariaDB : Duplicate entry '714851478L' for key 'employees_un'
+2023-11-07 17:11:14,557 - 127.0.0.1 - - [07/Nov/2023 17:11:14] "POST /employee HTTP/1.1" 200 -
+2023-11-07 17:11:34,169 - 127.0.0.1 - - [07/Nov/2023 17:11:34] "POST /employee HTTP/1.1" 200 -
+2023-11-07 17:45:01,730 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-07 17:45:01,867 -  * Restarting with stat
+2023-11-07 17:45:02,999 - Admin logged in
+2023-11-07 17:45:03,027 -  * Debugger is active!
+2023-11-07 17:45:03,034 -  * Debugger PIN: 593-384-150
+2023-11-07 17:52:06,888 - 127.0.0.1 - - [07/Nov/2023 17:52:06] "[35m[1mGET /employee/2 HTTP/1.1[0m" 500 -
+2023-11-07 17:53:48,803 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-11-07 17:53:48,957 -  * Restarting with stat
+2023-11-07 17:53:49,969 - Admin logged in
+2023-11-07 17:53:49,986 -  * Debugger is active!
+2023-11-07 17:53:49,991 -  * Debugger PIN: 593-384-150
+2023-11-07 17:55:06,936 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-07 17:55:07,079 -  * Restarting with stat
+2023-11-07 17:55:07,922 - Admin logged in
+2023-11-07 17:55:07,941 -  * Debugger is active!
+2023-11-07 17:55:07,946 -  * Debugger PIN: 593-384-150
+2023-11-07 17:55:35,115 - 127.0.0.1 - - [07/Nov/2023 17:55:35] "[35m[1mGET /employee/2 HTTP/1.1[0m" 500 -
+2023-11-07 17:58:14,056 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-11-07 17:58:14,195 -  * Restarting with stat
+2023-11-07 17:58:15,155 - Admin logged in
+2023-11-07 17:58:15,176 -  * Debugger is active!
+2023-11-07 17:58:15,181 -  * Debugger PIN: 593-384-150
+2023-11-07 17:58:18,598 - 127.0.0.1 - - [07/Nov/2023 17:58:18] "GET /employee/2 HTTP/1.1" 200 -
+2023-11-07 17:58:33,232 - 127.0.0.1 - - [07/Nov/2023 17:58:33] "GET /employee/11 HTTP/1.1" 200 -
+2023-11-07 17:58:40,173 - 127.0.0.1 - - [07/Nov/2023 17:58:40] "GET /employees HTTP/1.1" 200 -
+2023-11-07 18:00:20,113 - 127.0.0.1 - - [07/Nov/2023 18:00:20] "[35m[1mPUT /employee/11 HTTP/1.1[0m" 500 -
+2023-11-07 18:03:09,396 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-07 18:03:09,532 -  * Restarting with stat
+2023-11-07 18:03:10,400 - Admin logged in
+2023-11-07 18:03:10,419 -  * Debugger is active!
+2023-11-07 18:03:10,424 -  * Debugger PIN: 593-384-150
+2023-11-07 18:03:14,119 - 127.0.0.1 - - [07/Nov/2023 18:03:14] "PUT /employee/11 HTTP/1.1" 200 -
+2023-11-07 18:03:39,597 - 127.0.0.1 - - [07/Nov/2023 18:03:39] "PUT /employee/11 HTTP/1.1" 200 -
+2023-11-07 18:05:30,622 - Error - MariaDB : Duplicate entry '75841201S' for key 'employees_un'
+2023-11-07 18:05:30,623 - 127.0.0.1 - - [07/Nov/2023 18:05:30] "PUT /employee/11 HTTP/1.1" 200 -
+2023-11-07 18:09:03,503 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-11-07 18:09:03,634 -  * Restarting with stat
+2023-11-07 18:09:04,539 - Admin logged in
+2023-11-07 18:09:04,559 -  * Debugger is active!
+2023-11-07 18:09:04,564 -  * Debugger PIN: 593-384-150
+2023-11-07 18:10:09,255 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-07 18:10:09,391 -  * Restarting with stat
+2023-11-07 18:10:10,241 - Admin logged in
+2023-11-07 18:10:10,260 -  * Debugger is active!
+2023-11-07 18:10:10,265 -  * Debugger PIN: 593-384-150
+2023-11-07 18:10:23,071 - 127.0.0.1 - - [07/Nov/2023 18:10:23] "DELETE /employee/11 HTTP/1.1" 200 -
+2023-11-07 18:10:46,483 - Error - MariaDB : Duplicate entry '75841201S' for key 'employees_un'
+2023-11-07 18:10:46,484 - 127.0.0.1 - - [07/Nov/2023 18:10:46] "POST /employee HTTP/1.1" 200 -
+2023-11-07 18:11:03,538 - 127.0.0.1 - - [07/Nov/2023 18:11:03] "POST /employee HTTP/1.1" 200 -
+2023-11-07 18:46:05,242 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-11-07 18:46:05,372 -  * Restarting with stat
+2023-11-07 18:46:06,439 - Admin logged in
+2023-11-07 18:46:06,460 -  * Debugger is active!
+2023-11-07 18:46:06,465 -  * Debugger PIN: 593-384-150
+2023-11-07 19:00:41,090 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-07 19:00:41,241 -  * Restarting with stat
+2023-11-07 19:00:42,036 - Admin logged in
+2023-11-07 19:01:24,238 - Admin logged in
+2023-11-07 19:01:58,712 - Admin logged in
+2023-11-07 19:01:58,746 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-07 19:01:58,746 - [33mPress CTRL+C to quit[0m
+2023-11-07 19:01:58,748 -  * Restarting with stat
+2023-11-07 19:01:59,536 - Admin logged in
+2023-11-07 19:01:59,555 -  * Debugger is active!
+2023-11-07 19:01:59,560 -  * Debugger PIN: 593-384-150
+2023-11-07 19:02:10,213 - 127.0.0.1 - - [07/Nov/2023 19:02:10] "DELETE /brand/21 HTTP/1.1" 200 -
+2023-11-07 19:02:39,736 - 127.0.0.1 - - [07/Nov/2023 19:02:39] "DELETE /product/32 HTTP/1.1" 200 -

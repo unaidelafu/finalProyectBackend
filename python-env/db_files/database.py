@@ -44,7 +44,7 @@ class DbLoader:
 
     #aqui es donde comenzariamos a usar sentencias
 
-    # customers:
+    ##      --- Customers ---       ##
 
     def get_customers(self,id):
         
@@ -69,9 +69,10 @@ class DbLoader:
         finally:
             if cur is not None:
                 cur.close()
+            self.disconnect()
         return resultlist
     
-    def create_customers(self, customer):
+    def create_customer(self, customer):
 
         cur = None
         retval = None
@@ -130,6 +131,7 @@ class DbLoader:
     def delete_customer(self,id):
         
         cur = None
+        retval = ""
         query = f"DELETE FROM customers WHERE c_id= {id} "
         #values = (id)
         try:
@@ -139,29 +141,35 @@ class DbLoader:
             self.conn.commit() 
             
         except mariadb.Error as e:
+            self.conn.rollback()
             print(f"Error - MariaDB : {e}")
+            retval = f"Error - MariaDB : {e}"
         finally:
             if cur is not None:
-                cur.close()      
+                cur.close()  
+            self.disconnect()
+        return retval    
 
-    # Employees
+    ##      --- Employees ---       ##
 
-    def get_employees(self):
+    def get_employees(self, id):
 
         cur = None
         resultlist = []
+        wherecon = " WHERE 1"
+        if id is not None:
+            wherecon = f" WHERE e.e_id = {id}"
         try:
             self.connect()
             cur = self.conn.cursor()
             cur.execute(
-                """select e.e_id, e.e_sid, e.e_name, e.e_surname, e.e_status, et.et_name , et.et_admin 
+                f"""select e.e_id, e.e_sid, e.e_name, e.e_surname, e.e_status, et.et_name, et.et_admin, e.e_img_url 
                 from employees e 
                 inner join employees_types et 
-                on e.e_type_id = et.et_id 
-                where 1""")
+                on e.e_type_id = et.et_id {wherecon}""")
             # Print Result-set
-            for (id,sid, name1, name2, status, job, admin) in cur:
-                resultlist.append(em.Employee(id, sid, name1, name2, status, job, admin))
+            for (id,sid, name1, name2, status, job, admin,img_url) in cur:
+                resultlist.append(em.Employee(id, sid, name1, name2, status, job, admin, img_url))
                 #print(f"First Name: {e_name}, Last Name: {e_surname}, with dni: {e_sid}")
         except mariadb.Error as e:
             print(f"Error - MariaDB : {e}")
@@ -170,9 +178,89 @@ class DbLoader:
                 cur.close()        
 
         return resultlist
-    # Employees types
+    
+    def create_employee(self, employee):
 
-    def get_employees_types(self):
+        cur = None
+        retval = None
+        #Asumiendo que de la app se envia el id del job_type
+        query = "INSERT INTO customers (c_sid,c_name_1,c_name_2) VALUES (%s, %s, %s)"
+        query = """INSERT INTO bike_workshop.employees (e_sid,e_surname,e_name,e_type_id,e_img_url)
+            VALUES (%s,%s,%s,%s,%s);"""
+        #query = f"INSERT INTO customers (c_sid,c_name_1,c_name_2) VALUES ('{sid}', '{name1}', '{name2}')"
+        #job, admin,img_url
+        values = (employee.sid, employee.name_1, employee.name_2,employee.job,employee.img_url)
+        #id = 0
+        try:
+            self.connect()
+            cur = self.conn.cursor()
+            cur.execute(query,values)
+            self.conn.commit() 
+            #id = cur.lastrowid
+            retval = cur.lastrowid
+            
+        except mariadb.Error as e:
+            self.conn.rollback()
+            print(f"Error - MariaDB : {e}")
+            retval = f"Error - MariaDB : {e}"
+        finally:
+            if cur is not None:
+                cur.close()
+            self.disconnect()
+        return retval
+
+    def delete_employee(self,id):
+        
+        cur = None
+        retval = ""
+        query = f"DELETE FROM employees WHERE e_id= {id} "
+        #values = (id)
+        try:
+            self.connect()
+            cur = self.conn.cursor()
+            cur.execute(query)
+            self.conn.commit() 
+            
+        except mariadb.Error as e:
+            self.conn.rollback()
+            print(f"Error - MariaDB : {e}")
+            retval = f"Error - MariaDB : {e}"
+        finally:
+            if cur is not None:
+                cur.close()  
+            self.disconnect()
+        return retval    
+    
+    def update_employee(self, employee):
+        
+        cur = None
+        retval = ""
+
+        query = """UPDATE bike_workshop.employees
+	                SET e_sid= %s,e_name= %s,e_surname= %s,e_type_id= %s,e_status= %s,e_img_url= %s
+	                WHERE e_id= %s;"""
+        values = (employee.sid, employee.name_1, employee.name_2,employee.job,
+                  employee.status,employee.img_url,employee.id)
+        #id = 0
+        try:
+            self.connect()
+            cur = self.conn.cursor()
+            cur.execute(query,values)
+            self.conn.commit() 
+            #id = cur.lastrowid
+            
+        except mariadb.Error as e:
+            self.conn.rollback()
+            print(f"Error - MariaDB : {e}")
+            retval = f"Error - MariaDB : {e}"
+        finally:
+            if cur is not None:
+                cur.close()
+            self.disconnect
+        return retval
+    ##      --- Employee types ---       ##
+
+    def get_employee_types(self):
         cur = None
         resultlist = []
         try:
@@ -191,7 +279,7 @@ class DbLoader:
             if cur is not None:
                 cur.close()                
         return resultlist
-    #Wharehouse
+    ##      --- Wharehouse ---       ##
 
     def get_wharehouses(self):
         cur = None
@@ -213,7 +301,7 @@ class DbLoader:
             if cur is not None:
                 cur.close()   
         return resultlist
-    #brands
+    ##      --- brands ---       ##
     def get_brands(self):
         cur = None
         resultlist = []
@@ -234,7 +322,30 @@ class DbLoader:
             if cur is not None:
                 cur.close()       
         return resultlist
-    #brand types  
+
+    def delete_brand(self,id):
+        
+        cur = None
+        retval = ""
+        query = f"DELETE FROM brands WHERE b_id= {id} "
+        #values = (id)
+        try:
+            self.connect()
+            cur = self.conn.cursor()
+            cur.execute(query)
+            self.conn.commit() 
+            
+        except mariadb.Error as e:
+            self.conn.rollback()
+            print(f"Error - MariaDB : {e}")
+            retval = f"Error - MariaDB : {e}"
+        finally:
+            if cur is not None:
+                cur.close()  
+            self.disconnect()
+        return retval      
+    
+    ##      --- brand types ---       ##  
 
     def get_brands_types(self):
         cur = None
@@ -257,16 +368,19 @@ class DbLoader:
                 cur.close()   
         return resultlist      
 
-    #products - master product - brands - brand types
+    ##      --- products - master product - brands - brand types ---       ##
 
-    def get_products_all(self):
+    def get_products_all(self, id):
         cur = None
         resultlist = []
+        wherecon = " WHERE 1"
+        if id is not None:
+            wherecon = f" WHERE p.p_id = {id}"
         try:
             self.connect()
             cur = self.conn.cursor()
             cur.execute(
-                """ select p.p_id, mp.mp_product_code, mp.mp_product_name, 
+                f""" Select p.p_id, mp.mp_product_code, mp.mp_product_name, 
                     p.p_description, p.p_size, 
                     b.b_name, bt.bt_type, mp.mp_price, mp.mp_img_url  
                     from product p 
@@ -275,8 +389,7 @@ class DbLoader:
                     inner join brands b 
                     on mp.mp_brand_id = b.b_id 
                     inner join brands_types bt 
-                    on mp.mp_bt_id = bt.bt_id 
-                    where 1 
+                    on mp.mp_bt_id = bt.bt_id {wherecon} 
                     order by mp.mp_product_name""")
             # Print Result-set  Resultado
             for (id, code, name, description, size, b_name, b_type, price, img_url) in cur:
@@ -287,3 +400,25 @@ class DbLoader:
             if cur is not None:
                 cur.close()    
         return resultlist
+    
+    def delete_product(self,id):
+        
+        cur = None
+        retval = ""
+        query = f"DELETE FROM product WHERE p_id= {id} "
+        #values = (id)
+        try:
+            self.connect()
+            cur = self.conn.cursor()
+            cur.execute(query)
+            self.conn.commit() 
+            
+        except mariadb.Error as e:
+            self.conn.rollback()
+            print(f"Error - MariaDB : {e}")
+            retval = f"Error - MariaDB : {e}"
+        finally:
+            if cur is not None:
+                cur.close()  
+            self.disconnect()
+        return retval  

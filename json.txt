@@ -1,0 +1,19 @@
+Customers
+
+	Create:
+		{
+			"sid": "714851478L",
+			"name_1": "Andres",
+			"name_2": "Tarantino",      
+		}	
+	Update:
+
+		{
+			"sid": "714851478L",
+			"name_1": "Andres",
+			"name_2": "Tarantino",      
+			"status": "ACTIVE"
+		}
+		
+Employees
+	Create:
