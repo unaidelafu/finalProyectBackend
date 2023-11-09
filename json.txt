@@ -17,3 +17,19 @@ Customers
 		
 Employees
 	Create:
+		{
+			"sid": "714851478L",
+			"name_1": "Andres",
+			"name_2": "Tarantino",      
+			"job": 1,
+			"img_url":"www.google.com"
+		}	
+	Update:
+		{
+			"sid": "714851478L",
+			"name_1": "Andresito",
+			"name_2": "Tarantino",      
+			"job": 3,
+            "status": "ACTIVE",
+			"img_url":"www.google.com"
+		}			
