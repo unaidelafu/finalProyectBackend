@@ -168,10 +168,11 @@ def API_add_employee():
     sid = request.json['sid']
     name_1 = request.json['name_1']
     name_2 = request.json['name_2']
+    pswrd = request.json['pswrd']
     job = request.json['job']
     img_url = request.json['img_url']
 
-    new_employee = em.Employee(None,sid,name_1,name_2,None,job,None,img_url)
+    new_employee = em.Employee(None,sid,name_1,name_2,pswrd,None,job,None,img_url)
 
     message = db.create_employee(new_employee)
     if("Error" not in str(message)): 
@@ -194,12 +195,33 @@ def API_update_employee(id):
     job = request.json['job']
     status = request.json['status']
     img_url = request.json['img_url']
-    upd_employee = em.Employee(id,sid,name_1,name_2,status,job,None,img_url)
+    upd_employee = em.Employee(id,sid,name_1,name_2,None,status,job,None,img_url)
 #   ---
     message = db.update_employee(upd_employee)
 
     return API_json_resp(message,upd_employee)
 
+## update a employee pswrd:
+@app.route("/employee-pswrd/<id>", methods=["PUT"])
+def API_update_employee_pswrd(id):
+
+    retval = None
+    message = ""
+    structure = None
+
+
+    sid = None
+    name_1 = None
+    name_2 = None
+    job = None
+    status = None
+    img_url = None
+    pswrd = request.json['pswrd']
+    upd_employee = em.Employee(id,sid,name_1,name_2,pswrd,status,job,None,img_url)
+#   ---
+    message = db.update_employee_pswrd(upd_employee)
+
+    return API_json_resp(message,upd_employee)
 ## Delete one employee
 @app.route("/employee/<id>", methods=["DELETE"])
 def API_delete_employee(id):

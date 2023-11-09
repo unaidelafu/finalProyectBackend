@@ -163,13 +163,13 @@ class DbLoader:
             self.connect()
             cur = self.conn.cursor()
             cur.execute(
-                f"""select e.e_id, e.e_sid, e.e_name, e.e_surname, e.e_status, et.et_name, et.et_admin, e.e_img_url 
+                f"""select e.e_id, e.e_sid, e.e_name, e.e_surname, e.e_pswrd, e.e_status, et.et_name, et.et_admin, e.e_img_url 
                 from employees e 
                 inner join employees_types et 
                 on e.e_type_id = et.et_id {wherecon}""")
             # Print Result-set
-            for (id,sid, name1, name2, status, job, admin,img_url) in cur:
-                resultlist.append(em.Employee(id, sid, name1, name2, status, job, admin, img_url))
+            for (id,sid, name1, name2, pswrd, status, job, admin,img_url) in cur:
+                resultlist.append(em.Employee(id, sid, name1, name2, pswrd, status, job, admin, img_url))
                 #print(f"First Name: {e_name}, Last Name: {e_surname}, with dni: {e_sid}")
         except mariadb.Error as e:
             print(f"Error - MariaDB : {e}")
@@ -184,12 +184,11 @@ class DbLoader:
         cur = None
         retval = None
         #Asumiendo que de la app se envia el id del job_type
-        query = "INSERT INTO customers (c_sid,c_name_1,c_name_2) VALUES (%s, %s, %s)"
-        query = """INSERT INTO bike_workshop.employees (e_sid,e_surname,e_name,e_type_id,e_img_url)
-            VALUES (%s,%s,%s,%s,%s);"""
+        query = """INSERT INTO bike_workshop.employees (e_sid,e_name, e_surname, e_pswrd,e_type_id,e_img_url)
+            VALUES (%s,%s,%s,password(%s),%s,%s);"""
         #query = f"INSERT INTO customers (c_sid,c_name_1,c_name_2) VALUES ('{sid}', '{name1}', '{name2}')"
         #job, admin,img_url
-        values = (employee.sid, employee.name_1, employee.name_2,employee.job,employee.img_url)
+        values = (employee.sid, employee.name_1, employee.name_2, employee.pswrd, employee.job,employee.img_url)
         #id = 0
         try:
             self.connect()
@@ -239,7 +238,7 @@ class DbLoader:
         query = """UPDATE bike_workshop.employees
 	                SET e_sid= %s,e_name= %s,e_surname= %s,e_type_id= %s,e_status= %s,e_img_url= %s
 	                WHERE e_id= %s;"""
-        values = (employee.sid, employee.name_1, employee.name_2,employee.job,
+        values = (employee.sid, employee.name_1, employee.name_2, employee.job,
                   employee.status,employee.img_url,employee.id)
         #id = 0
         try:
@@ -258,8 +257,38 @@ class DbLoader:
                 cur.close()
             self.disconnect
         return retval
-    ##      --- Employee types ---       ##
 
+
+    
+    def update_employee_pswrd(self, employee):
+
+        cur = None
+        retval = ""
+
+        query = """UPDATE bike_workshop.employees
+	                SET e_pswrd = password(%s)
+	                WHERE e_id= %s;"""
+        values = (employee.pswrd, employee.id)
+        #id = 0
+        try:
+            self.connect()
+            cur = self.conn.cursor()
+            cur.execute(query,values)
+            self.conn.commit() 
+            #id = cur.lastrowid
+            
+        except mariadb.Error as e:
+            self.conn.rollback()
+            print(f"Error - MariaDB : {e}")
+            retval = f"Error - MariaDB : {e}"
+        finally:
+            if cur is not None:
+                cur.close()
+            self.disconnect
+        return retval   
+
+    ##      --- Employee types ---       ##
+             
     def get_employee_types(self):
         cur = None
         resultlist = []

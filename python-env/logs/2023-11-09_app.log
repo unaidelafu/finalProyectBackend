@@ -1,0 +1,64 @@
+2023-11-09 10:39:19,633 - Admin logged in
+2023-11-09 10:39:19,677 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-09 10:39:19,677 - [33mPress CTRL+C to quit[0m
+2023-11-09 10:39:19,679 -  * Restarting with stat
+2023-11-09 10:39:20,519 - Admin logged in
+2023-11-09 10:39:20,539 -  * Debugger is active!
+2023-11-09 10:39:20,544 -  * Debugger PIN: 593-384-150
+2023-11-09 10:39:30,889 - 127.0.0.1 - - [09/Nov/2023 10:39:30] "[31m[1mDELETE /employees HTTP/1.1[0m" 405 -
+2023-11-09 10:39:50,265 - 127.0.0.1 - - [09/Nov/2023 10:39:50] "GET /employees HTTP/1.1" 200 -
+2023-11-09 10:41:42,130 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-11-09 10:41:42,262 -  * Restarting with stat
+2023-11-09 10:41:43,108 - Admin logged in
+2023-11-09 10:41:43,128 -  * Debugger is active!
+2023-11-09 10:41:43,133 -  * Debugger PIN: 593-384-150
+2023-11-09 10:41:45,699 - 127.0.0.1 - - [09/Nov/2023 10:41:45] "GET /employees HTTP/1.1" 200 -
+2023-11-09 10:42:15,696 - 127.0.0.1 - - [09/Nov/2023 10:42:15] "[33mGET /employees/2 HTTP/1.1[0m" 404 -
+2023-11-09 10:42:21,585 - 127.0.0.1 - - [09/Nov/2023 10:42:21] "GET /employee/2 HTTP/1.1" 200 -
+2023-11-09 10:47:26,037 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-09 10:47:26,170 -  * Restarting with stat
+2023-11-09 10:47:27,097 - Admin logged in
+2023-11-09 10:47:27,119 -  * Debugger is active!
+2023-11-09 10:47:27,124 -  * Debugger PIN: 593-384-150
+2023-11-09 10:48:22,950 - Error - MariaDB : Unknown column 'e.e_pswrd' in 'field list'
+2023-11-09 10:48:22,951 - 127.0.0.1 - - [09/Nov/2023 10:48:22] "POST /employee HTTP/1.1" 200 -
+2023-11-09 10:49:37,531 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-11-09 10:49:37,672 -  * Restarting with stat
+2023-11-09 10:49:38,596 - Admin logged in
+2023-11-09 10:49:38,619 -  * Debugger is active!
+2023-11-09 10:49:38,624 -  * Debugger PIN: 593-384-150
+2023-11-09 10:49:41,476 - 127.0.0.1 - - [09/Nov/2023 10:49:41] "POST /employee HTTP/1.1" 200 -
+2023-11-09 10:50:56,905 - 127.0.0.1 - - [09/Nov/2023 10:50:56] "[35m[1mPUT /employee/14 HTTP/1.1[0m" 500 -
+2023-11-09 10:51:28,944 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-11-09 10:51:29,080 -  * Restarting with stat
+2023-11-09 10:51:29,997 - Admin logged in
+2023-11-09 10:51:30,017 -  * Debugger is active!
+2023-11-09 10:51:30,022 -  * Debugger PIN: 593-384-150
+2023-11-09 10:52:46,962 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-11-09 10:52:47,088 -  * Restarting with stat
+2023-11-09 10:52:48,021 - Admin logged in
+2023-11-09 10:52:48,041 -  * Debugger is active!
+2023-11-09 10:52:48,047 -  * Debugger PIN: 593-384-150
+2023-11-09 10:53:14,344 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-09 10:53:14,486 -  * Restarting with stat
+2023-11-09 10:53:15,365 - Admin logged in
+2023-11-09 10:53:15,387 -  * Debugger is active!
+2023-11-09 10:53:15,394 -  * Debugger PIN: 593-384-150
+2023-11-09 10:53:18,391 - 127.0.0.1 - - [09/Nov/2023 10:53:18] "PUT /employee/14 HTTP/1.1" 200 -
+2023-11-09 10:54:55,489 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-11-09 10:54:55,631 -  * Restarting with stat
+2023-11-09 10:54:56,516 - Admin logged in
+2023-11-09 10:54:56,539 -  * Debugger is active!
+2023-11-09 10:54:56,544 -  * Debugger PIN: 593-384-150
+2023-11-09 10:55:07,456 - 127.0.0.1 - - [09/Nov/2023 10:55:07] "DELETE /employee/14 HTTP/1.1" 200 -
+2023-11-09 10:55:20,995 - 127.0.0.1 - - [09/Nov/2023 10:55:20] "POST /employee HTTP/1.1" 200 -
+2023-11-09 10:55:51,028 - 127.0.0.1 - - [09/Nov/2023 10:55:51] "PUT /employee/15 HTTP/1.1" 200 -
+2023-11-09 10:59:50,867 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-09 10:59:51,032 -  * Restarting with stat
+2023-11-09 10:59:51,894 - Admin logged in
+2023-11-09 10:59:51,913 -  * Debugger is active!
+2023-11-09 10:59:51,918 -  * Debugger PIN: 593-384-150
+2023-11-09 11:02:06,355 - 127.0.0.1 - - [09/Nov/2023 11:02:06] "[35m[1mPUT /employee-pswrd/15 HTTP/1.1[0m" 500 -
+2023-11-09 11:02:33,656 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-09 11:02:33,816 -  * Restarting with stat
