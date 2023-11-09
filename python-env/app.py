@@ -229,6 +229,28 @@ def API_delete_employee(id):
     message = db.delete_employee(id)
     return API_json_resp(message,None)
 
+
+##      --- Employee login ---       
+# ##
+@app.route('/employee-login', methods=["GET"])
+def API_get_employee_login():
+    employees = []
+    
+    id = None
+    sid = request.json['sid']
+    name_1 = None
+    name_2 = None
+    job = None
+    status = 'ACTIVE'
+    img_url = None
+    pswrd = request.json['pswrd']
+    pswrd_employee = em.Employee(id,sid,name_1,name_2,pswrd,status,job,None,img_url)
+    employees = db.check_employee_login(pswrd_employee)
+    if(employees == []):
+        employees.append(pswrd_employee)
+    employee_list=[employee.serialize() for employee in employees]  #serialize to prepare for json
+
+    return jsonify(employee_list)
 ##      --- Employee types ---       ##
 
 ## get all employee types

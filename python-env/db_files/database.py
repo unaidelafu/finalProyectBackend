@@ -258,7 +258,36 @@ class DbLoader:
             self.disconnect
         return retval
 
+ 
+    ##      --- Employee Login ---       ##
+    def check_employee_login(self, employee):
 
+        cur = None
+        resultlist = []
+        query = """select e.e_id, e.e_sid, e.e_name, e.e_surname, e.e_pswrd, e.e_status, et.et_name, et.et_admin, e.e_img_url 
+                from employees e 
+                inner join employees_types et 
+                on e.e_type_id = et.et_id 
+                WHERE e.e_sid = %s and e.e_pswrd = password(%s) 
+                and e.e_status = %s"""
+        values = (employee.sid, employee.pswrd, employee.status)
+        try:
+            self.connect()
+            cur = self.conn.cursor()
+            cur.execute(query,values)
+            # Print Result-set
+            for (id,sid, name1, name2, pswrd, status, job, admin,img_url) in cur:
+                resultlist.append(em.Employee(id, sid, name1, name2, pswrd, status, job, admin, img_url))
+                #print(f"First Name: {e_name}, Last Name: {e_surname}, with dni: {e_sid}")
+        except mariadb.Error as e:
+            print(f"Error - MariaDB : {e}")
+        finally:
+            if cur is not None:
+                cur.close()        
+
+        return resultlist
+
+    ##      --- Employee Password ---       ##
     
     def update_employee_pswrd(self, employee):
 

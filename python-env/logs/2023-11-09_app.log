@@ -67,3 +67,55 @@
 2023-11-09 11:02:34,794 -  * Debugger PIN: 593-384-150
 2023-11-09 11:02:37,493 - 127.0.0.1 - - [09/Nov/2023 11:02:37] "PUT /employee-pswrd/15 HTTP/1.1" 200 -
 2023-11-09 11:03:05,137 - 127.0.0.1 - - [09/Nov/2023 11:03:05] "PUT /employee-pswrd/15 HTTP/1.1" 200 -
+2023-11-09 19:11:25,625 - Admin logged in
+2023-11-09 19:11:25,864 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-09 19:11:25,866 - [33mPress CTRL+C to quit[0m
+2023-11-09 19:11:25,886 -  * Restarting with stat
+2023-11-09 19:11:32,917 - Admin logged in
+2023-11-09 19:11:33,061 -  * Debugger is active!
+2023-11-09 19:11:33,085 -  * Debugger PIN: 593-384-150
+2023-11-09 19:14:10,790 - Admin logged in
+2023-11-09 19:14:10,876 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-09 19:14:10,876 - [33mPress CTRL+C to quit[0m
+2023-11-09 19:14:10,888 -  * Restarting with stat
+2023-11-09 19:14:15,182 - Admin logged in
+2023-11-09 19:14:15,232 -  * Debugger is active!
+2023-11-09 19:14:15,241 -  * Debugger PIN: 593-384-150
+2023-11-09 19:15:42,010 - 127.0.0.1 - - [09/Nov/2023 19:15:42] "GET /employee-login HTTP/1.1" 200 -
+2023-11-09 19:15:47,840 -  * Detected change in 'C:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-11-09 19:15:53,643 -  * Restarting with stat
+2023-11-09 19:15:56,381 - Admin logged in
+2023-11-09 19:15:56,422 -  * Debugger is active!
+2023-11-09 19:15:56,428 -  * Debugger PIN: 593-384-150
+2023-11-09 19:19:25,158 - Admin logged in
+2023-11-09 19:19:25,287 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-09 19:19:25,288 - [33mPress CTRL+C to quit[0m
+2023-11-09 19:19:25,294 -  * Restarting with stat
+2023-11-09 19:19:26,825 - Admin logged in
+2023-11-09 19:19:26,845 -  * Debugger is active!
+2023-11-09 19:19:26,851 -  * Debugger PIN: 593-384-150
+2023-11-09 19:19:28,145 - 127.0.0.1 - - [09/Nov/2023 19:19:28] "GET /employee-login HTTP/1.1" 200 -
+2023-11-09 19:19:56,608 - 127.0.0.1 - - [09/Nov/2023 19:19:56] "GET /employee-login HTTP/1.1" 200 -
+2023-11-09 19:57:20,198 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-09 19:57:20,328 -  * Restarting with stat
+2023-11-09 19:57:21,511 - Admin logged in
+2023-11-09 19:57:21,533 -  * Debugger is active!
+2023-11-09 19:57:21,538 -  * Debugger PIN: 593-384-150
+2023-11-09 19:57:43,720 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-09 19:57:43,882 -  * Restarting with stat
+2023-11-09 19:57:44,740 - Admin logged in
+2023-11-09 19:57:44,759 -  * Debugger is active!
+2023-11-09 19:57:44,764 -  * Debugger PIN: 593-384-150
+2023-11-09 19:57:57,692 - 127.0.0.1 - - [09/Nov/2023 19:57:57] "GET /employee-login HTTP/1.1" 200 -
+2023-11-09 19:58:03,988 - 127.0.0.1 - - [09/Nov/2023 19:58:03] "[35m[1mGET /employee-login HTTP/1.1[0m" 500 -
+2023-11-09 19:59:13,695 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-09 19:59:13,820 -  * Restarting with stat
+2023-11-09 19:59:14,798 - Admin logged in
+2023-11-09 19:59:14,817 -  * Debugger is active!
+2023-11-09 19:59:14,823 -  * Debugger PIN: 593-384-150
+2023-11-09 19:59:24,372 - 127.0.0.1 - - [09/Nov/2023 19:59:24] "GET /employee-login HTTP/1.1" 200 -
+2023-11-09 19:59:41,993 - 127.0.0.1 - - [09/Nov/2023 19:59:41] "GET /employee-login HTTP/1.1" 200 -
+2023-11-09 19:59:46,833 - 127.0.0.1 - - [09/Nov/2023 19:59:46] "GET /employee-login HTTP/1.1" 200 -
