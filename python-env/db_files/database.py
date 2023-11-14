@@ -163,13 +163,14 @@ class DbLoader:
             self.connect()
             cur = self.conn.cursor()
             cur.execute(
-                f"""select e.e_id, e.e_sid, e.e_name, e.e_surname, e.e_pswrd, e.e_status, et.et_name, et.et_admin, e.e_img_url 
+                f"""select e.e_id, e.e_sid, e.e_name, e.e_surname, e.e_pswrd, e.e_status, et.et_id, et.et_name, et.et_admin, e.e_img_url 
                 from employees e 
                 inner join employees_types et 
-                on e.e_type_id = et.et_id {wherecon}""")
+                on e.e_type_id = et.et_id {wherecon} 
+                ORDER BY e.e_status='ACTIVE', et.et_name, e.e_name, e.e_surname""")
             # Print Result-set
-            for (id,sid, name1, name2, pswrd, status, job, admin,img_url) in cur:
-                resultlist.append(em.Employee(id, sid, name1, name2, pswrd, status, job, admin, img_url))
+            for (id,sid, name1, name2, pswrd, status, jobId, job, admin,img_url) in cur:
+                resultlist.append(em.Employee(id, sid, name1, name2, pswrd, status, jobId, job, admin, img_url))
                 #print(f"First Name: {e_name}, Last Name: {e_surname}, with dni: {e_sid}")
         except mariadb.Error as e:
             print(f"Error - MariaDB : {e}")
@@ -264,7 +265,7 @@ class DbLoader:
 
         cur = None
         resultlist = []
-        query = """select e.e_id, e.e_sid, e.e_name, e.e_surname, e.e_pswrd, e.e_status, et.et_name, et.et_admin, e.e_img_url 
+        query = """select e.e_id, e.e_sid, e.e_name, e.e_surname, e.e_pswrd, e.e_status, et.et_id, et.et_name, et.et_admin, e.e_img_url 
                 from employees e 
                 inner join employees_types et 
                 on e.e_type_id = et.et_id 
@@ -276,8 +277,8 @@ class DbLoader:
             cur = self.conn.cursor()
             cur.execute(query,values)
             # Print Result-set
-            for (id,sid, name1, name2, pswrd, status, job, admin,img_url) in cur:
-                resultlist.append(em.Employee(id, sid, name1, name2, pswrd, status, job, admin, img_url))
+            for (id,sid, name1, name2, pswrd, status, jobId, job,admin,img_url) in cur:
+                resultlist.append(em.Employee(id, sid, name1, name2, pswrd, status, jobId, job, admin, img_url))
                 #print(f"First Name: {e_name}, Last Name: {e_surname}, with dni: {e_sid}")
         except mariadb.Error as e:
             print(f"Error - MariaDB : {e}")

@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
+from flask_cors import CORS
 
 import mariadb
 import logging
@@ -35,6 +36,8 @@ db = database.DbLoader(host, port, user, password, db_name)
 
 # flask
 app = Flask(__name__)
+CORS(app)       #CORS to allow external use sending JSON messages
+cors = CORS(app, resources={r"/*": {"origins": "*"}})   #allows origin of message form everywhere NOT SECURE!!
 ma=Marshmallow(app) 
 
 # directory
@@ -169,10 +172,11 @@ def API_add_employee():
     name_1 = request.json['name_1']
     name_2 = request.json['name_2']
     pswrd = request.json['pswrd']
+    jobId = None
     job = request.json['job']
     img_url = request.json['img_url']
 
-    new_employee = em.Employee(None,sid,name_1,name_2,pswrd,None,job,None,img_url)
+    new_employee = em.Employee(None,sid,name_1,name_2,pswrd,None,jobId,job,None,img_url)
 
     message = db.create_employee(new_employee)
     if("Error" not in str(message)): 
@@ -193,9 +197,10 @@ def API_update_employee(id):
     name_1 = request.json['name_1']
     name_2 = request.json['name_2']
     job = request.json['job']
+    jobId = None
     status = request.json['status']
     img_url = request.json['img_url']
-    upd_employee = em.Employee(id,sid,name_1,name_2,None,status,job,None,img_url)
+    upd_employee = em.Employee(id,sid,name_1,name_2,None,status,jobId,job,None,img_url)
 #   ---
     message = db.update_employee(upd_employee)
 
@@ -209,15 +214,15 @@ def API_update_employee_pswrd(id):
     message = ""
     structure = None
 
-
     sid = None
     name_1 = None
     name_2 = None
+    jobId = None
     job = None
     status = None
     img_url = None
     pswrd = request.json['pswrd']
-    upd_employee = em.Employee(id,sid,name_1,name_2,pswrd,status,job,None,img_url)
+    upd_employee = em.Employee(id,sid,name_1,name_2,pswrd,status,jobId,job,None,img_url)
 #   ---
     message = db.update_employee_pswrd(upd_employee)
 
@@ -232,7 +237,7 @@ def API_delete_employee(id):
 
 ##      --- Employee login ---       
 # ##
-@app.route('/employee-login', methods=["GET"])
+@app.route('/employee-login', methods=["PUT"])
 def API_get_employee_login():
     employees = []
     
@@ -240,11 +245,12 @@ def API_get_employee_login():
     sid = request.json['sid']
     name_1 = None
     name_2 = None
+    jobId = None
     job = None
     status = 'ACTIVE'
     img_url = None
     pswrd = request.json['pswrd']
-    pswrd_employee = em.Employee(id,sid,name_1,name_2,pswrd,status,job,None,img_url)
+    pswrd_employee = em.Employee(id,sid,name_1,name_2,pswrd,status,jobId,job,None,img_url)
     employees = db.check_employee_login(pswrd_employee)
     if(employees == []):
         employees.append(pswrd_employee)
