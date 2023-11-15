@@ -163,14 +163,14 @@ class DbLoader:
             self.connect()
             cur = self.conn.cursor()
             cur.execute(
-                f"""select e.e_id, e.e_sid, e.e_name, e.e_surname, e.e_pswrd, e.e_status, et.et_id, et.et_name, et.et_admin, e.e_img_url 
+                f"""select e.e_id, e.e_sid, e.e_name, e.e_surname, e.e_mail, e.e_phone_num, e.e_pswrd, e.e_status, et.et_id, et.et_name, et.et_admin, e.e_img_url 
                 from employees e 
                 inner join employees_types et 
                 on e.e_type_id = et.et_id {wherecon} 
                 ORDER BY e.e_status='ACTIVE', et.et_name, e.e_name, e.e_surname""")
             # Print Result-set
-            for (id,sid, name1, name2, pswrd, status, jobId, job, admin,img_url) in cur:
-                resultlist.append(em.Employee(id, sid, name1, name2, pswrd, status, jobId, job, admin, img_url))
+            for (id,sid, name1, name2,mail, phone_num, pswrd, status, jobId, job, admin,img_url) in cur:
+                resultlist.append(em.Employee(id, sid, name1, name2, mail, phone_num, pswrd, status, jobId, job, admin, img_url))
                 #print(f"First Name: {e_name}, Last Name: {e_surname}, with dni: {e_sid}")
         except mariadb.Error as e:
             print(f"Error - MariaDB : {e}")
@@ -185,11 +185,11 @@ class DbLoader:
         cur = None
         retval = None
         #Asumiendo que de la app se envia el id del job_type
-        query = """INSERT INTO bike_workshop.employees (e_sid,e_name, e_surname, e_pswrd,e_type_id,e_img_url)
-            VALUES (%s,%s,%s,password(%s),%s,%s);"""
+        query = """INSERT INTO bike_workshop.employees (e_sid,e_name, e_surname, e_mail, e_phone_num, e_pswrd,e_type_id,e_img_url)
+            VALUES (%s,%s,%s,%s,%s, password(%s),%s,%s);"""
         #query = f"INSERT INTO customers (c_sid,c_name_1,c_name_2) VALUES ('{sid}', '{name1}', '{name2}')"
         #job, admin,img_url
-        values = (employee.sid, employee.name_1, employee.name_2, employee.pswrd, employee.job,employee.img_url)
+        values = (employee.sid, employee.name_1, employee.name_2, employee.mail, employee.phone_num, employee.pswrd, employee.job,employee.img_url)
         #id = 0
         try:
             self.connect()
@@ -237,9 +237,9 @@ class DbLoader:
         retval = ""
 
         query = """UPDATE bike_workshop.employees
-	                SET e_sid= %s,e_name= %s,e_surname= %s,e_type_id= %s,e_status= %s,e_img_url= %s
+	                SET e_sid= %s,e_name= %s,e_surname= %s,e_mail = %s, e_phone_num = %s,e_type_id= %s,e_status= %s,e_img_url= %s
 	                WHERE e_id= %s;"""
-        values = (employee.sid, employee.name_1, employee.name_2, employee.job,
+        values = (employee.sid, employee.name_1, employee.name_2, employee.mail, employee.phone_num, employee.job,
                   employee.status,employee.img_url,employee.id)
         #id = 0
         try:
@@ -265,7 +265,7 @@ class DbLoader:
 
         cur = None
         resultlist = []
-        query = """select e.e_id, e.e_sid, e.e_name, e.e_surname, e.e_pswrd, e.e_status, et.et_id, et.et_name, et.et_admin, e.e_img_url 
+        query = """select e.e_id, e.e_sid, e.e_name, e.e_surname, e.e_mail, e.e_phone_num, e.e_pswrd, e.e_status, et.et_id, et.et_name, et.et_admin, e.e_img_url 
                 from employees e 
                 inner join employees_types et 
                 on e.e_type_id = et.et_id 
@@ -277,8 +277,8 @@ class DbLoader:
             cur = self.conn.cursor()
             cur.execute(query,values)
             # Print Result-set
-            for (id,sid, name1, name2, pswrd, status, jobId, job,admin,img_url) in cur:
-                resultlist.append(em.Employee(id, sid, name1, name2, pswrd, status, jobId, job, admin, img_url))
+            for (id,sid, name1, name2, mail, phone_num, pswrd, status, jobId, job,admin,img_url) in cur:
+                resultlist.append(em.Employee(id, sid, name1, name2, mail, phone_num, pswrd, status, jobId, job, admin, img_url))
                 #print(f"First Name: {e_name}, Last Name: {e_surname}, with dni: {e_sid}")
         except mariadb.Error as e:
             print(f"Error - MariaDB : {e}")

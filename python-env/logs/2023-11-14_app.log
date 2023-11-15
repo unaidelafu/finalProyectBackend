@@ -2,3 +2,19 @@
 2023-11-14 20:33:26,553 -  * Debugger is active!
 2023-11-14 20:33:26,647 -  * Debugger PIN: 593-384-150
 2023-11-14 20:33:26,927 - 127.0.0.1 - - [14/Nov/2023 20:33:26] "PUT /employee-login HTTP/1.1" 200 -
+2023-11-14 20:34:02,238 - 127.0.0.1 - - [14/Nov/2023 20:34:02] "OPTIONS /employee-login HTTP/1.1" 200 -
+2023-11-14 20:34:02,245 - 127.0.0.1 - - [14/Nov/2023 20:34:02] "PUT /employee-login HTTP/1.1" 200 -
+2023-11-14 20:36:26,295 - 127.0.0.1 - - [14/Nov/2023 20:36:26] "GET /employees HTTP/1.1" 200 -
+2023-11-14 20:38:20,035 - 127.0.0.1 - - [14/Nov/2023 20:38:20] "GET /employees HTTP/1.1" 200 -
+2023-11-14 20:38:41,661 - 127.0.0.1 - - [14/Nov/2023 20:38:41] "OPTIONS /employee-login HTTP/1.1" 200 -
+2023-11-14 20:38:41,670 - 127.0.0.1 - - [14/Nov/2023 20:38:41] "PUT /employee-login HTTP/1.1" 200 -
+2023-11-14 20:38:44,273 - 127.0.0.1 - - [14/Nov/2023 20:38:44] "GET /employees HTTP/1.1" 200 -
+2023-11-14 20:45:07,096 - 127.0.0.1 - - [14/Nov/2023 20:45:07] "GET /employees HTTP/1.1" 200 -
+2023-11-14 21:00:43,363 - 127.0.0.1 - - [14/Nov/2023 21:00:43] "GET /employees HTTP/1.1" 200 -
+2023-11-14 21:01:10,257 - 127.0.0.1 - - [14/Nov/2023 21:01:10] "OPTIONS /employee-login HTTP/1.1" 200 -
+2023-11-14 21:01:10,262 - 127.0.0.1 - - [14/Nov/2023 21:01:10] "PUT /employee-login HTTP/1.1" 200 -
+2023-11-14 21:01:15,513 - 127.0.0.1 - - [14/Nov/2023 21:01:15] "GET /employees HTTP/1.1" 200 -
+2023-11-14 21:21:41,593 - 127.0.0.1 - - [14/Nov/2023 21:21:41] "OPTIONS /employee-login HTTP/1.1" 200 -
+2023-11-14 21:21:41,599 - 127.0.0.1 - - [14/Nov/2023 21:21:41] "PUT /employee-login HTTP/1.1" 200 -
+2023-11-14 21:21:48,247 - 127.0.0.1 - - [14/Nov/2023 21:21:48] "GET /employees HTTP/1.1" 200 -
+2023-11-15 10:25:12,308 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\classes\\employees.py', reloading

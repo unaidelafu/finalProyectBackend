@@ -171,12 +171,14 @@ def API_add_employee():
     sid = request.json['sid']
     name_1 = request.json['name_1']
     name_2 = request.json['name_2']
+    mail = request.json['mail']
+    phone_num = request.json['phone_num']       
     pswrd = request.json['pswrd']
     jobId = None
     job = request.json['job']
     img_url = request.json['img_url']
 
-    new_employee = em.Employee(None,sid,name_1,name_2,pswrd,None,jobId,job,None,img_url)
+    new_employee = em.Employee(None,sid,name_1,name_2,mail,phone_num,pswrd,None,jobId,job,None,img_url)
 
     message = db.create_employee(new_employee)
     if("Error" not in str(message)): 
@@ -196,11 +198,13 @@ def API_update_employee(id):
     sid = request.json['sid']
     name_1 = request.json['name_1']
     name_2 = request.json['name_2']
+    mail = request.json['mail']
+    phone_num = request.json['phone_num']    
     job = request.json['job']
     jobId = None
     status = request.json['status']
     img_url = request.json['img_url']
-    upd_employee = em.Employee(id,sid,name_1,name_2,None,status,jobId,job,None,img_url)
+    upd_employee = em.Employee(id,sid,name_1,name_2,mail,phone_num,None,status,jobId,job,None,img_url)
 #   ---
     message = db.update_employee(upd_employee)
 
@@ -217,12 +221,14 @@ def API_update_employee_pswrd(id):
     sid = None
     name_1 = None
     name_2 = None
+    mail = None
+    phone_num = None    
     jobId = None
     job = None
     status = None
     img_url = None
     pswrd = request.json['pswrd']
-    upd_employee = em.Employee(id,sid,name_1,name_2,pswrd,status,jobId,job,None,img_url)
+    upd_employee = em.Employee(id,sid,name_1,name_2,mail,phone_num,pswrd,status,jobId,job,None,img_url)
 #   ---
     message = db.update_employee_pswrd(upd_employee)
 
@@ -245,12 +251,14 @@ def API_get_employee_login():
     sid = request.json['sid']
     name_1 = None
     name_2 = None
+    mail = None
+    phone_num = None
     jobId = None
     job = None
     status = 'ACTIVE'
     img_url = None
     pswrd = request.json['pswrd']
-    pswrd_employee = em.Employee(id,sid,name_1,name_2,pswrd,status,jobId,job,None,img_url)
+    pswrd_employee = em.Employee(id,sid,name_1,name_2,mail,phone_num,pswrd,status,jobId,job,None,img_url)
     employees = db.check_employee_login(pswrd_employee)
     if(employees == []):
         employees.append(pswrd_employee)
