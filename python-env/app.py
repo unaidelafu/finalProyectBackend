@@ -200,17 +200,21 @@ def API_update_employee(id):
     name_2 = request.json['name_2']
     mail = request.json['mail']
     phone_num = request.json['phone_num']    
+    pswrd = request.json['pswrd']
+    if pswrd =="":
+        pswrd = None
     job = request.json['job']
     jobId = None
     status = request.json['status']
     img_url = request.json['img_url']
-    upd_employee = em.Employee(id,sid,name_1,name_2,mail,phone_num,None,status,jobId,job,None,img_url)
+    upd_employee = em.Employee(id,sid,name_1,name_2,mail,phone_num,pswrd,status,jobId,job,None,img_url)
 #   ---
     message = db.update_employee(upd_employee)
 
     return API_json_resp(message,upd_employee)
 
-## update a employee pswrd:
+## update a employee pswrd: (NOT USING)
+
 @app.route("/employee-pswrd/<id>", methods=["PUT"])
 def API_update_employee_pswrd(id):
 
@@ -233,6 +237,7 @@ def API_update_employee_pswrd(id):
     message = db.update_employee_pswrd(upd_employee)
 
     return API_json_resp(message,upd_employee)
+
 ## Delete one employee
 @app.route("/employee/<id>", methods=["DELETE"])
 def API_delete_employee(id):

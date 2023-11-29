@@ -21,11 +21,13 @@ Employees
 			"sid": "74158726M",
 			"name_1": "Maria",
 			"name_2": "Montes",  
+			"mail": "albert.ordorika@unaibikeworkshop.com",
+			"phone_num": "674392931",			
             		"pswrd":"74158726M",    
-			"job": 3,
-            		"status": "ACTIVE",
+			"job": 1,
 			"img_url":"www.google1.com"
-		}	
+		}
+
 	Update (PUT):
 		{
 			"sid": "714851478L",

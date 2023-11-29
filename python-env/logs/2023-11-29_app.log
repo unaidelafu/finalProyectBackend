@@ -1,0 +1,35 @@
+2023-11-29 17:18:49,440 - Admin logged in
+2023-11-29 17:18:49,462 -  * Debugger is active!
+2023-11-29 17:18:49,468 -  * Debugger PIN: 593-384-150
+2023-11-29 17:19:23,886 - 127.0.0.1 - - [29/Nov/2023 17:19:23] "GET /employee_types HTTP/1.1" 200 -
+2023-11-29 17:19:33,480 - 127.0.0.1 - - [29/Nov/2023 17:19:33] "GET /employees HTTP/1.1" 200 -
+2023-11-29 17:19:33,491 - 127.0.0.1 - - [29/Nov/2023 17:19:33] "OPTIONS /employee/23 HTTP/1.1" 200 -
+2023-11-29 17:19:33,540 - Error - MariaDB : You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '{passQuery} e_type_id= ?,e_status= ?,e_img_url= ?
+	                WHERE e_id= ?' at line 2
+2023-11-29 17:19:33,562 - 127.0.0.1 - - [29/Nov/2023 17:19:33] "PUT /employee/23 HTTP/1.1" 200 -
+2023-11-29 17:21:23,189 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-11-29 17:21:25,088 - Admin logged in
+2023-11-29 17:21:25,109 -  * Debugger is active!
+2023-11-29 17:21:25,114 -  * Debugger PIN: 593-384-150
+2023-11-29 17:21:29,368 - 127.0.0.1 - - [29/Nov/2023 17:21:29] "GET /employee_types HTTP/1.1" 200 -
+2023-11-29 17:21:35,614 - 127.0.0.1 - - [29/Nov/2023 17:21:35] "GET /employees HTTP/1.1" 200 -
+2023-11-29 17:21:35,622 - 127.0.0.1 - - [29/Nov/2023 17:21:35] "OPTIONS /employee/23 HTTP/1.1" 200 -
+2023-11-29 17:21:35,707 - 127.0.0.1 - - [29/Nov/2023 17:21:35] "PUT /employee/23 HTTP/1.1" 200 -
+2023-11-29 17:22:43,869 - 127.0.0.1 - - [29/Nov/2023 17:22:43] "OPTIONS /employee-login HTTP/1.1" 200 -
+2023-11-29 17:22:43,881 - 127.0.0.1 - - [29/Nov/2023 17:22:43] "PUT /employee-login HTTP/1.1" 200 -
+2023-11-29 17:22:47,697 - 127.0.0.1 - - [29/Nov/2023 17:22:47] "PUT /employee-login HTTP/1.1" 200 -
+2023-11-29 17:22:50,021 - 127.0.0.1 - - [29/Nov/2023 17:22:50] "GET /employee_types HTTP/1.1" 200 -
+2023-11-29 17:22:59,020 - 127.0.0.1 - - [29/Nov/2023 17:22:59] "OPTIONS /employee/23 HTTP/1.1" 200 -
+2023-11-29 17:22:59,387 - 127.0.0.1 - - [29/Nov/2023 17:22:59] "PUT /employee/23 HTTP/1.1" 200 -
+2023-11-29 17:23:12,764 - 127.0.0.1 - - [29/Nov/2023 17:23:12] "GET /employee_types HTTP/1.1" 200 -
+2023-11-29 17:23:39,025 - 127.0.0.1 - - [29/Nov/2023 17:23:39] "OPTIONS /employee/23 HTTP/1.1" 200 -
+2023-11-29 17:23:39,170 - Error - MariaDB : Unknown column '78934350Y' in 'field list'
+2023-11-29 17:23:39,171 - 127.0.0.1 - - [29/Nov/2023 17:23:39] "PUT /employee/23 HTTP/1.1" 200 -
+2023-11-29 17:26:12,147 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-11-29 17:26:13,935 - Admin logged in
+2023-11-29 17:26:13,959 -  * Debugger is active!
+2023-11-29 17:26:13,964 -  * Debugger PIN: 593-384-150
+2023-11-29 17:26:17,079 - 127.0.0.1 - - [29/Nov/2023 17:26:17] "GET /employee_types HTTP/1.1" 200 -
+2023-11-29 17:26:33,574 - 127.0.0.1 - - [29/Nov/2023 17:26:33] "OPTIONS /employee/23 HTTP/1.1" 200 -
+2023-11-29 17:26:33,648 - 127.0.0.1 - - [29/Nov/2023 17:26:33] "PUT /employee/23 HTTP/1.1" 200 -
+2023-11-29 17:27:41,552 - 127.0.0.1 - - [29/Nov/2023 17:27:41] "GET /employee_types HTTP/1.1" 200 -

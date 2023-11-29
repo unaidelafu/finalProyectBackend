@@ -235,13 +235,18 @@ class DbLoader:
         
         cur = None
         retval = ""
-
+        passQuery =""
+        if(employee.pswrd!= None):
+            passQuery = f" e_pswrd = password('{employee.pswrd}'),"
+        
         query = """UPDATE bike_workshop.employees
-	                SET e_sid= %s,e_name= %s,e_surname= %s,e_mail = %s, e_phone_num = %s,e_type_id= %s,e_status= %s,e_img_url= %s
+	                SET e_sid= %s, e_name= %s, e_surname= %s, e_mail = %s, e_phone_num = %s,""" + passQuery + """ e_type_id= %s,
+                     e_status= %s, e_img_url= %s
 	                WHERE e_id= %s;"""
         values = (employee.sid, employee.name_1, employee.name_2, employee.mail, employee.phone_num, employee.job,
                   employee.status,employee.img_url,employee.id)
         #id = 0
+        print(f"Query : {query}")
         try:
             self.connect()
             cur = self.conn.cursor()

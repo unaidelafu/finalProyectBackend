@@ -1,0 +1,107 @@
+2023-11-28 09:10:17,756 - Admin logged in
+2023-11-28 09:10:17,899 -  * Debugger is active!
+2023-11-28 09:10:17,947 -  * Debugger PIN: 593-384-150
+2023-11-28 09:11:22,824 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-28 09:11:23,892 - Admin logged in
+2023-11-28 09:11:23,912 -  * Debugger is active!
+2023-11-28 09:11:23,918 -  * Debugger PIN: 593-384-150
+2023-11-28 09:11:39,793 - 127.0.0.1 - - [28/Nov/2023 09:11:39] "OPTIONS /employee/23 HTTP/1.1" 200 -
+2023-11-28 09:11:39,864 - 127.0.0.1 - - [28/Nov/2023 09:11:39] "PUT /employee/23 HTTP/1.1" 200 -
+2023-11-28 09:13:15,710 - 127.0.0.1 - - [28/Nov/2023 09:13:15] "OPTIONS /employee-login HTTP/1.1" 200 -
+2023-11-28 09:13:15,740 - 127.0.0.1 - - [28/Nov/2023 09:13:15] "PUT /employee-login HTTP/1.1" 200 -
+2023-11-28 09:13:19,995 - 127.0.0.1 - - [28/Nov/2023 09:13:19] "PUT /employee-login HTTP/1.1" 200 -
+2023-11-28 09:13:28,828 - 127.0.0.1 - - [28/Nov/2023 09:13:28] "GET /employee_types HTTP/1.1" 200 -
+2023-11-28 09:13:46,687 - 127.0.0.1 - - [28/Nov/2023 09:13:46] "OPTIONS /employee/23 HTTP/1.1" 200 -
+2023-11-28 09:13:46,754 - 127.0.0.1 - - [28/Nov/2023 09:13:46] "PUT /employee/23 HTTP/1.1" 200 -
+2023-11-28 09:15:42,190 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-11-28 09:15:43,452 - Admin logged in
+2023-11-28 09:15:43,474 -  * Debugger is active!
+2023-11-28 09:15:43,479 -  * Debugger PIN: 593-384-150
+2023-11-28 09:16:03,378 - 127.0.0.1 - - [28/Nov/2023 09:16:03] "OPTIONS /employee/23 HTTP/1.1" 200 -
+2023-11-28 09:16:03,543 - 127.0.0.1 - - [28/Nov/2023 09:16:03] "PUT /employee/23 HTTP/1.1" 200 -
+2023-11-28 09:16:40,246 - 127.0.0.1 - - [28/Nov/2023 09:16:40] "OPTIONS /employee/23 HTTP/1.1" 200 -
+2023-11-28 09:16:40,346 - 127.0.0.1 - - [28/Nov/2023 09:16:40] "PUT /employee/23 HTTP/1.1" 200 -
+2023-11-28 09:17:50,793 - 127.0.0.1 - - [28/Nov/2023 09:17:50] "OPTIONS /employee/23 HTTP/1.1" 200 -
+2023-11-28 09:17:50,881 - 127.0.0.1 - - [28/Nov/2023 09:17:50] "PUT /employee/23 HTTP/1.1" 200 -
+2023-11-28 09:28:43,513 - 127.0.0.1 - - [28/Nov/2023 09:28:43] "GET /employees HTTP/1.1" 200 -
+2023-11-28 09:30:14,533 - 127.0.0.1 - - [28/Nov/2023 09:30:14] "GET /employees HTTP/1.1" 200 -
+2023-11-28 09:30:34,666 - 127.0.0.1 - - [28/Nov/2023 09:30:34] "OPTIONS /employee-login HTTP/1.1" 200 -
+2023-11-28 09:30:34,685 - 127.0.0.1 - - [28/Nov/2023 09:30:34] "PUT /employee-login HTTP/1.1" 200 -
+2023-11-28 09:30:39,520 - 127.0.0.1 - - [28/Nov/2023 09:30:39] "GET /employee_types HTTP/1.1" 200 -
+2023-11-28 09:30:48,673 - 127.0.0.1 - - [28/Nov/2023 09:30:48] "OPTIONS /employee/23 HTTP/1.1" 200 -
+2023-11-28 09:30:48,764 - 127.0.0.1 - - [28/Nov/2023 09:30:48] "PUT /employee/23 HTTP/1.1" 200 -
+2023-11-28 09:31:14,036 - 127.0.0.1 - - [28/Nov/2023 09:31:14] "GET /employee_types HTTP/1.1" 200 -
+2023-11-28 09:31:22,948 - 127.0.0.1 - - [28/Nov/2023 09:31:22] "OPTIONS /employee/23 HTTP/1.1" 200 -
+2023-11-28 09:31:23,009 - 127.0.0.1 - - [28/Nov/2023 09:31:23] "PUT /employee/23 HTTP/1.1" 200 -
+2023-11-28 09:31:26,560 - 127.0.0.1 - - [28/Nov/2023 09:31:26] "GET /employees HTTP/1.1" 200 -
+2023-11-28 09:31:30,520 - 127.0.0.1 - - [28/Nov/2023 09:31:30] "GET /employee_types HTTP/1.1" 200 -
+2023-11-28 09:31:35,686 - 127.0.0.1 - - [28/Nov/2023 09:31:35] "GET /employees HTTP/1.1" 200 -
+2023-11-28 09:31:35,731 - 127.0.0.1 - - [28/Nov/2023 09:31:35] "OPTIONS /employee/1 HTTP/1.1" 200 -
+2023-11-28 09:31:35,786 - 127.0.0.1 - - [28/Nov/2023 09:31:35] "PUT /employee/1 HTTP/1.1" 200 -
+2023-11-28 09:39:20,189 - 127.0.0.1 - - [28/Nov/2023 09:39:20] "GET /employee_types HTTP/1.1" 200 -
+2023-11-28 09:46:05,881 - 127.0.0.1 - - [28/Nov/2023 09:46:05] "GET /employees HTTP/1.1" 200 -
+2023-11-28 09:46:06,162 - 127.0.0.1 - - [28/Nov/2023 09:46:06] "GET /employees HTTP/1.1" 200 -
+2023-11-28 09:46:11,604 - 127.0.0.1 - - [28/Nov/2023 09:46:11] "GET /employee_types HTTP/1.1" 200 -
+2023-11-28 09:46:40,161 - 127.0.0.1 - - [28/Nov/2023 09:46:40] "GET /employees HTTP/1.1" 200 -
+2023-11-28 09:46:40,198 - 127.0.0.1 - - [28/Nov/2023 09:46:40] "OPTIONS /employee/1 HTTP/1.1" 200 -
+2023-11-28 09:46:40,259 - 127.0.0.1 - - [28/Nov/2023 09:46:40] "PUT /employee/1 HTTP/1.1" 200 -
+2023-11-28 09:53:17,126 - 127.0.0.1 - - [28/Nov/2023 09:53:17] "GET /employees HTTP/1.1" 200 -
+2023-11-28 09:53:17,226 - 127.0.0.1 - - [28/Nov/2023 09:53:17] "GET /employees HTTP/1.1" 200 -
+2023-11-28 09:53:27,668 - 127.0.0.1 - - [28/Nov/2023 09:53:27] "GET /employee_types HTTP/1.1" 200 -
+2023-11-28 09:53:32,198 - 127.0.0.1 - - [28/Nov/2023 09:53:32] "GET /employees HTTP/1.1" 200 -
+2023-11-28 09:54:21,702 - 127.0.0.1 - - [28/Nov/2023 09:54:21] "GET /employees HTTP/1.1" 200 -
+2023-11-28 09:54:21,799 - 127.0.0.1 - - [28/Nov/2023 09:54:21] "GET /employees HTTP/1.1" 200 -
+2023-11-28 09:54:28,958 - 127.0.0.1 - - [28/Nov/2023 09:54:28] "GET /employee_types HTTP/1.1" 200 -
+2023-11-28 09:54:31,375 - 127.0.0.1 - - [28/Nov/2023 09:54:31] "GET /employees HTTP/1.1" 200 -
+2023-11-28 09:55:27,607 - 127.0.0.1 - - [28/Nov/2023 09:55:27] "GET /employees HTTP/1.1" 200 -
+2023-11-28 09:55:27,773 - 127.0.0.1 - - [28/Nov/2023 09:55:27] "GET /employees HTTP/1.1" 200 -
+2023-11-28 09:55:30,838 - 127.0.0.1 - - [28/Nov/2023 09:55:30] "GET /employee_types HTTP/1.1" 200 -
+2023-11-28 09:55:33,368 - 127.0.0.1 - - [28/Nov/2023 09:55:33] "OPTIONS /employee/1 HTTP/1.1" 200 -
+2023-11-28 09:55:33,440 - 127.0.0.1 - - [28/Nov/2023 09:55:33] "DELETE /employee/1 HTTP/1.1" 200 -
+2023-11-28 09:56:36,918 - 127.0.0.1 - - [28/Nov/2023 09:56:36] "GET /employees HTTP/1.1" 200 -
+2023-11-28 09:56:37,006 - 127.0.0.1 - - [28/Nov/2023 09:56:37] "GET /employees HTTP/1.1" 200 -
+2023-11-28 10:06:38,243 - 127.0.0.1 - - [28/Nov/2023 10:06:38] "GET /employees HTTP/1.1" 200 -
+2023-11-28 10:06:38,322 - 127.0.0.1 - - [28/Nov/2023 10:06:38] "GET /employees HTTP/1.1" 200 -
+2023-11-28 10:06:45,840 - 127.0.0.1 - - [28/Nov/2023 10:06:45] "GET /employee_types HTTP/1.1" 200 -
+2023-11-28 10:07:09,546 - 127.0.0.1 - - [28/Nov/2023 10:07:09] "GET /employees HTTP/1.1" 200 -
+2023-11-28 10:07:09,551 - 127.0.0.1 - - [28/Nov/2023 10:07:09] "OPTIONS /employee/2 HTTP/1.1" 200 -
+2023-11-28 10:07:09,704 - 127.0.0.1 - - [28/Nov/2023 10:07:09] "[35m[1mPUT /employee/2 HTTP/1.1[0m" 500 -
+2023-11-28 10:07:49,813 - 127.0.0.1 - - [28/Nov/2023 10:07:49] "GET /employees HTTP/1.1" 200 -
+2023-11-28 10:07:49,957 - 127.0.0.1 - - [28/Nov/2023 10:07:49] "GET /employees HTTP/1.1" 200 -
+2023-11-28 10:07:55,082 - 127.0.0.1 - - [28/Nov/2023 10:07:55] "GET /employee_types HTTP/1.1" 200 -
+2023-11-28 10:15:53,533 - 127.0.0.1 - - [28/Nov/2023 10:15:53] "GET /employees HTTP/1.1" 200 -
+2023-11-28 10:15:53,579 - 127.0.0.1 - - [28/Nov/2023 10:15:53] "OPTIONS /employee/2 HTTP/1.1" 200 -
+2023-11-28 10:15:53,650 - 127.0.0.1 - - [28/Nov/2023 10:15:53] "PUT /employee/2 HTTP/1.1" 200 -
+2023-11-28 10:15:56,538 - 127.0.0.1 - - [28/Nov/2023 10:15:56] "GET /employee_types HTTP/1.1" 200 -
+2023-11-28 10:16:38,545 - 127.0.0.1 - - [28/Nov/2023 10:16:38] "GET /employees HTTP/1.1" 200 -
+2023-11-28 10:16:38,561 - 127.0.0.1 - - [28/Nov/2023 10:16:38] "OPTIONS /employee/2 HTTP/1.1" 200 -
+2023-11-28 10:16:38,662 - 127.0.0.1 - - [28/Nov/2023 10:16:38] "PUT /employee/2 HTTP/1.1" 200 -
+2023-11-28 10:17:49,413 - 127.0.0.1 - - [28/Nov/2023 10:17:49] "GET /employee_types HTTP/1.1" 200 -
+2023-11-28 10:17:54,782 - 127.0.0.1 - - [28/Nov/2023 10:17:54] "GET /employees HTTP/1.1" 200 -
+2023-11-28 10:17:54,793 - 127.0.0.1 - - [28/Nov/2023 10:17:54] "OPTIONS /employee/2 HTTP/1.1" 200 -
+2023-11-28 10:17:54,868 - 127.0.0.1 - - [28/Nov/2023 10:17:54] "PUT /employee/2 HTTP/1.1" 200 -
+2023-11-28 10:18:30,105 - 127.0.0.1 - - [28/Nov/2023 10:18:30] "GET /employee_types HTTP/1.1" 200 -
+2023-11-28 10:18:36,366 - 127.0.0.1 - - [28/Nov/2023 10:18:36] "GET /employees HTTP/1.1" 200 -
+2023-11-28 10:18:36,380 - 127.0.0.1 - - [28/Nov/2023 10:18:36] "OPTIONS /employee/2 HTTP/1.1" 200 -
+2023-11-28 10:18:36,457 - 127.0.0.1 - - [28/Nov/2023 10:18:36] "PUT /employee/2 HTTP/1.1" 200 -
+2023-11-28 10:19:00,211 - 127.0.0.1 - - [28/Nov/2023 10:19:00] "GET /employee_types HTTP/1.1" 200 -
+2023-11-28 10:19:07,976 - 127.0.0.1 - - [28/Nov/2023 10:19:07] "GET /employees HTTP/1.1" 200 -
+2023-11-28 10:19:08,027 - 127.0.0.1 - - [28/Nov/2023 10:19:08] "OPTIONS /employee/3 HTTP/1.1" 200 -
+2023-11-28 10:19:08,098 - 127.0.0.1 - - [28/Nov/2023 10:19:08] "PUT /employee/3 HTTP/1.1" 200 -
+2023-11-28 10:25:15,122 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-11-28 10:25:16,423 - Admin logged in
+2023-11-28 10:25:16,442 -  * Debugger is active!
+2023-11-28 10:25:16,446 -  * Debugger PIN: 593-384-150
+2023-11-28 10:27:09,457 - 127.0.0.1 - - [28/Nov/2023 10:27:09] "GET /employee_types HTTP/1.1" 200 -
+2023-11-28 10:27:14,768 - 127.0.0.1 - - [28/Nov/2023 10:27:14] "GET /employees HTTP/1.1" 200 -
+2023-11-28 10:27:14,809 - 127.0.0.1 - - [28/Nov/2023 10:27:14] "OPTIONS /employee/3 HTTP/1.1" 200 -
+2023-11-28 10:27:14,901 - Error - MariaDB : You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '{passQuery} e_type_id= ?,e_status= ?,e_img_url= ?
+	                WHERE e_id= ?' at line 2
+2023-11-28 10:27:14,903 - 127.0.0.1 - - [28/Nov/2023 10:27:14] "PUT /employee/3 HTTP/1.1" 200 -
+2023-11-28 10:27:45,881 - 127.0.0.1 - - [28/Nov/2023 10:27:45] "GET /employee_types HTTP/1.1" 200 -
+2023-11-28 10:27:49,521 - 127.0.0.1 - - [28/Nov/2023 10:27:49] "GET /employees HTTP/1.1" 200 -
+2023-11-28 10:27:49,527 - 127.0.0.1 - - [28/Nov/2023 10:27:49] "OPTIONS /employee/3 HTTP/1.1" 200 -
+2023-11-28 10:27:49,579 - Error - MariaDB : You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '{passQuery} e_type_id= ?,e_status= ?,e_img_url= ?
+	                WHERE e_id= ?' at line 2
+2023-11-28 10:27:49,579 - 127.0.0.1 - - [28/Nov/2023 10:27:49] "PUT /employee/3 HTTP/1.1" 200 -
+2023-11-29 17:18:44,692 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
