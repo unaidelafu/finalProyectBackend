@@ -57,12 +57,12 @@ class DbLoader:
             self.connect()
             cur = self.conn.cursor()
             cur.execute(
-                """SELECT c_id, c_sid, c_name_1, c_name_2, c_status FROM customers""" + wherecon)
+                """SELECT c_id, c_sid, c_name_1, c_name_2, c_mail, c_phone_num, c_city, c_status FROM customers""" + wherecon)
             
             # Print Result-set
-            for (id, sid, name1, name2, status) in cur:
-                resultlist.append(c.Customer(id, sid, name1, name2, status))
-                print(f"First Name: {name2}, Last Name: {name1}, with dni: {sid}")
+            for (id, sid, name1, name2, mail, phone_num, city, status) in cur:
+                resultlist.append(c.Customer(id, sid, name1, name2, mail, phone_num, city, status))
+                #print(f"First Name: {name2}, Last Name: {name1}, with dni: {sid}")
 
         except mariadb.Error as e:
             print(f"Error - MariaDB : {e}")
@@ -77,9 +77,8 @@ class DbLoader:
         cur = None
         retval = None
 
-        query = "INSERT INTO customers (c_sid,c_name_1,c_name_2) VALUES (%s, %s, %s)"
-        #query = f"INSERT INTO customers (c_sid,c_name_1,c_name_2) VALUES ('{sid}', '{name1}', '{name2}')"
-        values = (customer.sid, customer.name_1, customer.name_2)
+        query = "INSERT INTO customers (c_sid, c_name_1, c_name_2, c_mail, c_phone_num, c_city) VALUES (%s, %s, %s, %s, %s, %s)"
+        values = (customer.sid, customer.name_1, customer.name_2, customer.mail, customer.phone_num, customer.city)
         #id = 0
         try:
             self.connect()
@@ -106,9 +105,10 @@ class DbLoader:
         retval = ""
 
         query = """UPDATE customers
-	                SET c_sid= %s,c_name_1= %s,c_name_2= %s,c_status= %s
+	                SET c_sid= %s, c_name_1= %s, c_name_2= %s, c_mail= %s, c_phone_num= %s, c_city= %s, c_status= %s
 	                WHERE c_id= %s;""" 
-        values = (customer.sid, customer.name_1, customer.name_2,customer.status,customer.id)
+        values = (customer.sid, customer.name_1, customer.name_2, customer.mail, customer.phone_num, customer.city,
+                  customer.status,customer.id)
         #id = 0
         try:
             self.connect()

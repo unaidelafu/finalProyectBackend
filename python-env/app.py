@@ -105,7 +105,11 @@ def API_add_customer():
     sid = request.json['sid']
     name_1 = request.json['name_1']
     name_2 = request.json['name_2']
-    new_customer = c.Customer(None,sid,name_1,name_2,None)
+    mail = request.json['mail']
+    phone_num = request.json['phone_num']
+    city = request.json['city']
+
+    new_customer = c.Customer(None,sid,name_1,name_2,mail,phone_num,city,None)
 
     message = db.create_customer(new_customer)
     if("Error" not in str(message)): 
@@ -125,8 +129,12 @@ def API_update_customer(id):
     sid = request.json['sid']
     name1 = request.json['name_1']
     name2 = request.json['name_2']
+    mail = request.json['mail']
+    phone_num = request.json['phone_num']
+    city = request.json['city']
     status = request.json['status']
-    upd_customer = c.Customer(id,sid,name1,name2,status)
+
+    upd_customer = c.Customer(id,sid,name1,name2,mail,phone_num,city,status)
 
     message = db.update_customer(upd_customer)
 
