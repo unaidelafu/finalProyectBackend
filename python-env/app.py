@@ -102,12 +102,12 @@ def API_add_customer():
     retval = None
     message = ""
 
-    sid = request.json['sid']
-    name_1 = request.json['name_1']
-    name_2 = request.json['name_2']
-    mail = request.json['mail']
+    sid = request.json['sid'].upper()
+    name_1 = request.json['name_1'].capitalize() 
+    name_2 = request.json['name_2'].capitalize()
+    mail = request.json['mail'].lower()
     phone_num = request.json['phone_num']
-    city = request.json['city']
+    city = request.json['city'].capitalize() 
 
     new_customer = c.Customer(None,sid,name_1,name_2,mail,phone_num,city,None)
 
@@ -126,15 +126,15 @@ def API_update_customer(id):
     structure = None
 
 
-    sid = request.json['sid']
-    name1 = request.json['name_1']
-    name2 = request.json['name_2']
-    mail = request.json['mail']
+    sid = request.json['sid'].upper()
+    name_1 = request.json['name_1'].capitalize() 
+    name_2 = request.json['name_2'].capitalize()
+    mail = request.json['mail'].lower()
     phone_num = request.json['phone_num']
-    city = request.json['city']
+    city = request.json['city'].capitalize() 
     status = request.json['status']
 
-    upd_customer = c.Customer(id,sid,name1,name2,mail,phone_num,city,status)
+    upd_customer = c.Customer(id,sid,name_1,name_2,mail,phone_num,city,status)
 
     message = db.update_customer(upd_customer)
 
@@ -176,10 +176,10 @@ def API_add_employee():
     retval = None
     message = ""
 
-    sid = request.json['sid']
-    name_1 = request.json['name_1']
-    name_2 = request.json['name_2']
-    mail = request.json['mail']
+    sid = request.json['sid'].upper()
+    name_1 = request.json['name_1'].capitalize() 
+    name_2 = request.json['name_2'].capitalize()
+    mail = request.json['mail'].lower()
     phone_num = request.json['phone_num']       
     pswrd = request.json['pswrd']
     jobId = None
@@ -202,11 +202,10 @@ def API_update_employee(id):
     message = ""
     structure = None
 
-
-    sid = request.json['sid']
-    name_1 = request.json['name_1']
-    name_2 = request.json['name_2']
-    mail = request.json['mail']
+    sid = request.json['sid'].upper()
+    name_1 = request.json['name_1'].capitalize() 
+    name_2 = request.json['name_2'].capitalize()
+    mail = request.json['mail'].lower()
     phone_num = request.json['phone_num']    
     pswrd = request.json['pswrd']
     if pswrd =="":

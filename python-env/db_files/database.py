@@ -57,7 +57,8 @@ class DbLoader:
             self.connect()
             cur = self.conn.cursor()
             cur.execute(
-                """SELECT c_id, c_sid, c_name_1, c_name_2, c_mail, c_phone_num, c_city, c_status FROM customers""" + wherecon)
+                """SELECT c_id, c_sid, c_name_1, c_name_2, c_mail, c_phone_num, c_city, c_status FROM customers""" 
+                + wherecon + """ ORDER BY c_city, c_name_1, c_name_2 """ )
             
             # Print Result-set
             for (id, sid, name1, name2, mail, phone_num, city, status) in cur:

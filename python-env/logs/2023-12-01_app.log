@@ -1,0 +1,192 @@
+2023-12-01 09:31:19,185 - Admin logged in
+2023-12-01 09:31:19,237 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-12-01 09:31:19,237 - [33mPress CTRL+C to quit[0m
+2023-12-01 09:31:19,239 -  * Restarting with stat
+2023-12-01 09:31:20,106 - Admin logged in
+2023-12-01 09:31:20,127 -  * Debugger is active!
+2023-12-01 09:31:20,132 -  * Debugger PIN: 593-384-150
+2023-12-01 09:31:28,387 - 127.0.0.1 - - [01/Dec/2023 09:31:28] "GET /customers HTTP/1.1" 200 -
+2023-12-01 09:35:59,222 - 127.0.0.1 - - [01/Dec/2023 09:35:59] "OPTIONS /customer/4 HTTP/1.1" 200 -
+2023-12-01 09:35:59,284 - 127.0.0.1 - - [01/Dec/2023 09:35:59] "DELETE /customer/4 HTTP/1.1" 200 -
+2023-12-01 09:40:23,408 - 127.0.0.1 - - [01/Dec/2023 09:40:23] "GET /customers HTTP/1.1" 200 -
+2023-12-01 09:49:14,756 - 127.0.0.1 - - [01/Dec/2023 09:49:14] "GET /customers HTTP/1.1" 200 -
+2023-12-01 09:51:38,684 - 127.0.0.1 - - [01/Dec/2023 09:51:38] "OPTIONS /customer/43 HTTP/1.1" 200 -
+2023-12-01 09:51:38,845 - 127.0.0.1 - - [01/Dec/2023 09:51:38] "DELETE /customer/43 HTTP/1.1" 200 -
+2023-12-01 09:51:50,843 - 127.0.0.1 - - [01/Dec/2023 09:51:50] "GET /customers HTTP/1.1" 200 -
+2023-12-01 09:56:35,419 - 127.0.0.1 - - [01/Dec/2023 09:56:35] "OPTIONS /employee-login HTTP/1.1" 200 -
+2023-12-01 09:56:35,430 - 127.0.0.1 - - [01/Dec/2023 09:56:35] "PUT /employee-login HTTP/1.1" 200 -
+2023-12-01 09:56:39,016 - 127.0.0.1 - - [01/Dec/2023 09:56:39] "GET /products HTTP/1.1" 200 -
+2023-12-01 09:56:40,332 - 127.0.0.1 - - [01/Dec/2023 09:56:40] "GET /customers HTTP/1.1" 200 -
+2023-12-01 09:56:43,194 - 127.0.0.1 - - [01/Dec/2023 09:56:43] "GET /employees HTTP/1.1" 200 -
+2023-12-01 09:56:48,026 - 127.0.0.1 - - [01/Dec/2023 09:56:48] "GET /customers HTTP/1.1" 200 -
+2023-12-01 09:56:50,742 - 127.0.0.1 - - [01/Dec/2023 09:56:50] "GET /employees HTTP/1.1" 200 -
+2023-12-01 09:56:51,708 - 127.0.0.1 - - [01/Dec/2023 09:56:51] "GET /customers HTTP/1.1" 200 -
+2023-12-01 09:56:52,719 - 127.0.0.1 - - [01/Dec/2023 09:56:52] "GET /products HTTP/1.1" 200 -
+2023-12-01 09:56:55,445 - 127.0.0.1 - - [01/Dec/2023 09:56:55] "GET /customers HTTP/1.1" 200 -
+2023-12-01 09:56:58,527 - 127.0.0.1 - - [01/Dec/2023 09:56:58] "GET /employees HTTP/1.1" 200 -
+2023-12-01 09:57:01,545 - 127.0.0.1 - - [01/Dec/2023 09:57:01] "GET /customers HTTP/1.1" 200 -
+2023-12-01 09:58:10,972 - 127.0.0.1 - - [01/Dec/2023 09:58:10] "GET /employees HTTP/1.1" 200 -
+2023-12-01 09:58:12,759 - 127.0.0.1 - - [01/Dec/2023 09:58:12] "GET /customers HTTP/1.1" 200 -
+2023-12-01 09:58:13,854 - 127.0.0.1 - - [01/Dec/2023 09:58:13] "GET /employees HTTP/1.1" 200 -
+2023-12-01 09:58:14,981 - 127.0.0.1 - - [01/Dec/2023 09:58:14] "GET /customers HTTP/1.1" 200 -
+2023-12-01 09:58:16,424 - 127.0.0.1 - - [01/Dec/2023 09:58:16] "GET /employees HTTP/1.1" 200 -
+2023-12-01 09:58:24,530 - 127.0.0.1 - - [01/Dec/2023 09:58:24] "GET /customers HTTP/1.1" 200 -
+2023-12-01 09:58:32,981 - 127.0.0.1 - - [01/Dec/2023 09:58:32] "GET /employees HTTP/1.1" 200 -
+2023-12-01 09:59:02,763 - 127.0.0.1 - - [01/Dec/2023 09:59:02] "GET /employee_types HTTP/1.1" 200 -
+2023-12-01 09:59:08,919 - 127.0.0.1 - - [01/Dec/2023 09:59:08] "GET /employee_types HTTP/1.1" 200 -
+2023-12-01 09:59:15,631 - 127.0.0.1 - - [01/Dec/2023 09:59:15] "GET /employee_types HTTP/1.1" 200 -
+2023-12-01 09:59:21,742 - 127.0.0.1 - - [01/Dec/2023 09:59:21] "GET /customers HTTP/1.1" 200 -
+2023-12-01 10:07:13,463 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-01 10:07:13,610 -  * Restarting with stat
+2023-12-01 10:07:26,070 - Admin logged in
+2023-12-01 10:07:26,104 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-12-01 10:07:26,104 - [33mPress CTRL+C to quit[0m
+2023-12-01 10:07:26,106 -  * Restarting with stat
+2023-12-01 10:07:26,932 - Admin logged in
+2023-12-01 10:07:26,953 -  * Debugger is active!
+2023-12-01 10:07:26,958 -  * Debugger PIN: 593-384-150
+2023-12-01 10:07:33,491 - 127.0.0.1 - - [01/Dec/2023 10:07:33] "GET /customers HTTP/1.1" 200 -
+2023-12-01 10:07:49,199 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-01 10:07:49,340 -  * Restarting with stat
+2023-12-01 10:07:50,151 - Admin logged in
+2023-12-01 10:07:50,170 -  * Debugger is active!
+2023-12-01 10:07:50,174 -  * Debugger PIN: 593-384-150
+2023-12-01 10:07:52,706 - 127.0.0.1 - - [01/Dec/2023 10:07:52] "GET /customers HTTP/1.1" 200 -
+2023-12-01 10:09:38,733 - 127.0.0.1 - - [01/Dec/2023 10:09:38] "GET /customers HTTP/1.1" 200 -
+2023-12-01 10:12:37,823 - 127.0.0.1 - - [01/Dec/2023 10:12:37] "GET /customers HTTP/1.1" 200 -
+2023-12-01 10:19:58,288 - 127.0.0.1 - - [01/Dec/2023 10:19:58] "GET /customers HTTP/1.1" 200 -
+2023-12-01 10:20:29,495 - 127.0.0.1 - - [01/Dec/2023 10:20:29] "GET /customers HTTP/1.1" 200 -
+2023-12-01 10:22:34,179 - 127.0.0.1 - - [01/Dec/2023 10:22:34] "OPTIONS /customer HTTP/1.1" 200 -
+2023-12-01 10:22:34,240 - 127.0.0.1 - - [01/Dec/2023 10:22:34] "POST /customer HTTP/1.1" 200 -
+2023-12-01 10:26:57,150 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-01 10:26:57,286 -  * Restarting with stat
+2023-12-01 10:26:58,145 - Admin logged in
+2023-12-01 10:26:58,169 -  * Debugger is active!
+2023-12-01 10:26:58,175 -  * Debugger PIN: 593-384-150
+2023-12-01 10:57:40,948 - 127.0.0.1 - - [01/Dec/2023 10:57:40] "GET /customers HTTP/1.1" 200 -
+2023-12-01 10:59:11,162 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-01 10:59:11,309 -  * Restarting with stat
+2023-12-01 10:59:12,245 - Admin logged in
+2023-12-01 10:59:12,268 -  * Debugger is active!
+2023-12-01 10:59:12,272 -  * Debugger PIN: 593-384-150
+2023-12-01 11:00:01,566 - 127.0.0.1 - - [01/Dec/2023 11:00:01] "OPTIONS /customer HTTP/1.1" 200 -
+2023-12-01 11:00:01,631 - 127.0.0.1 - - [01/Dec/2023 11:00:01] "[35m[1mPOST /customer HTTP/1.1[0m" 500 -
+2023-12-01 11:00:48,040 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-01 11:00:48,172 -  * Restarting with stat
+2023-12-01 11:00:49,149 - Admin logged in
+2023-12-01 11:00:49,168 -  * Debugger is active!
+2023-12-01 11:00:49,173 -  * Debugger PIN: 593-384-150
+2023-12-01 11:01:10,383 - Admin logged in
+2023-12-01 11:01:10,419 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-12-01 11:01:10,419 - [33mPress CTRL+C to quit[0m
+2023-12-01 11:01:10,422 -  * Restarting with stat
+2023-12-01 11:01:11,274 - Admin logged in
+2023-12-01 11:01:11,293 -  * Debugger is active!
+2023-12-01 11:01:11,297 -  * Debugger PIN: 593-384-150
+2023-12-01 11:01:15,775 - 127.0.0.1 - - [01/Dec/2023 11:01:15] "OPTIONS /customer HTTP/1.1" 200 -
+2023-12-01 11:01:15,788 - 127.0.0.1 - - [01/Dec/2023 11:01:15] "[35m[1mPOST /customer HTTP/1.1[0m" 500 -
+2023-12-01 11:03:11,642 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-01 11:03:11,794 -  * Restarting with stat
+2023-12-01 11:03:12,711 - Admin logged in
+2023-12-01 11:03:12,733 -  * Debugger is active!
+2023-12-01 11:03:12,737 -  * Debugger PIN: 593-384-150
+2023-12-01 11:03:22,716 - Admin logged in
+2023-12-01 11:03:22,752 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-12-01 11:03:22,752 - [33mPress CTRL+C to quit[0m
+2023-12-01 11:03:22,754 -  * Restarting with stat
+2023-12-01 11:03:23,562 - Admin logged in
+2023-12-01 11:03:23,582 -  * Debugger is active!
+2023-12-01 11:03:23,586 -  * Debugger PIN: 593-384-150
+2023-12-01 11:03:25,444 - 127.0.0.1 - - [01/Dec/2023 11:03:25] "OPTIONS /customer HTTP/1.1" 200 -
+2023-12-01 11:03:25,475 - 127.0.0.1 - - [01/Dec/2023 11:03:25] "[35m[1mPOST /customer HTTP/1.1[0m" 500 -
+2023-12-01 11:04:29,014 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-01 11:04:29,139 -  * Restarting with stat
+2023-12-01 11:04:30,028 - Admin logged in
+2023-12-01 11:04:30,049 -  * Debugger is active!
+2023-12-01 11:04:30,054 -  * Debugger PIN: 593-384-150
+2023-12-01 11:05:13,642 - Admin logged in
+2023-12-01 11:05:13,679 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-12-01 11:05:13,679 - [33mPress CTRL+C to quit[0m
+2023-12-01 11:05:13,681 -  * Restarting with stat
+2023-12-01 11:05:14,549 - Admin logged in
+2023-12-01 11:05:14,571 -  * Debugger is active!
+2023-12-01 11:05:14,576 -  * Debugger PIN: 593-384-150
+2023-12-01 11:05:22,278 - 127.0.0.1 - - [01/Dec/2023 11:05:22] "OPTIONS /customer HTTP/1.1" 200 -
+2023-12-01 11:05:22,413 - 127.0.0.1 - - [01/Dec/2023 11:05:22] "POST /customer HTTP/1.1" 200 -
+2023-12-01 11:11:13,376 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-01 11:11:13,522 -  * Restarting with stat
+2023-12-01 11:11:14,525 - Admin logged in
+2023-12-01 11:11:14,547 -  * Debugger is active!
+2023-12-01 11:11:14,552 -  * Debugger PIN: 593-384-150
+2023-12-01 11:12:49,389 - 127.0.0.1 - - [01/Dec/2023 11:12:49] "GET /customers HTTP/1.1" 200 -
+2023-12-01 11:13:35,739 - 127.0.0.1 - - [01/Dec/2023 11:13:35] "OPTIONS /customer HTTP/1.1" 200 -
+2023-12-01 11:13:35,801 - 127.0.0.1 - - [01/Dec/2023 11:13:35] "POST /customer HTTP/1.1" 200 -
+2023-12-01 11:15:01,917 - 127.0.0.1 - - [01/Dec/2023 11:15:01] "GET /customers HTTP/1.1" 200 -
+2023-12-01 11:16:00,989 - 127.0.0.1 - - [01/Dec/2023 11:16:00] "OPTIONS /customer HTTP/1.1" 200 -
+2023-12-01 11:16:01,044 - 127.0.0.1 - - [01/Dec/2023 11:16:01] "POST /customer HTTP/1.1" 200 -
+2023-12-01 11:22:12,734 - 127.0.0.1 - - [01/Dec/2023 11:22:12] "GET /customers HTTP/1.1" 200 -
+2023-12-01 11:22:30,881 - 127.0.0.1 - - [01/Dec/2023 11:22:30] "OPTIONS /customer/49 HTTP/1.1" 200 -
+2023-12-01 11:22:30,940 - 127.0.0.1 - - [01/Dec/2023 11:22:30] "PUT /customer/49 HTTP/1.1" 200 -
+2023-12-01 11:36:07,486 - 127.0.0.1 - - [01/Dec/2023 11:36:07] "GET /customers HTTP/1.1" 200 -
+2023-12-01 11:36:23,602 - 127.0.0.1 - - [01/Dec/2023 11:36:23] "OPTIONS /customer/2 HTTP/1.1" 200 -
+2023-12-01 11:36:23,668 - 127.0.0.1 - - [01/Dec/2023 11:36:23] "PUT /customer/2 HTTP/1.1" 200 -
+2023-12-01 11:37:45,994 - 127.0.0.1 - - [01/Dec/2023 11:37:45] "GET /customers HTTP/1.1" 200 -
+2023-12-01 11:37:53,811 - 127.0.0.1 - - [01/Dec/2023 11:37:53] "OPTIONS /customer/2 HTTP/1.1" 200 -
+2023-12-01 11:37:53,930 - 127.0.0.1 - - [01/Dec/2023 11:37:53] "PUT /customer/2 HTTP/1.1" 200 -
+2023-12-01 11:40:04,456 - 127.0.0.1 - - [01/Dec/2023 11:40:04] "GET /customers HTTP/1.1" 200 -
+2023-12-01 11:40:12,255 - 127.0.0.1 - - [01/Dec/2023 11:40:12] "OPTIONS /customer/2 HTTP/1.1" 200 -
+2023-12-01 11:40:12,305 - 127.0.0.1 - - [01/Dec/2023 11:40:12] "PUT /customer/2 HTTP/1.1" 200 -
+2023-12-01 11:53:26,744 - 127.0.0.1 - - [01/Dec/2023 11:53:26] "GET /customers HTTP/1.1" 200 -
+2023-12-01 11:53:40,182 - 127.0.0.1 - - [01/Dec/2023 11:53:40] "OPTIONS /customer/2 HTTP/1.1" 200 -
+2023-12-01 11:53:40,249 - 127.0.0.1 - - [01/Dec/2023 11:53:40] "PUT /customer/2 HTTP/1.1" 200 -
+2023-12-01 11:53:56,981 - 127.0.0.1 - - [01/Dec/2023 11:53:56] "OPTIONS /customer/49 HTTP/1.1" 200 -
+2023-12-01 11:53:57,033 - 127.0.0.1 - - [01/Dec/2023 11:53:57] "PUT /customer/49 HTTP/1.1" 200 -
+2023-12-01 12:04:45,527 - 127.0.0.1 - - [01/Dec/2023 12:04:45] "GET /customers HTTP/1.1" 200 -
+2023-12-01 12:23:50,964 - 127.0.0.1 - - [01/Dec/2023 12:23:50] "GET /customers HTTP/1.1" 200 -
+2023-12-01 12:24:01,732 - 127.0.0.1 - - [01/Dec/2023 12:24:01] "OPTIONS /customer/49 HTTP/1.1" 200 -
+2023-12-01 12:24:01,805 - 127.0.0.1 - - [01/Dec/2023 12:24:01] "DELETE /customer/49 HTTP/1.1" 200 -
+2023-12-01 12:26:18,318 - 127.0.0.1 - - [01/Dec/2023 12:26:18] "GET /customers HTTP/1.1" 200 -
+2023-12-01 12:27:13,817 - 127.0.0.1 - - [01/Dec/2023 12:27:13] "GET /customers HTTP/1.1" 200 -
+2023-12-01 12:27:38,263 - 127.0.0.1 - - [01/Dec/2023 12:27:38] "OPTIONS /customer/30 HTTP/1.1" 200 -
+2023-12-01 12:27:38,317 - 127.0.0.1 - - [01/Dec/2023 12:27:38] "DELETE /customer/30 HTTP/1.1" 200 -
+2023-12-01 12:29:38,027 - 127.0.0.1 - - [01/Dec/2023 12:29:38] "OPTIONS /customer HTTP/1.1" 200 -
+2023-12-01 12:29:38,165 - 127.0.0.1 - - [01/Dec/2023 12:29:38] "POST /customer HTTP/1.1" 200 -
+2023-12-01 12:30:05,497 - 127.0.0.1 - - [01/Dec/2023 12:30:05] "OPTIONS /customer/50 HTTP/1.1" 200 -
+2023-12-01 12:30:05,554 - 127.0.0.1 - - [01/Dec/2023 12:30:05] "PUT /customer/50 HTTP/1.1" 200 -
+2023-12-01 12:30:20,600 - 127.0.0.1 - - [01/Dec/2023 12:30:20] "OPTIONS /customer/50 HTTP/1.1" 200 -
+2023-12-01 12:30:20,680 - 127.0.0.1 - - [01/Dec/2023 12:30:20] "PUT /customer/50 HTTP/1.1" 200 -
+2023-12-01 12:32:57,065 - 127.0.0.1 - - [01/Dec/2023 12:32:57] "OPTIONS /customer/50 HTTP/1.1" 200 -
+2023-12-01 12:32:57,105 - 127.0.0.1 - - [01/Dec/2023 12:32:57] "DELETE /customer/50 HTTP/1.1" 200 -
+2023-12-01 12:33:16,849 - 127.0.0.1 - - [01/Dec/2023 12:33:16] "GET /customers HTTP/1.1" 200 -
+2023-12-01 12:41:48,997 - 127.0.0.1 - - [01/Dec/2023 12:41:48] "GET /customers HTTP/1.1" 200 -
+2023-12-01 12:44:15,669 - 127.0.0.1 - - [01/Dec/2023 12:44:15] "GET /customers HTTP/1.1" 200 -
+2023-12-01 12:44:43,382 - 127.0.0.1 - - [01/Dec/2023 12:44:43] "GET /customers HTTP/1.1" 200 -
+2023-12-01 12:45:48,062 - 127.0.0.1 - - [01/Dec/2023 12:45:48] "GET /customers HTTP/1.1" 200 -
+2023-12-01 12:52:10,770 - 127.0.0.1 - - [01/Dec/2023 12:52:10] "GET /employees HTTP/1.1" 200 -
+2023-12-01 12:52:33,073 - 127.0.0.1 - - [01/Dec/2023 12:52:33] "GET /customers HTTP/1.1" 200 -
+2023-12-01 12:57:28,860 - 127.0.0.1 - - [01/Dec/2023 12:57:28] "GET /customers HTTP/1.1" 200 -
+2023-12-01 13:03:03,910 - 127.0.0.1 - - [01/Dec/2023 13:03:03] "GET /customers HTTP/1.1" 200 -
+2023-12-01 13:03:49,722 - 127.0.0.1 - - [01/Dec/2023 13:03:49] "GET /customers HTTP/1.1" 200 -
+2023-12-01 13:04:05,267 - 127.0.0.1 - - [01/Dec/2023 13:04:05] "OPTIONS /employee-login HTTP/1.1" 200 -
+2023-12-01 13:04:05,307 - 127.0.0.1 - - [01/Dec/2023 13:04:05] "PUT /employee-login HTTP/1.1" 200 -
+2023-12-01 13:04:09,999 - 127.0.0.1 - - [01/Dec/2023 13:04:09] "GET /employees HTTP/1.1" 200 -
+2023-12-01 13:04:11,243 - 127.0.0.1 - - [01/Dec/2023 13:04:11] "GET /employee_types HTTP/1.1" 200 -
+2023-12-01 13:04:43,487 - 127.0.0.1 - - [01/Dec/2023 13:04:43] "GET /employees HTTP/1.1" 200 -
+2023-12-01 13:04:45,023 - 127.0.0.1 - - [01/Dec/2023 13:04:45] "GET /employee_types HTTP/1.1" 200 -
+2023-12-01 13:06:10,662 - 127.0.0.1 - - [01/Dec/2023 13:06:10] "GET /employees HTTP/1.1" 200 -
+2023-12-01 13:06:11,502 - 127.0.0.1 - - [01/Dec/2023 13:06:11] "GET /employee_types HTTP/1.1" 200 -
+2023-12-01 13:06:53,820 - 127.0.0.1 - - [01/Dec/2023 13:06:53] "GET /employees HTTP/1.1" 200 -
+2023-12-01 13:06:56,650 - 127.0.0.1 - - [01/Dec/2023 13:06:56] "GET /employee_types HTTP/1.1" 200 -
+2023-12-01 13:08:37,036 - 127.0.0.1 - - [01/Dec/2023 13:08:37] "GET /customers HTTP/1.1" 200 -
+2023-12-01 13:22:56,293 - 127.0.0.1 - - [01/Dec/2023 13:22:56] "GET /customers HTTP/1.1" 200 -
+2023-12-01 13:27:25,226 - 127.0.0.1 - - [01/Dec/2023 13:27:25] "GET /customers HTTP/1.1" 200 -
+2023-12-01 13:32:04,501 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-01 13:32:04,726 -  * Restarting with stat
+2023-12-01 13:32:06,133 - Admin logged in
+2023-12-01 13:32:06,156 -  * Debugger is active!
+2023-12-01 13:32:06,161 -  * Debugger PIN: 593-384-150
