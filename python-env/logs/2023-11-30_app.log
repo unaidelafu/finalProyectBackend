@@ -129,3 +129,16 @@
 2023-11-30 20:01:42,208 - 127.0.0.1 - - [30/Nov/2023 20:01:42] "OPTIONS /customer/45 HTTP/1.1" 200 -
 2023-11-30 20:01:42,319 - 127.0.0.1 - - [30/Nov/2023 20:01:42] "DELETE /customer/45 HTTP/1.1" 200 -
 2023-11-30 20:04:59,535 - 127.0.0.1 - - [30/Nov/2023 20:04:59] "GET /customers HTTP/1.1" 200 -
+2023-11-30 20:11:38,174 - Admin logged in
+2023-11-30 20:11:38,227 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-30 20:11:38,227 - [33mPress CTRL+C to quit[0m
+2023-11-30 20:11:38,228 -  * Restarting with stat
+2023-11-30 20:11:39,145 - Admin logged in
+2023-11-30 20:11:39,167 -  * Debugger is active!
+2023-11-30 20:11:39,173 -  * Debugger PIN: 593-384-150
+2023-11-30 20:11:41,842 - 127.0.0.1 - - [30/Nov/2023 20:11:41] "GET /customers HTTP/1.1" 200 -
+2023-11-30 20:38:47,158 - 127.0.0.1 - - [30/Nov/2023 20:38:47] "GET /customers HTTP/1.1" 200 -
+2023-11-30 20:43:27,814 - 127.0.0.1 - - [30/Nov/2023 20:43:27] "GET /customers HTTP/1.1" 200 -
+2023-11-30 20:46:43,104 - 127.0.0.1 - - [30/Nov/2023 20:46:43] "GET /customers HTTP/1.1" 200 -
+2023-11-30 20:53:12,348 - 127.0.0.1 - - [30/Nov/2023 20:53:12] "GET /customers HTTP/1.1" 200 -
