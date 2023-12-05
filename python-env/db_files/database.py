@@ -466,7 +466,7 @@ class DbLoader:
                 cur.close()    
         return resultlist
     
-    def create_product(self, product):
+    def create_edit_product(self, product, p_id):
  
         cur = None
         retval = None
@@ -484,7 +484,6 @@ class DbLoader:
             print(f"mp ID: {mp_id}")
             if mp_id > 0:
                 #Update changes
-                print(f"Updating mp")
                 query = """UPDATE bike_workshop.master_product 
                     SET mp_product_name = %s, mp_brand_id = %s,
                     mp_bt_id = %s, mp_price = %s, mp_img_url = %s
@@ -494,23 +493,31 @@ class DbLoader:
                 #---self.conn.commit()  
             else:
                 #Create master product, get mp_id,
-                print(f"Creando mp")
                 query = """INSERT INTO bike_workshop.master_product (mp_product_code, mp_product_name, mp_brand_id,
                 mp_bt_id, mp_price, mp_img_url)
                 VALUES (%s,%s,%s,%s,%s,%s);"""
                 values = (product.code, product.name, product.b_id, product.b_type_id, product.price, product.img_url)
                 cur.execute(query,values)
                 #---self.conn.commit() 
-                mp_id = cur.lastrowid            
-            # insert product
-            print(f"Creando p")
-            query = """INSERT INTO bike_workshop.product (p_mp_id, p_description, p_size)
-            VALUES (%s,%s,%s);"""
-            values = (mp_id, product.description, product.size)            
-            cur.execute(query,values)
-            self.conn.commit() 
-            #id = cur.lastrowid
-            retval = cur.lastrowid
+                mp_id = cur.lastrowid
+            if p_id < 1:                
+                # insert product
+                query = """INSERT INTO bike_workshop.product (p_mp_id, p_description, p_size)
+                VALUES (%s,%s,%s);"""
+                values = (mp_id, product.description, product.size)   
+                cur.execute(query,values)
+                self.conn.commit() 
+                #id = cur.lastrowid
+                retval = cur.lastrowid    
+            else:
+                query = """UPDATE bike_workshop.product SET p_mp_id = %s, p_description = %s, p_size = %s
+                WHERE p_id = %s"""
+                values = (mp_id, product.description, product.size, p_id) 
+                cur.execute(query,values)
+                self.conn.commit() 
+                #id = cur.lastrowid
+                retval = p_id                   
+
         
         except mariadb.Error as e:
             self.conn.rollback()
@@ -521,6 +528,7 @@ class DbLoader:
                 cur.close()
             self.disconnect()
         return retval
+ 
       
     def delete_product(self,id):
         

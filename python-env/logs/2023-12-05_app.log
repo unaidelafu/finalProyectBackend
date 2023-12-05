@@ -123,3 +123,69 @@
 2023-12-05 22:06:14,528 - 127.0.0.1 - - [05/Dec/2023 22:06:14] "POST /product HTTP/1.1" 200 -
 2023-12-05 22:06:15,940 - Error - MariaDB : Duplicate entry '32-BH Expert La mejor-M' for key 'product_un'
 2023-12-05 22:06:15,941 - 127.0.0.1 - - [05/Dec/2023 22:06:15] "POST /product HTTP/1.1" 200 -
+2023-12-05 22:38:11,338 - Admin logged in
+2023-12-05 22:38:11,387 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-12-05 22:38:11,387 - [33mPress CTRL+C to quit[0m
+2023-12-05 22:38:11,390 -  * Restarting with stat
+2023-12-05 22:38:12,324 - Admin logged in
+2023-12-05 22:38:12,349 -  * Debugger is active!
+2023-12-05 22:38:12,354 -  * Debugger PIN: 593-384-150
+2023-12-05 22:38:12,977 - 127.0.0.1 - - [05/Dec/2023 22:38:12] "GET /products HTTP/1.1" 200 -
+2023-12-05 22:41:26,976 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-05 22:41:27,154 -  * Restarting with stat
+2023-12-05 22:41:28,033 - Admin logged in
+2023-12-05 22:41:28,053 -  * Debugger is active!
+2023-12-05 22:41:28,058 -  * Debugger PIN: 593-384-150
+2023-12-05 22:44:09,320 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-05 22:44:09,521 -  * Restarting with stat
+2023-12-05 22:44:11,294 - Admin logged in
+2023-12-05 22:44:11,378 -  * Debugger is active!
+2023-12-05 22:44:11,393 -  * Debugger PIN: 593-384-150
+2023-12-05 22:44:38,842 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-05 22:44:39,001 -  * Restarting with stat
+2023-12-05 22:44:40,089 - Admin logged in
+2023-12-05 22:44:40,139 -  * Debugger is active!
+2023-12-05 22:44:40,149 -  * Debugger PIN: 593-384-150
+2023-12-05 22:45:01,228 - 127.0.0.1 - - [05/Dec/2023 22:45:01] "GET /product/33 HTTP/1.1" 200 -
+2023-12-05 22:45:32,558 - 127.0.0.1 - - [05/Dec/2023 22:45:32] "GET /product/32 HTTP/1.1" 200 -
+2023-12-05 22:48:00,951 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-05 22:48:01,221 -  * Restarting with stat
+2023-12-05 22:48:03,049 - Admin logged in
+2023-12-05 22:48:03,110 -  * Debugger is active!
+2023-12-05 22:48:03,117 -  * Debugger PIN: 593-384-150
+2023-12-05 22:48:25,339 - 127.0.0.1 - - [05/Dec/2023 22:48:25] "[31m[1mPOST /product/32 HTTP/1.1[0m" 405 -
+2023-12-05 22:48:51,662 - 127.0.0.1 - - [05/Dec/2023 22:48:51] "POST /product HTTP/1.1" 200 -
+2023-12-05 22:49:05,422 - Error - MariaDB : Duplicate entry '32-BH Expert La mejor-M' for key 'product_un'
+2023-12-05 22:49:05,423 - 127.0.0.1 - - [05/Dec/2023 22:49:05] "POST /product HTTP/1.1" 200 -
+2023-12-05 22:49:16,536 - 127.0.0.1 - - [05/Dec/2023 22:49:16] "[31m[1mPOST /product/32 HTTP/1.1[0m" 405 -
+2023-12-05 22:49:23,999 - 127.0.0.1 - - [05/Dec/2023 22:49:23] "[35m[1mPUT /product/32 HTTP/1.1[0m" 500 -
+2023-12-05 22:50:06,819 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-05 22:50:07,077 -  * Restarting with stat
+2023-12-05 22:50:09,079 - Admin logged in
+2023-12-05 22:50:09,103 -  * Debugger is active!
+2023-12-05 22:50:09,108 -  * Debugger PIN: 593-384-150
+2023-12-05 22:50:10,381 - 127.0.0.1 - - [05/Dec/2023 22:50:10] "[35m[1mPUT /product/32 HTTP/1.1[0m" 500 -
+2023-12-05 22:53:09,597 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-05 22:53:09,790 -  * Restarting with stat
+2023-12-05 22:53:11,785 - Admin logged in
+2023-12-05 22:53:11,820 -  * Debugger is active!
+2023-12-05 22:53:11,825 -  * Debugger PIN: 593-384-150
+2023-12-05 22:53:15,126 - Error - MariaDB : You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= ?, p_description = ?, p_size = ?
+                WHERE p_id = ?' at line 1
+2023-12-05 22:53:15,127 - 127.0.0.1 - - [05/Dec/2023 22:53:15] "PUT /product/32 HTTP/1.1" 200 -
+2023-12-05 22:53:49,360 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-05 22:53:49,536 -  * Restarting with stat
+2023-12-05 22:53:51,109 - Admin logged in
+2023-12-05 22:53:51,133 -  * Debugger is active!
+2023-12-05 22:53:51,140 -  * Debugger PIN: 593-384-150
+2023-12-05 22:53:53,415 - 127.0.0.1 - - [05/Dec/2023 22:53:53] "PUT /product/32 HTTP/1.1" 200 -
+2023-12-05 22:54:34,820 - 127.0.0.1 - - [05/Dec/2023 22:54:34] "PUT /product/32 HTTP/1.1" 200 -
+2023-12-05 22:55:18,854 - 127.0.0.1 - - [05/Dec/2023 22:55:18] "PUT /product/49 HTTP/1.1" 200 -
+2023-12-05 22:55:35,397 - 127.0.0.1 - - [05/Dec/2023 22:55:35] "PUT /product/49 HTTP/1.1" 200 -
+2023-12-05 22:55:48,420 - 127.0.0.1 - - [05/Dec/2023 22:55:48] "PUT /product/49 HTTP/1.1" 200 -
+2023-12-05 22:56:37,340 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-05 22:56:37,502 -  * Restarting with stat
+2023-12-05 22:56:39,394 - Admin logged in
+2023-12-05 22:56:39,456 -  * Debugger is active!
+2023-12-05 22:56:39,472 -  * Debugger PIN: 593-384-150

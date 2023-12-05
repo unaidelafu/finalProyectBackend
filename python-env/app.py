@@ -375,12 +375,36 @@ def API_add_product():
 
     new_product = p.product(None, code, name, description, size, b_id, None, b_type_id, None, price, img_url)
 
-    message = db.create_product(new_product)
+    message = db.create_edit_product(new_product,0)
     if("Error" not in str(message)): 
         new_product.id = message
         new_product.status = 'ACTIVE'
     return API_json_resp(message,new_product)
 
+## Update a product:
+@app.route('/product/<id>', methods=["PUT"])
+def API_update_product(id):
+
+    employee_resp = None
+    retval = None
+    message = ""
+
+    code = request.json['code'].upper()
+    name = request.json['name']
+    description = request.json['description']
+    b_id = request.json['b_id']
+    b_type_id = request.json['b_type_id']
+    img_url = request.json['img_url']
+    size = request.json['size'].upper()
+    price = request.json['price']
+
+    upd_product = p.product(None, code, name, description, size, b_id, None, b_type_id, None, price, img_url)
+
+    message = db.create_edit_product(upd_product, int(id))
+    if("Error" not in str(message)): 
+        upd_product.id = message
+        upd_product.status = 'ACTIVE'
+    return API_json_resp(message,upd_product)
 
 ## Delete one product
 @app.route("/product/<id>", methods=["DELETE"])
