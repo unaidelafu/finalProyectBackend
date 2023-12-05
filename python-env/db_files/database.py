@@ -446,8 +446,8 @@ class DbLoader:
             cur = self.conn.cursor()
             cur.execute(
                 f""" Select p.p_id, mp.mp_product_code, mp.mp_product_name, 
-                    p.p_description, p.p_size, 
-                    b.b_name, bt.bt_type, mp.mp_price, mp.mp_img_url  
+                    p.p_description, p.p_size, b.b_id,
+                    b.b_name, bt.bt_id, bt.bt_type, mp.mp_price, mp.mp_img_url  
                     from product p 
                     inner join master_product mp 
                     on p.p_mp_id = mp.mp_id 
@@ -457,8 +457,8 @@ class DbLoader:
                     on mp.mp_bt_id = bt.bt_id {wherecon} 
                     order by mp.mp_product_name""")
             # Print Result-set  Resultado
-            for (id, code, name, description, size, b_name, b_type, price, img_url) in cur:
-                resultlist.append(p.product(id, code, name, description, size, b_name, b_type, price, img_url))
+            for (id, code, name, description, size, b_id, b_name, b_type_id, b_type, price, img_url) in cur:
+                resultlist.append(p.product(id, code, name, description, size, b_id, b_name,b_type_id, b_type, price, img_url))
         except mariadb.Error as e:
             print(f"Error - MariaDB : {e}")
         finally:
@@ -466,6 +466,56 @@ class DbLoader:
                 cur.close()    
         return resultlist
     
+    def create_product(self, product):
+ 
+        cur = None
+        retval = None
+        resultlist = []
+        mp_id = 0
+        #check if master product exists.
+
+        query = "SELECT mp_id from master_product where mp_product_code = %s"
+        values = product.code
+        try:
+            self.connect()
+            cur = self.conn.cursor()
+            cur.execute(query,values)
+            for (id,) in cur:
+                mp_id = id
+            if mp_id < 1:
+                #Create master product, get mp_id,
+                query = """INSERT INTO bike_workshop.master_product (mp_product_code, mp_product_name, mp_brand_id
+                mp_bt_id, mp_price, mp_img_url)
+                VALUES (%s,%s,%s,%s,%s,%s);"""
+                values = (product.code, product.name, product.b_id, product.b_type_id, product.price, product.img_url)
+                cur.execute(query,values)
+                #---self.conn.commit() 
+                mp_id = cur.lastrowid
+            else:
+                #Update changes
+                query = """UPDATE bike_workshop.master_product 
+                    SET mp_product_code = %s, mp_product_name = %s, mp_brand_id = %s,
+                    mp_bt_id = %s, mp_price = %s, mp_img_url = %s"""
+                values = (product.code, product.name, product.b_id, product.b_type_id, product.price, product.img_url)
+                cur.execute(query,values)
+                #---self.conn.commit()              
+            # insert product
+            query = """INSERT INTO bike_workshop.product (p_mp_id, p_description, p_size)
+            VALUES (%s,%s,%s);"""
+            values = (mp_id, product.description, product.size)            
+            self.conn.commit() 
+            #id = cur.lastrowid
+            retval = cur.lastrowid
+        
+        except mariadb.Error as e:
+            self.conn.rollback()
+            print(f"Error - MariaDB : {e}")
+            retval = f"Error - MariaDB : {e}"
+        finally:
+            if cur is not None:
+                cur.close()
+            self.disconnect()       
+      
     def delete_product(self,id):
         
         cur = None

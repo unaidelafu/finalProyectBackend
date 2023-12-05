@@ -1,0 +1,27 @@
+2023-12-03 20:43:56,688 - Admin logged in
+2023-12-03 20:43:56,711 -  * Debugger is active!
+2023-12-03 20:43:56,716 -  * Debugger PIN: 593-384-150
+2023-12-03 20:45:59,467 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\classes\\products.py', reloading
+2023-12-03 20:46:01,265 - Admin logged in
+2023-12-03 20:46:01,320 -  * Debugger is active!
+2023-12-03 20:46:01,328 -  * Debugger PIN: 593-384-150
+2023-12-03 20:47:31,609 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-03 20:47:32,617 - Admin logged in
+2023-12-03 20:47:32,637 -  * Debugger is active!
+2023-12-03 20:47:32,642 -  * Debugger PIN: 593-384-150
+2023-12-03 20:48:01,568 - 127.0.0.1 - - [03/Dec/2023 20:48:01] "GET /products HTTP/1.1" 200 -
+2023-12-04 18:08:10,886 - 127.0.0.1 - - [04/Dec/2023 18:08:10] "OPTIONS /employee-login HTTP/1.1" 200 -
+2023-12-04 18:08:10,935 - 127.0.0.1 - - [04/Dec/2023 18:08:10] "PUT /employee-login HTTP/1.1" 200 -
+2023-12-04 18:08:18,265 - 127.0.0.1 - - [04/Dec/2023 18:08:18] "GET /employees HTTP/1.1" 200 -
+2023-12-04 18:08:33,908 - 127.0.0.1 - - [04/Dec/2023 18:08:33] "GET /employee_types HTTP/1.1" 200 -
+2023-12-04 18:10:00,829 - 127.0.0.1 - - [04/Dec/2023 18:10:00] "GET /customers HTTP/1.1" 200 -
+2023-12-04 18:10:02,414 - 127.0.0.1 - - [04/Dec/2023 18:10:02] "GET /employees HTTP/1.1" 200 -
+2023-12-04 18:12:39,571 - 127.0.0.1 - - [04/Dec/2023 18:12:39] "GET /products HTTP/1.1" 200 -
+2023-12-04 18:15:46,204 - 127.0.0.1 - - [04/Dec/2023 18:15:46] "GET /products HTTP/1.1" 200 -
+2023-12-04 18:16:53,162 - 127.0.0.1 - - [04/Dec/2023 18:16:53] "GET /products HTTP/1.1" 200 -
+2023-12-04 18:17:22,659 - 127.0.0.1 - - [04/Dec/2023 18:17:22] "GET /products HTTP/1.1" 200 -
+2023-12-04 18:18:26,497 - 127.0.0.1 - - [04/Dec/2023 18:18:26] "GET /products HTTP/1.1" 200 -
+2023-12-04 18:18:44,316 - 127.0.0.1 - - [04/Dec/2023 18:18:44] "GET /products HTTP/1.1" 200 -
+2023-12-04 18:20:42,380 - 127.0.0.1 - - [04/Dec/2023 18:20:42] "GET /products HTTP/1.1" 200 -
+2023-12-04 18:23:02,629 - 127.0.0.1 - - [04/Dec/2023 18:23:02] "GET /products HTTP/1.1" 200 -
+2023-12-04 18:23:43,899 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading

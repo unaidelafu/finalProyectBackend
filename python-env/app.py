@@ -16,6 +16,7 @@ from classes import employee_types as emt
 from classes import wharehouses as w
 from classes import brands as b
 from classes import brand_types as bt
+from classes import products as p
 
 # **********
 # CONSTS
@@ -354,6 +355,32 @@ def API_get_product_all(id):
     products = db.get_products_all(id)
     products_list=[products.serialize() for products in products]  #serialize to prepare for json
     return jsonify(products_list)
+
+## create a product:
+@app.route('/product', methods=["POST"])
+def API_add_product():
+
+    employee_resp = None
+    retval = None
+    message = ""
+
+    code = request.json['code'].upper()
+    name = request.json['name'].capitalize() 
+    description = request.json['description']
+    b_id = request.json['b_id']
+    b_type_id = request.json['b_type_id']
+    img_url = request.json['img_url']
+    size = request.json['size'].capitalize()
+    price = request.json['price']
+
+    new_product = p.product(None, code, name, description, size, b_id, None, b_type_id, None, price, img_url)
+
+    message = db.create_product(new_product)
+    if("Error" not in str(message)): 
+        new_product.id = message
+        new_product.status = 'ACTIVE'
+    return API_json_resp(message,new_product)
+
 
 ## Delete one product
 @app.route("/product/<id>", methods=["DELETE"])
