@@ -365,12 +365,12 @@ def API_add_product():
     message = ""
 
     code = request.json['code'].upper()
-    name = request.json['name'].capitalize() 
+    name = request.json['name']
     description = request.json['description']
     b_id = request.json['b_id']
     b_type_id = request.json['b_type_id']
     img_url = request.json['img_url']
-    size = request.json['size'].capitalize()
+    size = request.json['size'].upper()
     price = request.json['price']
 
     new_product = p.product(None, code, name, description, size, b_id, None, b_type_id, None, price, img_url)

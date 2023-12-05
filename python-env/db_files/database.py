@@ -474,35 +474,40 @@ class DbLoader:
         mp_id = 0
         #check if master product exists.
 
-        query = "SELECT mp_id from master_product where mp_product_code = %s"
-        values = product.code
+        query = f"SELECT mp_id,mp_product_code from master_product where mp_product_code = '{product.code}' LIMIT 1"
         try:
             self.connect()
             cur = self.conn.cursor()
-            cur.execute(query,values)
-            for (id,) in cur:
+            cur.execute(query)
+            for (id, code) in cur:
                 mp_id = id
-            if mp_id < 1:
+            print(f"mp ID: {mp_id}")
+            if mp_id > 0:
+                #Update changes
+                print(f"Updating mp")
+                query = """UPDATE bike_workshop.master_product 
+                    SET mp_product_name = %s, mp_brand_id = %s,
+                    mp_bt_id = %s, mp_price = %s, mp_img_url = %s
+                    WHERE mp_product_code = %s"""
+                values = (product.name, product.b_id, product.b_type_id, product.price, product.img_url,product.code)
+                cur.execute(query,values)
+                #---self.conn.commit()  
+            else:
                 #Create master product, get mp_id,
-                query = """INSERT INTO bike_workshop.master_product (mp_product_code, mp_product_name, mp_brand_id
+                print(f"Creando mp")
+                query = """INSERT INTO bike_workshop.master_product (mp_product_code, mp_product_name, mp_brand_id,
                 mp_bt_id, mp_price, mp_img_url)
                 VALUES (%s,%s,%s,%s,%s,%s);"""
                 values = (product.code, product.name, product.b_id, product.b_type_id, product.price, product.img_url)
                 cur.execute(query,values)
                 #---self.conn.commit() 
-                mp_id = cur.lastrowid
-            else:
-                #Update changes
-                query = """UPDATE bike_workshop.master_product 
-                    SET mp_product_code = %s, mp_product_name = %s, mp_brand_id = %s,
-                    mp_bt_id = %s, mp_price = %s, mp_img_url = %s"""
-                values = (product.code, product.name, product.b_id, product.b_type_id, product.price, product.img_url)
-                cur.execute(query,values)
-                #---self.conn.commit()              
+                mp_id = cur.lastrowid            
             # insert product
+            print(f"Creando p")
             query = """INSERT INTO bike_workshop.product (p_mp_id, p_description, p_size)
             VALUES (%s,%s,%s);"""
             values = (mp_id, product.description, product.size)            
+            cur.execute(query,values)
             self.conn.commit() 
             #id = cur.lastrowid
             retval = cur.lastrowid
@@ -514,7 +519,8 @@ class DbLoader:
         finally:
             if cur is not None:
                 cur.close()
-            self.disconnect()       
+            self.disconnect()
+        return retval
       
     def delete_product(self,id):
         
