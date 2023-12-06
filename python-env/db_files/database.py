@@ -434,18 +434,43 @@ class DbLoader:
         return resultlist      
 
     ##      --- products - master product - brands - brand types ---       ##
-
-    def get_products_all(self, id):
+    def get_master_products(self):
         cur = None
         resultlist = []
-        wherecon = " WHERE 1"
-        if id is not None:
-            wherecon = f" WHERE p.p_id = {id}"
         try:
             self.connect()
             cur = self.conn.cursor()
             cur.execute(
-                f""" Select p.p_id, mp.mp_product_code, mp.mp_product_name, 
+                f""" Select mp.mp_id, mp.mp_product_code, mp.mp_product_name, 
+                    b.b_id, b.b_name, bt.bt_id, bt.bt_type, mp.mp_price, mp.mp_img_url  
+                    from master_product mp 
+                    inner join brands b 
+                    on mp.mp_brand_id = b.b_id 
+                    inner join brands_types bt 
+                    on mp.mp_bt_id = bt.bt_id  WHERE 1 
+                    order by mp.mp_product_code, mp.mp_product_name""")
+            # Print Result-set  Resultado
+            for (mp_id, code, name, b_id, b_name, b_type_id, b_type, price, img_url) in cur:
+                resultlist.append(p.product(None, mp_id, code, name, None, None, b_id, b_name,b_type_id, b_type, price, img_url))
+
+        except mariadb.Error as e:
+            print(f"Error - MariaDB : {e}")
+        finally:
+            if cur is not None:
+                cur.close()       
+        return resultlist       
+
+    def get_products_all(self, mp_id):
+        cur = None
+        resultlist = []
+        wherecon = " WHERE 1"
+        if mp_id is not None:
+            wherecon = f" WHERE mp.mp_id = {mp_id}"
+        try:
+            self.connect()
+            cur = self.conn.cursor()
+            cur.execute(
+                f""" Select p.p_id,mp.mp_id, mp.mp_product_code, mp.mp_product_name, 
                     p.p_description, p.p_size, b.b_id,
                     b.b_name, bt.bt_id, bt.bt_type, mp.mp_price, mp.mp_img_url  
                     from product p 
@@ -455,10 +480,10 @@ class DbLoader:
                     on mp.mp_brand_id = b.b_id 
                     inner join brands_types bt 
                     on mp.mp_bt_id = bt.bt_id {wherecon} 
-                    order by mp.mp_product_name""")
+                    order by mp.mp_product_code, mp.mp_product_name, p.p_description, FIELD(p.p_size, 'XS', 'S', 'M', 'L', 'XL')""")
             # Print Result-set  Resultado
-            for (id, code, name, description, size, b_id, b_name, b_type_id, b_type, price, img_url) in cur:
-                resultlist.append(p.product(id, code, name, description, size, b_id, b_name,b_type_id, b_type, price, img_url))
+            for (mp_id, mp_id, code, name, description, size, b_id, b_name, b_type_id, b_type, price, img_url) in cur:
+                resultlist.append(p.product(mp_id, mp_id, code, name, description, size, b_id, b_name,b_type_id, b_type, price, img_url))
         except mariadb.Error as e:
             print(f"Error - MariaDB : {e}")
         finally:

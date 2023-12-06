@@ -1,0 +1,59 @@
+2023-12-06 08:18:33,588 - Admin logged in
+2023-12-06 08:18:33,638 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-12-06 08:18:33,639 - [33mPress CTRL+C to quit[0m
+2023-12-06 08:18:33,641 -  * Restarting with stat
+2023-12-06 08:18:34,532 - Admin logged in
+2023-12-06 08:18:34,553 -  * Debugger is active!
+2023-12-06 08:18:34,559 -  * Debugger PIN: 593-384-150
+2023-12-06 08:18:51,873 - 127.0.0.1 - - [06/Dec/2023 08:18:51] "GET /products HTTP/1.1" 200 -
+2023-12-06 08:21:23,202 - 127.0.0.1 - - [06/Dec/2023 08:21:23] "POST /product HTTP/1.1" 200 -
+2023-12-06 08:21:32,904 - 127.0.0.1 - - [06/Dec/2023 08:21:32] "GET /products HTTP/1.1" 200 -
+2023-12-06 08:29:36,094 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-06 08:29:36,262 -  * Restarting with stat
+2023-12-06 08:29:37,202 - Admin logged in
+2023-12-06 08:29:37,223 -  * Debugger is active!
+2023-12-06 08:29:37,228 -  * Debugger PIN: 593-384-150
+2023-12-06 08:30:15,334 - 127.0.0.1 - - [06/Dec/2023 08:30:15] "GET /product/21 HTTP/1.1" 200 -
+2023-12-06 08:30:45,451 - 127.0.0.1 - - [06/Dec/2023 08:30:45] "GET /product/49 HTTP/1.1" 200 -
+2023-12-06 08:32:15,066 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-06 08:32:15,236 -  * Restarting with stat
+2023-12-06 08:32:16,254 - Admin logged in
+2023-12-06 08:32:16,279 -  * Debugger is active!
+2023-12-06 08:32:16,284 -  * Debugger PIN: 593-384-150
+2023-12-06 08:32:36,695 - 127.0.0.1 - - [06/Dec/2023 08:32:36] "GET /product/49 HTTP/1.1" 200 -
+2023-12-06 08:32:42,362 - 127.0.0.1 - - [06/Dec/2023 08:32:42] "GET /product/21 HTTP/1.1" 200 -
+2023-12-06 08:33:46,305 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\classes\\products.py', reloading
+2023-12-06 08:33:46,451 -  * Restarting with stat
+2023-12-06 08:33:47,425 - Admin logged in
+2023-12-06 08:33:47,451 -  * Debugger is active!
+2023-12-06 08:33:47,456 -  * Debugger PIN: 593-384-150
+2023-12-06 08:37:32,109 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-06 08:37:32,253 -  * Restarting with stat
+2023-12-06 08:37:33,366 - Admin logged in
+2023-12-06 08:37:33,390 -  * Debugger is active!
+2023-12-06 08:37:33,395 -  * Debugger PIN: 593-384-150
+2023-12-06 08:38:30,087 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-06 08:38:30,258 -  * Restarting with stat
+2023-12-06 08:38:31,220 - Admin logged in
+2023-12-06 08:38:31,242 -  * Debugger is active!
+2023-12-06 08:38:31,247 -  * Debugger PIN: 593-384-150
+2023-12-06 08:38:34,055 - 127.0.0.1 - - [06/Dec/2023 08:38:34] "GET /product/21 HTTP/1.1" 200 -
+2023-12-06 08:38:44,046 - 127.0.0.1 - - [06/Dec/2023 08:38:44] "GET /products HTTP/1.1" 200 -
+2023-12-06 08:40:53,722 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-06 08:40:53,872 -  * Restarting with stat
+2023-12-06 08:40:54,927 - Admin logged in
+2023-12-06 08:40:54,953 -  * Debugger is active!
+2023-12-06 08:40:54,958 -  * Debugger PIN: 593-384-150
+2023-12-06 08:42:10,890 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-06 08:42:11,028 -  * Restarting with stat
+2023-12-06 08:42:11,937 - Admin logged in
+2023-12-06 08:42:11,961 -  * Debugger is active!
+2023-12-06 08:42:11,965 -  * Debugger PIN: 593-384-150
+2023-12-06 08:42:28,543 - 127.0.0.1 - - [06/Dec/2023 08:42:28] "[35m[1mGET /master-products HTTP/1.1[0m" 500 -
+2023-12-06 08:47:00,612 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-06 08:47:00,755 -  * Restarting with stat
+2023-12-06 08:47:01,649 - Admin logged in
+2023-12-06 08:47:01,672 -  * Debugger is active!
+2023-12-06 08:47:01,678 -  * Debugger PIN: 593-384-150
+2023-12-06 08:47:05,702 - 127.0.0.1 - - [06/Dec/2023 08:47:05] "GET /master-products HTTP/1.1" 200 -

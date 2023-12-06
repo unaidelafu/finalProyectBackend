@@ -281,7 +281,7 @@ def API_get_employee_login():
 ##      --- Employee types ---       ##
 
 ## get all employee types
-@app.route('/employee_types', methods=["GET"])
+@app.route('/employee-types', methods=["GET"])
 def API_get_employee_types():
     employee_types = []
 
@@ -325,7 +325,7 @@ def API_delete_brand(id):
 ##      --- brand types ---       ## 
 
 ## get all brand types
-@app.route('/brand_types', methods=["GET"])
+@app.route('/brand-types', methods=["GET"])
 def API_get_brand_types():
     brand_types = []
 
@@ -335,6 +335,18 @@ def API_get_brand_types():
     return jsonify(brand_type_list)
 
 ##      --- Products ---       ## 
+
+## get all master products
+@app.route('/master-products', methods=["GET"])
+
+def API_get_master_products():
+    products = []
+
+    products = db.get_master_products()
+    products_list=[products.serialize() for products in products]  #serialize to prepare for json
+
+    return jsonify(products_list)
+
 
 ## get all products
 @app.route('/products', methods=["GET"])
@@ -373,7 +385,7 @@ def API_add_product():
     size = request.json['size'].upper()
     price = request.json['price']
 
-    new_product = p.product(None, code, name, description, size, b_id, None, b_type_id, None, price, img_url)
+    new_product = p.product(None, None, code, name, description, size, b_id, None, b_type_id, None, price, img_url)
 
     message = db.create_edit_product(new_product,0)
     if("Error" not in str(message)): 
@@ -398,7 +410,7 @@ def API_update_product(id):
     size = request.json['size'].upper()
     price = request.json['price']
 
-    upd_product = p.product(None, code, name, description, size, b_id, None, b_type_id, None, price, img_url)
+    upd_product = p.product(None, None, code, name, description, size, b_id, None, b_type_id, None, price, img_url)
 
     message = db.create_edit_product(upd_product, int(id))
     if("Error" not in str(message)): 
