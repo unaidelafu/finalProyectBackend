@@ -448,7 +448,7 @@ class DbLoader:
                     on mp.mp_brand_id = b.b_id 
                     inner join brands_types bt 
                     on mp.mp_bt_id = bt.bt_id  WHERE 1 
-                    order by mp.mp_product_code, mp.mp_product_name""")
+                    order by bt.bt_type, mp.mp_product_code, mp.mp_product_name""")
             # Print Result-set  Resultado
             for (mp_id, code, name, b_id, b_name, b_type_id, b_type, price, img_url) in cur:
                 resultlist.append(p.product(None, mp_id, code, name, None, None, b_id, b_name,b_type_id, b_type, price, img_url))
@@ -482,8 +482,8 @@ class DbLoader:
                     on mp.mp_bt_id = bt.bt_id {wherecon} 
                     order by mp.mp_product_code, mp.mp_product_name, p.p_description, FIELD(p.p_size, 'XS', 'S', 'M', 'L', 'XL')""")
             # Print Result-set  Resultado
-            for (mp_id, mp_id, code, name, description, size, b_id, b_name, b_type_id, b_type, price, img_url) in cur:
-                resultlist.append(p.product(mp_id, mp_id, code, name, description, size, b_id, b_name,b_type_id, b_type, price, img_url))
+            for (p_id, mp_id, code, name, description, size, b_id, b_name, b_type_id, b_type, price, img_url) in cur:
+                resultlist.append(p.product(p_id, mp_id, code, name, description, size, b_id, b_name,b_type_id, b_type, price, img_url))
         except mariadb.Error as e:
             print(f"Error - MariaDB : {e}")
         finally:

@@ -57,3 +57,47 @@
 2023-12-06 08:47:01,672 -  * Debugger is active!
 2023-12-06 08:47:01,678 -  * Debugger PIN: 593-384-150
 2023-12-06 08:47:05,702 - 127.0.0.1 - - [06/Dec/2023 08:47:05] "GET /master-products HTTP/1.1" 200 -
+2023-12-06 08:50:06,197 - Admin logged in
+2023-12-06 08:50:06,238 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-12-06 08:50:06,238 - [33mPress CTRL+C to quit[0m
+2023-12-06 08:50:06,239 -  * Restarting with stat
+2023-12-06 08:50:07,200 - Admin logged in
+2023-12-06 08:50:07,221 -  * Debugger is active!
+2023-12-06 08:50:07,226 -  * Debugger PIN: 593-384-150
+2023-12-06 08:50:10,470 - 127.0.0.1 - - [06/Dec/2023 08:50:10] "GET /master-products HTTP/1.1" 200 -
+2023-12-06 08:51:19,045 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-06 08:51:19,204 -  * Restarting with stat
+2023-12-06 08:51:20,248 - Admin logged in
+2023-12-06 08:51:20,273 -  * Debugger is active!
+2023-12-06 08:51:20,280 -  * Debugger PIN: 593-384-150
+2023-12-06 08:51:27,139 - 127.0.0.1 - - [06/Dec/2023 08:51:27] "GET /master-products HTTP/1.1" 200 -
+2023-12-06 16:24:26,188 - 127.0.0.1 - - [06/Dec/2023 16:24:26] "[33mGET /brand_types HTTP/1.1[0m" 404 -
+2023-12-06 16:24:43,357 - 127.0.0.1 - - [06/Dec/2023 16:24:43] "GET /employees HTTP/1.1" 200 -
+2023-12-06 16:25:41,743 - 127.0.0.1 - - [06/Dec/2023 16:25:41] "GET /employees HTTP/1.1" 200 -
+2023-12-06 16:26:02,165 - 127.0.0.1 - - [06/Dec/2023 16:26:02] "GET /master-products HTTP/1.1" 200 -
+2023-12-06 16:35:07,940 - 127.0.0.1 - - [06/Dec/2023 16:35:07] "GET /product/32 HTTP/1.1" 200 -
+2023-12-06 16:35:21,368 - 127.0.0.1 - - [06/Dec/2023 16:35:21] "GET /product/40 HTTP/1.1" 200 -
+2023-12-06 17:42:13,137 - 127.0.0.1 - - [06/Dec/2023 17:42:13] "GET /master-products HTTP/1.1" 200 -
+2023-12-06 17:44:03,670 - 127.0.0.1 - - [06/Dec/2023 17:44:03] "GET /master-products HTTP/1.1" 200 -
+2023-12-06 17:45:53,369 - 127.0.0.1 - - [06/Dec/2023 17:45:53] "GET /master-products HTTP/1.1" 200 -
+2023-12-06 17:47:25,044 - 127.0.0.1 - - [06/Dec/2023 17:47:25] "GET /master-products HTTP/1.1" 200 -
+2023-12-06 17:49:37,414 - 127.0.0.1 - - [06/Dec/2023 17:49:37] "GET /master-products HTTP/1.1" 200 -
+2023-12-06 18:01:18,902 - 127.0.0.1 - - [06/Dec/2023 18:01:18] "GET /master-products HTTP/1.1" 200 -
+2023-12-06 18:14:35,477 - 127.0.0.1 - - [06/Dec/2023 18:14:35] "GET /master-products HTTP/1.1" 200 -
+2023-12-06 18:33:05,615 - 127.0.0.1 - - [06/Dec/2023 18:33:05] "GET /master-products HTTP/1.1" 200 -
+2023-12-06 18:40:32,395 - 127.0.0.1 - - [06/Dec/2023 18:40:32] "GET /master-products HTTP/1.1" 200 -
+2023-12-07 07:58:04,189 - 127.0.0.1 - - [07/Dec/2023 07:58:04] "GET /master-products HTTP/1.1" 200 -
+2023-12-07 07:58:07,337 - 127.0.0.1 - - [07/Dec/2023 07:58:07] "GET /master-products HTTP/1.1" 200 -
+2023-12-07 07:59:24,661 - 127.0.0.1 - - [07/Dec/2023 07:59:24] "GET /master-products HTTP/1.1" 200 -
+2023-12-07 07:59:28,033 - 127.0.0.1 - - [07/Dec/2023 07:59:28] "[33mGET /brand_types HTTP/1.1[0m" 404 -
+2023-12-07 07:59:52,551 - 127.0.0.1 - - [07/Dec/2023 07:59:52] "GET /master-products HTTP/1.1" 200 -
+2023-12-07 08:02:46,539 - 127.0.0.1 - - [07/Dec/2023 08:02:46] "GET /master-products HTTP/1.1" 200 -
+2023-12-07 08:02:55,301 - 127.0.0.1 - - [07/Dec/2023 08:02:55] "GET /master-products HTTP/1.1" 200 -
+2023-12-07 08:02:59,876 - 127.0.0.1 - - [07/Dec/2023 08:02:59] "GET /master-products HTTP/1.1" 200 -
+2023-12-07 08:05:26,736 - 127.0.0.1 - - [07/Dec/2023 08:05:26] "GET /products HTTP/1.1" 200 -
+2023-12-07 08:07:03,848 - 127.0.0.1 - - [07/Dec/2023 08:07:03] "GET /master-products HTTP/1.1" 200 -
+2023-12-07 08:07:41,717 - 127.0.0.1 - - [07/Dec/2023 08:07:41] "GET /master-products HTTP/1.1" 200 -
+2023-12-07 08:13:15,566 - 127.0.0.1 - - [07/Dec/2023 08:13:15] "GET /product/32 HTTP/1.1" 200 -
+2023-12-07 08:17:14,381 - 127.0.0.1 - - [07/Dec/2023 08:17:14] "GET /product/31 HTTP/1.1" 200 -
+2023-12-07 08:18:39,316 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
