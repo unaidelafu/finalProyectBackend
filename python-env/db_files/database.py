@@ -377,7 +377,7 @@ class DbLoader:
             cur.execute(
                 """select b_id, b_name
                 from brands
-                where 1""")
+                where 1 ORDER BY b_name""")
             # Print Result-set
             for (id, name) in cur:
                 resultlist.append(b.Brand(id, name))
@@ -422,7 +422,7 @@ class DbLoader:
             cur.execute(
                 """select bt_id, bt_type
                 from brands_types
-                where 1""")
+                where 1 ORDER BY bt_type""")
             # Print Result-set
             for (id, name) in cur:
                 resultlist.append(bt.Brand_type(id, name))
@@ -461,6 +461,63 @@ class DbLoader:
                 cur.close()       
         return resultlist       
 
+    def create_edit_master_product(self, product):
+        cur = None
+        retval = None
+
+        if(product.mp_id == None):
+            query = """INSERT INTO bike_workshop.master_product (mp_product_code, mp_product_name, mp_brand_id, mp_bt_id, mp_price, mp_img_url)
+                VALUES (%s,%s,%s,%s,%s,%s);"""
+            values = (product.code, product.name, product.b_id, product.b_type_id, product.price, product.img_url)
+        else:
+            query = """UPDATE bike_workshop.master_product SET mp_product_code = %s, mp_product_name = %s,
+                    mp_brand_id = %s, mp_bt_id = %s, mp_price = %s, mp_img_url = %s
+                    WHERE mp_id = %s"""
+            values = (product.code, product.name, product.b_id, product.b_type_id, product.price, product.img_url, product.mp_id)           
+        #id = 0
+        try:
+            self.connect()
+            cur = self.conn.cursor()
+            cur.execute(query,values)
+            self.conn.commit() 
+            #id = cur.lastrowid
+            if(product.mp_id == None):
+                retval = cur.lastrowid
+            else:
+                retval = product.mp_id
+            
+        except mariadb.Error as e:
+            self.conn.rollback()
+            print(f"Error - MariaDB : {e}")
+            retval = f"Error - MariaDB : {e}"
+        finally:
+            if cur is not None:
+                cur.close()
+            self.disconnect()
+        return retval
+
+    def delete_master_product(self,id):
+        #las foren keys saltaran si queda algun product
+        cur = None
+        retval = ""
+        query = f"DELETE FROM master_product WHERE mp_id= {id} "
+        #values = (id)
+        try:
+            self.connect()
+            cur = self.conn.cursor()
+            cur.execute(query)
+            self.conn.commit() 
+            
+        except mariadb.Error as e:
+            self.conn.rollback()
+            print(f"Error - MariaDB : {e}")
+            retval = f"Error - MariaDB : {e}"
+        finally:
+            if cur is not None:
+                cur.close()  
+            self.disconnect()
+        return retval  
+
     def get_products_all(self, mp_id):
         cur = None
         resultlist = []
@@ -492,6 +549,8 @@ class DbLoader:
                 cur.close()    
         return resultlist
     
+
+
     def create_edit_product(self, product, p_id):
  
         cur = None
@@ -591,6 +650,7 @@ class DbLoader:
             if cur is not None:
                 cur.close()    
         return resultlist     
+    
     def delete_product(self,id):
         
         cur = None

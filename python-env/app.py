@@ -348,6 +348,62 @@ def API_get_master_products():
 
     return jsonify(products_list)
 
+## Create master product
+@app.route('/master-product', methods=["POST"])
+def API_add_master_product():
+
+    employee_resp = None
+    retval = None
+    message = ""
+    mp_id = None
+    code = request.json['code'].upper()
+    name = request.json['name']
+    description = None
+    b_id = request.json['b_id']
+    b_type_id = request.json['b_type_id']
+    img_url = request.json['img_url']
+    size = None
+    price = request.json['price']
+
+    new_product = p.product(None, mp_id, code, name, description, size, b_id, None, b_type_id, None, price, img_url)
+
+    message = db.create_edit_master_product(new_product)
+    if("Error" not in str(message)): 
+        new_product.mp_id = message
+    return API_json_resp(message,new_product)
+
+
+
+##  Update Master product
+@app.route('/master-product/<id>', methods=["PUT"])
+def API_update_master_product(id):
+
+    employee_resp = None
+    retval = None
+    message = ""
+    mp_id = id
+    code = request.json['code'].upper()
+    name = request.json['name']
+    description = None
+    b_id = request.json['b_id']
+    b_type_id = request.json['b_type_id']
+    img_url = request.json['img_url']
+    size = None
+    price = request.json['price']
+
+    updt_product = p.product(None, mp_id, code, name, description, size, b_id, None, b_type_id, None, price, img_url)
+
+    message = db.create_edit_master_product(updt_product)
+
+    return API_json_resp(message,updt_product)
+
+## Delete one product
+@app.route("/master-product/<id>", methods=["DELETE"])
+def API_delete_master_product(id):
+
+    message = db.delete_master_product(id)
+    return API_json_resp(message,None)
+
 
 ## get all products
 @app.route('/products', methods=["GET"])

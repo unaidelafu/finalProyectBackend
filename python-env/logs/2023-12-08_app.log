@@ -54,3 +54,224 @@
 2023-12-08 11:08:29,665 -  * Debugger is active!
 2023-12-08 11:08:29,669 -  * Debugger PIN: 593-384-150
 2023-12-08 11:08:40,711 - 127.0.0.1 - - [08/Dec/2023 11:08:40] "GET /stock/32 HTTP/1.1" 200 -
+2023-12-08 11:12:02,377 - Admin logged in
+2023-12-08 11:12:02,420 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-12-08 11:12:02,420 - [33mPress CTRL+C to quit[0m
+2023-12-08 11:12:02,423 -  * Restarting with stat
+2023-12-08 11:12:03,402 - Admin logged in
+2023-12-08 11:12:03,423 -  * Debugger is active!
+2023-12-08 11:12:03,427 -  * Debugger PIN: 593-384-150
+2023-12-08 11:15:24,141 - 127.0.0.1 - - [08/Dec/2023 11:15:24] "GET /stock/31 HTTP/1.1" 200 -
+2023-12-08 11:29:21,094 - 127.0.0.1 - - [08/Dec/2023 11:29:21] "GET /stock/31 HTTP/1.1" 200 -
+2023-12-08 11:29:47,804 - 127.0.0.1 - - [08/Dec/2023 11:29:47] "GET /stock/31 HTTP/1.1" 200 -
+2023-12-08 11:44:15,438 - 127.0.0.1 - - [08/Dec/2023 11:44:15] "GET /stock/31 HTTP/1.1" 200 -
+2023-12-08 11:46:30,663 - 127.0.0.1 - - [08/Dec/2023 11:46:30] "GET /stock/31 HTTP/1.1" 200 -
+2023-12-08 11:48:52,560 - 127.0.0.1 - - [08/Dec/2023 11:48:52] "GET /stock/31 HTTP/1.1" 200 -
+2023-12-08 11:53:39,391 - 127.0.0.1 - - [08/Dec/2023 11:53:39] "GET /stock/31 HTTP/1.1" 200 -
+2023-12-08 12:08:40,103 - 127.0.0.1 - - [08/Dec/2023 12:08:40] "GET /stock/31 HTTP/1.1" 200 -
+2023-12-08 12:10:41,062 - 127.0.0.1 - - [08/Dec/2023 12:10:41] "GET /stock/31 HTTP/1.1" 200 -
+2023-12-08 12:12:21,262 - 127.0.0.1 - - [08/Dec/2023 12:12:21] "GET /stock/31 HTTP/1.1" 200 -
+2023-12-08 12:28:08,401 - 127.0.0.1 - - [08/Dec/2023 12:28:08] "GET /master-products HTTP/1.1" 200 -
+2023-12-08 12:30:44,151 - 127.0.0.1 - - [08/Dec/2023 12:30:44] "GET /master-products HTTP/1.1" 200 -
+2023-12-08 12:31:47,951 - 127.0.0.1 - - [08/Dec/2023 12:31:47] "GET /stock/32 HTTP/1.1" 200 -
+2023-12-08 14:46:40,274 - 127.0.0.1 - - [08/Dec/2023 14:46:40] "GET /stock/32 HTTP/1.1" 200 -
+2023-12-08 14:46:58,736 - 127.0.0.1 - - [08/Dec/2023 14:46:58] "[33mGET /brand_types HTTP/1.1[0m" 404 -
+2023-12-08 14:47:10,422 - 127.0.0.1 - - [08/Dec/2023 14:47:10] "[33mGET /brand_types HTTP/1.1[0m" 404 -
+2023-12-08 15:07:26,159 - 127.0.0.1 - - [08/Dec/2023 15:07:26] "GET /master-products HTTP/1.1" 200 -
+2023-12-08 15:21:04,868 - 127.0.0.1 - - [08/Dec/2023 15:21:04] "GET /brands HTTP/1.1" 200 -
+2023-12-08 15:21:16,715 - 127.0.0.1 - - [08/Dec/2023 15:21:16] "[33mGET /master-product HTTP/1.1[0m" 404 -
+2023-12-08 15:21:27,476 - 127.0.0.1 - - [08/Dec/2023 15:21:27] "GET /master-products HTTP/1.1" 200 -
+2023-12-08 15:27:03,625 - 127.0.0.1 - - [08/Dec/2023 15:27:03] "GET /stock/32 HTTP/1.1" 200 -
+2023-12-08 15:27:08,444 - 127.0.0.1 - - [08/Dec/2023 15:27:08] "[33mGET /brand_types HTTP/1.1[0m" 404 -
+2023-12-08 15:31:15,415 - 127.0.0.1 - - [08/Dec/2023 15:31:15] "GET /stock/32 HTTP/1.1" 200 -
+2023-12-08 15:32:39,919 - 127.0.0.1 - - [08/Dec/2023 15:32:39] "GET /stock/32 HTTP/1.1" 200 -
+2023-12-08 15:33:10,182 - 127.0.0.1 - - [08/Dec/2023 15:33:10] "GET /stock/32 HTTP/1.1" 200 -
+2023-12-08 15:33:12,517 - 127.0.0.1 - - [08/Dec/2023 15:33:12] "[33mGET /brand_types HTTP/1.1[0m" 404 -
+2023-12-08 15:33:49,670 - 127.0.0.1 - - [08/Dec/2023 15:33:49] "GET /stock/32 HTTP/1.1" 200 -
+2023-12-08 15:33:51,168 - 127.0.0.1 - - [08/Dec/2023 15:33:51] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 15:35:24,699 - 127.0.0.1 - - [08/Dec/2023 15:35:24] "GET /stock/32 HTTP/1.1" 200 -
+2023-12-08 15:35:26,512 - 127.0.0.1 - - [08/Dec/2023 15:35:26] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 15:35:26,513 - 127.0.0.1 - - [08/Dec/2023 15:35:26] "GET /brands HTTP/1.1" 200 -
+2023-12-08 15:36:39,591 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-08 15:36:39,806 -  * Restarting with stat
+2023-12-08 15:36:42,279 - Admin logged in
+2023-12-08 15:36:42,303 -  * Debugger is active!
+2023-12-08 15:36:42,309 -  * Debugger PIN: 593-384-150
+2023-12-08 15:36:46,312 - 127.0.0.1 - - [08/Dec/2023 15:36:46] "GET /brands HTTP/1.1" 200 -
+2023-12-08 15:36:46,312 - 127.0.0.1 - - [08/Dec/2023 15:36:46] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 15:39:02,367 - 127.0.0.1 - - [08/Dec/2023 15:39:02] "GET /master-products HTTP/1.1" 200 -
+2023-12-08 15:39:03,603 - 127.0.0.1 - - [08/Dec/2023 15:39:03] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 15:39:03,605 - 127.0.0.1 - - [08/Dec/2023 15:39:03] "GET /brands HTTP/1.1" 200 -
+2023-12-08 15:39:50,672 - 127.0.0.1 - - [08/Dec/2023 15:39:50] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 15:39:50,682 - 127.0.0.1 - - [08/Dec/2023 15:39:50] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:04:33,960 - 127.0.0.1 - - [08/Dec/2023 16:04:33] "GET /master-products HTTP/1.1" 200 -
+2023-12-08 16:04:38,925 - 127.0.0.1 - - [08/Dec/2023 16:04:38] "GET /master-products HTTP/1.1" 200 -
+2023-12-08 16:04:42,029 - 127.0.0.1 - - [08/Dec/2023 16:04:42] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:04:42,033 - 127.0.0.1 - - [08/Dec/2023 16:04:42] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:10:02,326 - 127.0.0.1 - - [08/Dec/2023 16:10:02] "GET /master-products HTTP/1.1" 200 -
+2023-12-08 16:10:04,615 - 127.0.0.1 - - [08/Dec/2023 16:10:04] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:10:04,617 - 127.0.0.1 - - [08/Dec/2023 16:10:04] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:10:31,285 - 127.0.0.1 - - [08/Dec/2023 16:10:31] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:10:31,287 - 127.0.0.1 - - [08/Dec/2023 16:10:31] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:10:37,576 - 127.0.0.1 - - [08/Dec/2023 16:10:37] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:10:37,583 - 127.0.0.1 - - [08/Dec/2023 16:10:37] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:10:46,894 - 127.0.0.1 - - [08/Dec/2023 16:10:46] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:10:46,899 - 127.0.0.1 - - [08/Dec/2023 16:10:46] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:10:57,520 - 127.0.0.1 - - [08/Dec/2023 16:10:57] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:10:57,525 - 127.0.0.1 - - [08/Dec/2023 16:10:57] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:11:02,227 - 127.0.0.1 - - [08/Dec/2023 16:11:02] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:11:02,228 - 127.0.0.1 - - [08/Dec/2023 16:11:02] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:12:11,382 - 127.0.0.1 - - [08/Dec/2023 16:12:11] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:12:11,386 - 127.0.0.1 - - [08/Dec/2023 16:12:11] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:12:13,915 - 127.0.0.1 - - [08/Dec/2023 16:12:13] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:12:13,918 - 127.0.0.1 - - [08/Dec/2023 16:12:13] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:12:16,752 - 127.0.0.1 - - [08/Dec/2023 16:12:16] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:12:16,755 - 127.0.0.1 - - [08/Dec/2023 16:12:16] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:12:19,691 - 127.0.0.1 - - [08/Dec/2023 16:12:19] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:12:19,697 - 127.0.0.1 - - [08/Dec/2023 16:12:19] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:12:45,141 - 127.0.0.1 - - [08/Dec/2023 16:12:45] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:12:45,144 - 127.0.0.1 - - [08/Dec/2023 16:12:45] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:12:57,717 - 127.0.0.1 - - [08/Dec/2023 16:12:57] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:12:57,726 - 127.0.0.1 - - [08/Dec/2023 16:12:57] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:13:02,180 - 127.0.0.1 - - [08/Dec/2023 16:13:02] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:13:02,185 - 127.0.0.1 - - [08/Dec/2023 16:13:02] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:19:12,331 - 127.0.0.1 - - [08/Dec/2023 16:19:12] "GET /master-products HTTP/1.1" 200 -
+2023-12-08 16:19:16,925 - 127.0.0.1 - - [08/Dec/2023 16:19:16] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:19:16,925 - 127.0.0.1 - - [08/Dec/2023 16:19:16] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:22:07,911 - 127.0.0.1 - - [08/Dec/2023 16:22:07] "GET /master-products HTTP/1.1" 200 -
+2023-12-08 16:22:09,262 - 127.0.0.1 - - [08/Dec/2023 16:22:09] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:22:09,263 - 127.0.0.1 - - [08/Dec/2023 16:22:09] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:28:30,132 - 127.0.0.1 - - [08/Dec/2023 16:28:30] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:28:30,134 - 127.0.0.1 - - [08/Dec/2023 16:28:30] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:31:08,974 - 127.0.0.1 - - [08/Dec/2023 16:31:08] "GET /master-products HTTP/1.1" 200 -
+2023-12-08 16:31:11,490 - 127.0.0.1 - - [08/Dec/2023 16:31:11] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:31:11,500 - 127.0.0.1 - - [08/Dec/2023 16:31:11] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:31:41,726 - 127.0.0.1 - - [08/Dec/2023 16:31:41] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:31:41,730 - 127.0.0.1 - - [08/Dec/2023 16:31:41] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:31:45,050 - 127.0.0.1 - - [08/Dec/2023 16:31:45] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:31:45,054 - 127.0.0.1 - - [08/Dec/2023 16:31:45] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:31:57,079 - 127.0.0.1 - - [08/Dec/2023 16:31:57] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:31:57,084 - 127.0.0.1 - - [08/Dec/2023 16:31:57] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:32:02,219 - 127.0.0.1 - - [08/Dec/2023 16:32:02] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:32:02,223 - 127.0.0.1 - - [08/Dec/2023 16:32:02] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:35:02,352 - 127.0.0.1 - - [08/Dec/2023 16:35:02] "GET /master-products HTTP/1.1" 200 -
+2023-12-08 16:35:04,513 - 127.0.0.1 - - [08/Dec/2023 16:35:04] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:35:04,517 - 127.0.0.1 - - [08/Dec/2023 16:35:04] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:38:56,435 - 127.0.0.1 - - [08/Dec/2023 16:38:56] "GET /master-products HTTP/1.1" 200 -
+2023-12-08 16:38:57,727 - 127.0.0.1 - - [08/Dec/2023 16:38:57] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:38:57,729 - 127.0.0.1 - - [08/Dec/2023 16:38:57] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:39:03,976 - 127.0.0.1 - - [08/Dec/2023 16:39:03] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:39:03,978 - 127.0.0.1 - - [08/Dec/2023 16:39:03] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:39:10,768 - 127.0.0.1 - - [08/Dec/2023 16:39:10] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:39:10,769 - 127.0.0.1 - - [08/Dec/2023 16:39:10] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:39:14,036 - 127.0.0.1 - - [08/Dec/2023 16:39:14] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:39:14,040 - 127.0.0.1 - - [08/Dec/2023 16:39:14] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:39:17,069 - 127.0.0.1 - - [08/Dec/2023 16:39:17] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:39:17,073 - 127.0.0.1 - - [08/Dec/2023 16:39:17] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:39:21,619 - 127.0.0.1 - - [08/Dec/2023 16:39:21] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:39:21,625 - 127.0.0.1 - - [08/Dec/2023 16:39:21] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:39:24,497 - 127.0.0.1 - - [08/Dec/2023 16:39:24] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:39:24,507 - 127.0.0.1 - - [08/Dec/2023 16:39:24] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:39:31,445 - 127.0.0.1 - - [08/Dec/2023 16:39:31] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:39:31,452 - 127.0.0.1 - - [08/Dec/2023 16:39:31] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:39:34,655 - 127.0.0.1 - - [08/Dec/2023 16:39:34] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:39:34,661 - 127.0.0.1 - - [08/Dec/2023 16:39:34] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:39:47,397 - 127.0.0.1 - - [08/Dec/2023 16:39:47] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:39:47,398 - 127.0.0.1 - - [08/Dec/2023 16:39:47] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:39:49,565 - 127.0.0.1 - - [08/Dec/2023 16:39:49] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:39:49,569 - 127.0.0.1 - - [08/Dec/2023 16:39:49] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:39:53,369 - 127.0.0.1 - - [08/Dec/2023 16:39:53] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:39:53,370 - 127.0.0.1 - - [08/Dec/2023 16:39:53] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:39:59,059 - 127.0.0.1 - - [08/Dec/2023 16:39:59] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:39:59,061 - 127.0.0.1 - - [08/Dec/2023 16:39:59] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:40:03,769 - 127.0.0.1 - - [08/Dec/2023 16:40:03] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:40:03,771 - 127.0.0.1 - - [08/Dec/2023 16:40:03] "GET /brands HTTP/1.1" 200 -
+2023-12-08 16:40:09,276 - 127.0.0.1 - - [08/Dec/2023 16:40:09] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 16:40:09,279 - 127.0.0.1 - - [08/Dec/2023 16:40:09] "GET /brands HTTP/1.1" 200 -
+2023-12-08 17:49:39,192 - 127.0.0.1 - - [08/Dec/2023 17:49:39] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 17:49:39,212 - 127.0.0.1 - - [08/Dec/2023 17:49:39] "GET /brands HTTP/1.1" 200 -
+2023-12-08 17:50:34,819 - 127.0.0.1 - - [08/Dec/2023 17:50:34] "GET /master-products HTTP/1.1" 200 -
+2023-12-08 17:50:36,289 - 127.0.0.1 - - [08/Dec/2023 17:50:36] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 17:50:36,290 - 127.0.0.1 - - [08/Dec/2023 17:50:36] "GET /brands HTTP/1.1" 200 -
+2023-12-08 17:51:16,276 - 127.0.0.1 - - [08/Dec/2023 17:51:16] "GET /master-products HTTP/1.1" 200 -
+2023-12-08 17:52:32,414 - 127.0.0.1 - - [08/Dec/2023 17:52:32] "GET /master-products HTTP/1.1" 200 -
+2023-12-08 17:52:35,261 - 127.0.0.1 - - [08/Dec/2023 17:52:35] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 17:52:35,263 - 127.0.0.1 - - [08/Dec/2023 17:52:35] "GET /brands HTTP/1.1" 200 -
+2023-12-08 17:53:12,970 - 127.0.0.1 - - [08/Dec/2023 17:53:12] "GET /master-products HTTP/1.1" 200 -
+2023-12-08 17:53:14,303 - 127.0.0.1 - - [08/Dec/2023 17:53:14] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 17:53:14,306 - 127.0.0.1 - - [08/Dec/2023 17:53:14] "GET /brands HTTP/1.1" 200 -
+2023-12-08 18:00:16,700 - 127.0.0.1 - - [08/Dec/2023 18:00:16] "GET /brand-types HTTP/1.1" 200 -
+2023-12-08 18:00:16,701 - 127.0.0.1 - - [08/Dec/2023 18:00:16] "GET /brands HTTP/1.1" 200 -
+2023-12-08 18:15:48,034 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-08 18:15:48,270 -  * Restarting with stat
+2023-12-08 18:15:49,632 - Admin logged in
+2023-12-08 18:15:49,681 -  * Debugger is active!
+2023-12-08 18:15:49,692 -  * Debugger PIN: 593-384-150
+2023-12-08 18:23:58,891 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-08 18:23:59,050 -  * Restarting with stat
+2023-12-08 18:24:00,283 - Admin logged in
+2023-12-08 18:25:35,994 - Admin logged in
+2023-12-08 18:26:02,962 - Admin logged in
+2023-12-08 18:26:03,001 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-12-08 18:26:03,001 - [33mPress CTRL+C to quit[0m
+2023-12-08 18:26:03,003 -  * Restarting with stat
+2023-12-08 18:26:04,012 - Admin logged in
+2023-12-08 18:26:04,044 -  * Debugger is active!
+2023-12-08 18:26:04,049 -  * Debugger PIN: 593-384-150
+2023-12-08 18:26:07,071 - 127.0.0.1 - - [08/Dec/2023 18:26:07] "[35m[1mPUT /master-product HTTP/1.1[0m" 500 -
+2023-12-08 18:26:27,470 - 127.0.0.1 - - [08/Dec/2023 18:26:27] "POST /master-product HTTP/1.1" 200 -
+2023-12-08 18:29:09,403 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-08 18:29:09,538 -  * Restarting with stat
+2023-12-08 18:29:10,510 - Admin logged in
+2023-12-08 18:29:10,535 -  * Debugger is active!
+2023-12-08 18:29:10,540 -  * Debugger PIN: 593-384-150
+2023-12-08 18:30:16,387 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-08 18:30:16,536 -  * Restarting with stat
+2023-12-08 18:30:17,474 - Admin logged in
+2023-12-08 18:30:17,499 -  * Debugger is active!
+2023-12-08 18:30:17,505 -  * Debugger PIN: 593-384-150
+2023-12-08 18:30:31,698 - 127.0.0.1 - - [08/Dec/2023 18:30:31] "POST /master-product HTTP/1.1" 200 -
+2023-12-08 18:31:21,285 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-08 18:31:21,436 -  * Restarting with stat
+2023-12-08 18:31:22,288 - Admin logged in
+2023-12-08 18:31:22,313 -  * Debugger is active!
+2023-12-08 18:31:22,319 -  * Debugger PIN: 593-384-150
+2023-12-08 18:31:35,958 - 127.0.0.1 - - [08/Dec/2023 18:31:35] "POST /master-product HTTP/1.1" 200 -
+2023-12-08 18:34:16,277 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-08 18:34:16,395 -  * Restarting with stat
+2023-12-08 18:34:17,267 - Admin logged in
+2023-12-08 18:34:17,289 -  * Debugger is active!
+2023-12-08 18:34:17,294 -  * Debugger PIN: 593-384-150
+2023-12-08 18:34:28,445 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-08 18:34:28,567 -  * Restarting with stat
+2023-12-08 18:34:29,401 - Admin logged in
+2023-12-08 18:34:29,425 -  * Debugger is active!
+2023-12-08 18:34:29,429 -  * Debugger PIN: 593-384-150
+2023-12-08 18:34:50,726 - Error - MariaDB : Cannot delete or update a parent row: a foreign key constraint fails (`bike_workshop`.`stock`, CONSTRAINT `stock_FK_1` FOREIGN KEY (`s_p_id`) REFERENCES `product` (`p_id`))
+2023-12-08 18:34:50,728 - 127.0.0.1 - - [08/Dec/2023 18:34:50] "DELETE /master-product/35 HTTP/1.1" 200 -
+2023-12-08 18:35:47,379 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-08 18:35:47,524 -  * Restarting with stat
+2023-12-08 18:35:48,404 - Admin logged in
+2023-12-08 18:35:48,428 -  * Debugger is active!
+2023-12-08 18:35:48,433 -  * Debugger PIN: 593-384-150
+2023-12-08 18:36:41,955 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-08 18:36:42,090 -  * Restarting with stat
+2023-12-08 18:36:43,050 - Admin logged in
+2023-12-08 18:36:43,073 -  * Debugger is active!
+2023-12-08 18:36:43,079 -  * Debugger PIN: 593-384-150
+2023-12-08 18:37:05,416 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-08 18:37:05,578 -  * Restarting with stat
+2023-12-08 18:37:06,782 - Admin logged in
+2023-12-08 18:37:06,819 -  * Debugger is active!
+2023-12-08 18:37:06,825 -  * Debugger PIN: 593-384-150
+2023-12-08 18:37:10,628 - 127.0.0.1 - - [08/Dec/2023 18:37:10] "DELETE /master-product/35 HTTP/1.1" 200 -
+2023-12-08 18:37:34,216 - 127.0.0.1 - - [08/Dec/2023 18:37:34] "[31m[1mPUT /master-product/33 HTTP/1.1[0m" 405 -
+2023-12-08 18:39:44,705 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-08 18:39:44,860 -  * Restarting with stat
+2023-12-08 18:39:45,866 - Admin logged in
+2023-12-08 18:39:45,893 -  * Debugger is active!
+2023-12-08 18:39:45,898 -  * Debugger PIN: 593-384-150
+2023-12-08 18:39:50,403 - 127.0.0.1 - - [08/Dec/2023 18:39:50] "PUT /master-product/33 HTTP/1.1" 200 -
+2023-12-08 18:40:21,576 - 127.0.0.1 - - [08/Dec/2023 18:40:21] "PUT /master-product/33 HTTP/1.1" 200 -
