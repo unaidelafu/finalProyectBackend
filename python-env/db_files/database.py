@@ -8,6 +8,7 @@ from classes import wharehouses as w
 from classes import brands as b
 from classes import brand_types as bt
 from classes import products as p
+from classes import stock as s
 
 
 class DbLoader:
@@ -554,7 +555,42 @@ class DbLoader:
             self.disconnect()
         return retval
  
-      
+    def get_stock(self, mp_id):
+        cur = None
+        resultlist = []
+        wherecon = " WHERE 1"
+        productVar = None
+        if mp_id is not None:
+            wherecon = f" WHERE mp.mp_id = {mp_id}"
+        try:
+            self.connect()
+            cur = self.conn.cursor()
+            cur.execute(
+                f""" Select p.p_id,mp.mp_id, mp.mp_product_code, mp.mp_product_name, 
+                    p.p_description, p.p_size, b.b_id,
+                    b.b_name, bt.bt_id, bt.bt_type, mp.mp_price, mp.mp_img_url, s.s_w_id, w.w_name, s.s_qty  
+                    from stock s
+                    inner join wharehouses w 
+                    on w.w_id = s.s_w_id 
+                    inner join product p 
+                    on s_p_id = p_id
+                    inner join master_product mp 
+                    on p.p_mp_id = mp.mp_id 
+                    inner join brands b 
+                    on mp.mp_brand_id = b.b_id 
+                    inner join brands_types bt 
+                    on mp.mp_bt_id = bt.bt_id {wherecon} 
+                    order by w.w_name, mp.mp_product_code, mp.mp_product_name, p.p_description, FIELD(p.p_size, 'XS', 'S', 'M', 'L', 'XL')""")
+            # Print Result-set  Resultado
+            for (p_id, mp_id, code, name, description, size, b_id, b_name, b_type_id, b_type, price, img_url, w_id, w_name, s_qty) in cur:
+                productVar = p.product(p_id, mp_id, code, name, description, size, b_id, b_name,b_type_id, b_type, price, img_url)
+                resultlist.append(s.stock(productVar,w_id, w_name, s_qty))               
+        except mariadb.Error as e:
+            print(f"Error - MariaDB : {e}")
+        finally:
+            if cur is not None:
+                cur.close()    
+        return resultlist     
     def delete_product(self,id):
         
         cur = None

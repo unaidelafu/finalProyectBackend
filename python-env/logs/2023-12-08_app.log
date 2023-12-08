@@ -1,0 +1,56 @@
+2023-12-08 10:57:50,716 - Admin logged in
+2023-12-08 10:58:32,112 - Admin logged in
+2023-12-08 10:58:32,161 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-12-08 10:58:32,161 - [33mPress CTRL+C to quit[0m
+2023-12-08 10:58:32,163 -  * Restarting with stat
+2023-12-08 10:58:33,051 - Admin logged in
+2023-12-08 10:58:33,075 -  * Debugger is active!
+2023-12-08 10:58:33,080 -  * Debugger PIN: 593-384-150
+2023-12-08 10:58:43,267 - 127.0.0.1 - - [08/Dec/2023 10:58:43] "[35m[1mGET /stock/32 HTTP/1.1[0m" 500 -
+2023-12-08 10:59:07,410 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-08 10:59:07,533 -  * Restarting with stat
+2023-12-08 10:59:08,414 - Admin logged in
+2023-12-08 10:59:08,436 -  * Debugger is active!
+2023-12-08 10:59:08,441 -  * Debugger PIN: 593-384-150
+2023-12-08 10:59:15,531 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-08 10:59:15,662 -  * Restarting with stat
+2023-12-08 10:59:16,568 - Admin logged in
+2023-12-08 10:59:16,590 -  * Debugger is active!
+2023-12-08 10:59:16,595 -  * Debugger PIN: 593-384-150
+2023-12-08 10:59:23,104 - 127.0.0.1 - - [08/Dec/2023 10:59:23] "GET /stock/32 HTTP/1.1" 200 -
+2023-12-08 10:59:55,058 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-08 10:59:55,192 -  * Restarting with stat
+2023-12-08 10:59:56,212 - Admin logged in
+2023-12-08 10:59:56,238 -  * Debugger is active!
+2023-12-08 10:59:56,243 -  * Debugger PIN: 593-384-150
+2023-12-08 10:59:59,720 - 127.0.0.1 - - [08/Dec/2023 10:59:59] "[35m[1mGET /stock/32 HTTP/1.1[0m" 500 -
+2023-12-08 11:01:39,444 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-08 11:01:39,587 -  * Restarting with stat
+2023-12-08 11:01:40,425 - Admin logged in
+2023-12-08 11:01:40,450 -  * Debugger is active!
+2023-12-08 11:01:40,455 -  * Debugger PIN: 593-384-150
+2023-12-08 11:01:43,295 - 127.0.0.1 - - [08/Dec/2023 11:01:43] "[35m[1mGET /stock/32 HTTP/1.1[0m" 500 -
+2023-12-08 11:03:48,044 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-08 11:03:48,179 -  * Restarting with stat
+2023-12-08 11:03:49,061 - Admin logged in
+2023-12-08 11:03:49,082 -  * Debugger is active!
+2023-12-08 11:03:49,088 -  * Debugger PIN: 593-384-150
+2023-12-08 11:03:58,622 - 127.0.0.1 - - [08/Dec/2023 11:03:58] "GET /stock/32 HTTP/1.1" 200 -
+2023-12-08 11:04:57,861 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-08 11:04:58,009 -  * Restarting with stat
+2023-12-08 11:04:58,922 - Admin logged in
+2023-12-08 11:04:58,945 -  * Debugger is active!
+2023-12-08 11:04:58,949 -  * Debugger PIN: 593-384-150
+2023-12-08 11:05:12,869 - 127.0.0.1 - - [08/Dec/2023 11:05:12] "GET /product/32 HTTP/1.1" 200 -
+2023-12-08 11:07:52,039 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\classes\\stock.py', reloading
+2023-12-08 11:07:52,187 -  * Restarting with stat
+2023-12-08 11:07:53,177 - Admin logged in
+2023-12-08 11:07:53,205 -  * Debugger is active!
+2023-12-08 11:07:53,212 -  * Debugger PIN: 593-384-150
+2023-12-08 11:08:28,657 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-08 11:08:28,820 -  * Restarting with stat
+2023-12-08 11:08:29,643 - Admin logged in
+2023-12-08 11:08:29,665 -  * Debugger is active!
+2023-12-08 11:08:29,669 -  * Debugger PIN: 593-384-150
+2023-12-08 11:08:40,711 - 127.0.0.1 - - [08/Dec/2023 11:08:40] "GET /stock/32 HTTP/1.1" 200 -

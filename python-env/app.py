@@ -17,6 +17,7 @@ from classes import wharehouses as w
 from classes import brands as b
 from classes import brand_types as bt
 from classes import products as p
+from classes import stock as s
 
 # **********
 # CONSTS
@@ -424,6 +425,17 @@ def API_delete_product(id):
 
     message = db.delete_product(id)
     return API_json_resp(message,None)
+
+
+## get one stock of mp
+@app.route('/stock/<id>', methods=["GET"])
+def API_get_product_stock(id):
+
+    productsStock = []
+    productsStock = db.get_stock(id)
+    #print(f"Product stock: {productsStock}")
+    products_list=[productStock.serialize() for productStock in productsStock]  #serialize to prepare for json
+    return jsonify(products_list)
 
 
 if __name__ == '__main__':
