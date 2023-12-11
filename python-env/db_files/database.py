@@ -549,9 +549,113 @@ class DbLoader:
                 cur.close()    
         return resultlist
     
+    def get_product_id(self, product):
+        cur1 = None
+        checkedId = None
+        wherecon = ""
+        if product.size is not None:
+            wherecon = f" and p.size = '{product.size}'"
+
+            
+        try:
+            self.connect()
+            cur1 = self.conn.cursor()
+            cur1.execute(
+                f""" Select p_id, p_mp_id 
+                    from product 
+                    WHERE p_mp_id = {product.mp_id} and p_description = '{product.description}' {wherecon}""")
+            # Print Result-set  Resultado
+            for (p_id,p_mp_id) in cur1:
+                checkedId = p_id
+        except mariadb.Error as e:
+            print(f"Error - MariaDB : {e}")
+        finally:
+            if cur1 is not None:
+                cur1.close()    
+        return checkedId
+      
+    def create_edit_product(self, product):
+        cur = None
+        retval = None
+        idCheck = None
+
+        if(product.id == None):
+            #check if exist
+
+            idCheck = self.get_product_id(product)
+            if(idCheck != None):
+                product.id = idCheck
+            if(product.size == None):
+                query = """INSERT INTO bike_workshop.product (p_mp_id, p_description)
+                    VALUES (%s,%s) ON DUPLICATE KEY UPDATE p_mp_id = p_mp_id"""
+                values = (product.mp_id, product.description)
+            else:
+                query = """INSERT INTO bike_workshop.product (p_mp_id, p_description, p_size)
+                    VALUES (%s,%s,%s) ON DUPLICATE KEY UPDATE p_mp_id = p_mp_id"""
+                values = (product.mp_id, product.description, product.size)              
+        else:
+            if(product.size == None):
+                query = """UPDATE bike_workshop.product SET p_mp_id = %s, p_description = %s,
+                        p_size = %s WHERE p_id = %s"""
+                values = (product.mp_id, product.description, product.size, product.id)           
+            else:
+                query = """UPDATE bike_workshop.product SET p_mp_id = %s, p_description = %s
+                        WHERE p_id = %s"""
+                values = (product.mp_id, product.description, product.id)                  
+        #id = 0
+        try:
+            self.connect()
+            cur = self.conn.cursor()
+            cur.execute(query,values)
+            self.conn.commit() 
+            #id = cur.lastrowid
+            if(product.id == None):
+                retval = cur.lastrowid
+            else:
+                retval = product.id
+            
+        except mariadb.Error as e:
+            self.conn.rollback()
+            print(f"Error - MariaDB : {e}")
+            retval = f"Error - MariaDB : {e}"
+        finally:
+            if cur is not None:
+                cur.close()
+            self.disconnect()
+        return retval
 
 
-    def create_edit_product(self, product, p_id):
+    def create_edit_stock(self,stock,id):
+        
+        cur = None
+        retval = None
+
+        query = """INSERT INTO stock (s_w_id, s_p_id, s_qty) VALUES (%s,%s,%s)
+        ON DUPLICATE KEY UPDATE s_qty = %s"""        
+
+        values = (stock.w_id, id, stock.qty, stock.qty)                  
+        #id = 0
+        try:
+            self.connect()
+            cur = self.conn.cursor()
+            cur.execute(query,values)
+            self.conn.commit() 
+            #id = cur.lastrowid
+
+            retval = cur.lastrowid
+
+            
+        except mariadb.Error as e:
+            self.conn.rollback()
+            print(f"Error - MariaDB : {e}")
+            retval = f"Error - MariaDB : {e}"
+        finally:
+            if cur is not None:
+                cur.close()
+            self.disconnect()
+        return retval
+
+    def create_edit_product_old(self, product, p_id):
  
         cur = None
         retval = None

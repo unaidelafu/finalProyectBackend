@@ -1,0 +1,158 @@
+2023-12-11 16:51:31,445 - Admin logged in
+2023-12-11 16:51:31,588 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-12-11 16:51:31,588 - [33mPress CTRL+C to quit[0m
+2023-12-11 16:51:31,591 -  * Restarting with stat
+2023-12-11 16:51:32,513 - Admin logged in
+2023-12-11 16:51:32,535 -  * Debugger is active!
+2023-12-11 16:51:32,606 -  * Debugger PIN: 593-384-150
+2023-12-11 16:51:47,914 - 127.0.0.1 - - [11/Dec/2023 16:51:47] "[35m[1mPOST /product HTTP/1.1[0m" 500 -
+2023-12-11 16:52:15,928 - 127.0.0.1 - - [11/Dec/2023 16:52:15] "[35m[1mPOST /product HTTP/1.1[0m" 500 -
+2023-12-11 16:52:54,602 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-11 16:52:54,884 -  * Restarting with stat
+2023-12-11 16:52:55,834 - Admin logged in
+2023-12-11 16:52:55,859 -  * Debugger is active!
+2023-12-11 16:52:55,864 -  * Debugger PIN: 593-384-150
+2023-12-11 16:53:03,620 - Error - MariaDB : statement (4) doesn't match the number of data elements (3).
+2023-12-11 16:53:03,621 - 127.0.0.1 - - [11/Dec/2023 16:53:03] "POST /product HTTP/1.1" 200 -
+2023-12-11 16:53:59,506 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 16:53:59,641 -  * Restarting with stat
+2023-12-11 16:54:00,536 - Admin logged in
+2023-12-11 16:54:00,565 -  * Debugger is active!
+2023-12-11 16:54:00,570 -  * Debugger PIN: 593-384-150
+2023-12-11 16:54:16,518 - 127.0.0.1 - - [11/Dec/2023 16:54:16] "POST /product HTTP/1.1" 200 -
+2023-12-11 17:00:38,930 - 127.0.0.1 - - [11/Dec/2023 17:00:38] "[35m[1mPUT /product/53 HTTP/1.1[0m" 500 -
+2023-12-11 17:01:45,248 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 17:01:45,390 -  * Restarting with stat
+2023-12-11 17:01:46,300 - Admin logged in
+2023-12-11 17:01:46,324 -  * Debugger is active!
+2023-12-11 17:01:46,329 -  * Debugger PIN: 593-384-150
+2023-12-11 17:01:49,493 - 127.0.0.1 - - [11/Dec/2023 17:01:49] "PUT /product/53 HTTP/1.1" 200 -
+2023-12-11 17:10:18,305 - 127.0.0.1 - - [11/Dec/2023 17:10:18] "POST /product HTTP/1.1" 200 -
+2023-12-11 17:11:43,829 - Error - MariaDB : Duplicate entry '14-Prueba nueva de stock updated-NO SIZE' for key 'product_un'
+2023-12-11 17:11:43,830 - 127.0.0.1 - - [11/Dec/2023 17:11:43] "POST /product HTTP/1.1" 200 -
+2023-12-11 17:12:14,786 - Error - MariaDB : Duplicate entry '14-Prueba nueva de stock updated-NO SIZE' for key 'product_un'
+2023-12-11 17:12:14,786 - 127.0.0.1 - - [11/Dec/2023 17:12:14] "POST /product HTTP/1.1" 200 -
+2023-12-11 17:22:51,828 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 17:22:51,984 -  * Restarting with stat
+2023-12-11 17:22:52,936 - Admin logged in
+2023-12-11 17:22:52,959 -  * Debugger is active!
+2023-12-11 17:22:52,964 -  * Debugger PIN: 593-384-150
+2023-12-11 17:23:33,489 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 17:23:33,659 -  * Restarting with stat
+2023-12-11 17:23:34,584 - Admin logged in
+2023-12-11 17:23:34,611 -  * Debugger is active!
+2023-12-11 17:23:34,616 -  * Debugger PIN: 593-384-150
+2023-12-11 17:23:39,266 - Error - MariaDB : Column 's_p_id' cannot be null
+2023-12-11 17:23:39,266 - 127.0.0.1 - - [11/Dec/2023 17:23:39] "POST /product HTTP/1.1" 200 -
+2023-12-11 17:39:54,187 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 17:39:54,332 -  * Restarting with stat
+2023-12-11 17:39:55,497 - Admin logged in
+2023-12-11 17:39:55,519 -  * Debugger is active!
+2023-12-11 17:39:55,523 -  * Debugger PIN: 593-384-150
+2023-12-11 17:46:29,314 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 17:46:29,453 -  * Restarting with stat
+2023-12-11 17:46:30,348 - Admin logged in
+2023-12-11 17:46:30,376 -  * Debugger is active!
+2023-12-11 17:46:30,381 -  * Debugger PIN: 593-384-150
+2023-12-11 17:47:10,787 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 17:47:10,920 -  * Restarting with stat
+2023-12-11 17:47:11,742 - Admin logged in
+2023-12-11 17:47:11,765 -  * Debugger is active!
+2023-12-11 17:47:11,769 -  * Debugger PIN: 593-384-150
+2023-12-11 17:47:47,706 - Error - MariaDB : Data type 'tuple' in column 1 not supported in MariaDB Connector/Python
+2023-12-11 17:47:47,707 - 127.0.0.1 - - [11/Dec/2023 17:47:47] "POST /product HTTP/1.1" 200 -
+2023-12-11 17:48:48,039 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 17:48:48,169 -  * Restarting with stat
+2023-12-11 17:48:49,147 - Admin logged in
+2023-12-11 17:48:49,174 -  * Debugger is active!
+2023-12-11 17:48:49,180 -  * Debugger PIN: 593-384-150
+2023-12-11 17:48:51,075 - Error - MariaDB : Data type 'tuple' in column 1 not supported in MariaDB Connector/Python
+2023-12-11 17:48:51,077 - 127.0.0.1 - - [11/Dec/2023 17:48:51] "POST /product HTTP/1.1" 200 -
+2023-12-11 17:51:13,101 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 17:51:13,235 -  * Restarting with stat
+2023-12-11 17:51:14,201 - Admin logged in
+2023-12-11 17:51:14,228 -  * Debugger is active!
+2023-12-11 17:51:14,235 -  * Debugger PIN: 593-384-150
+2023-12-11 17:51:16,100 - Error - MariaDB : Data type 'tuple' in column 1 not supported in MariaDB Connector/Python
+2023-12-11 17:51:16,101 - 127.0.0.1 - - [11/Dec/2023 17:51:16] "POST /product HTTP/1.1" 200 -
+2023-12-11 17:54:20,661 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 17:54:20,803 -  * Restarting with stat
+2023-12-11 17:54:21,759 - Admin logged in
+2023-12-11 17:54:21,789 -  * Debugger is active!
+2023-12-11 17:54:21,795 -  * Debugger PIN: 593-384-150
+2023-12-11 17:54:27,094 - Error - MariaDB : Column 's_p_id' cannot be null
+2023-12-11 17:54:27,095 - 127.0.0.1 - - [11/Dec/2023 17:54:27] "POST /product HTTP/1.1" 200 -
+2023-12-11 17:56:17,154 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 17:56:17,291 -  * Restarting with stat
+2023-12-11 17:56:18,175 - Admin logged in
+2023-12-11 17:56:18,199 -  * Debugger is active!
+2023-12-11 17:56:18,205 -  * Debugger PIN: 593-384-150
+2023-12-11 17:56:21,174 - Error - MariaDB : Column 's_p_id' cannot be null
+2023-12-11 17:56:21,175 - 127.0.0.1 - - [11/Dec/2023 17:56:21] "POST /product HTTP/1.1" 200 -
+2023-12-11 17:56:55,700 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 17:56:55,833 -  * Restarting with stat
+2023-12-11 17:56:56,738 - Admin logged in
+2023-12-11 17:56:56,765 -  * Debugger is active!
+2023-12-11 17:56:56,770 -  * Debugger PIN: 593-384-150
+2023-12-11 17:57:00,828 - Error - MariaDB : Data type 'tuple' in column 1 not supported in MariaDB Connector/Python
+2023-12-11 17:57:00,829 - 127.0.0.1 - - [11/Dec/2023 17:57:00] "POST /product HTTP/1.1" 200 -
+2023-12-11 17:59:29,684 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 17:59:29,821 -  * Restarting with stat
+2023-12-11 17:59:30,779 - Admin logged in
+2023-12-11 17:59:30,808 -  * Debugger is active!
+2023-12-11 17:59:30,813 -  * Debugger PIN: 593-384-150
+2023-12-11 17:59:34,025 - 127.0.0.1 - - [11/Dec/2023 17:59:34] "[35m[1mPOST /product HTTP/1.1[0m" 500 -
+2023-12-11 18:01:23,313 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 18:01:23,460 -  * Restarting with stat
+2023-12-11 18:01:24,460 - Admin logged in
+2023-12-11 18:01:24,486 -  * Debugger is active!
+2023-12-11 18:01:24,491 -  * Debugger PIN: 593-384-150
+2023-12-11 18:01:26,236 - 127.0.0.1 - - [11/Dec/2023 18:01:26] "[35m[1mPOST /product HTTP/1.1[0m" 500 -
+2023-12-11 18:06:20,143 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 18:06:20,269 -  * Restarting with stat
+2023-12-11 18:06:21,268 - Admin logged in
+2023-12-11 18:06:21,299 -  * Debugger is active!
+2023-12-11 18:06:21,306 -  * Debugger PIN: 593-384-150
+2023-12-11 18:06:24,159 - 127.0.0.1 - - [11/Dec/2023 18:06:24] "[35m[1mPOST /product HTTP/1.1[0m" 500 -
+2023-12-11 18:07:09,784 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 18:07:09,934 -  * Restarting with stat
+2023-12-11 18:07:10,884 - Admin logged in
+2023-12-11 18:07:10,908 -  * Debugger is active!
+2023-12-11 18:07:10,915 -  * Debugger PIN: 593-384-150
+2023-12-11 18:07:12,418 - Error - MariaDB : Column 's_p_id' cannot be null
+2023-12-11 18:07:12,419 - 127.0.0.1 - - [11/Dec/2023 18:07:12] "POST /product HTTP/1.1" 200 -
+2023-12-11 18:07:24,088 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 18:07:24,230 -  * Restarting with stat
+2023-12-11 18:07:25,219 - Admin logged in
+2023-12-11 18:07:25,245 -  * Debugger is active!
+2023-12-11 18:07:25,250 -  * Debugger PIN: 593-384-150
+2023-12-11 18:07:27,374 - Error - MariaDB : Data type 'tuple' in column 1 not supported in MariaDB Connector/Python
+2023-12-11 18:07:27,374 - 127.0.0.1 - - [11/Dec/2023 18:07:27] "POST /product HTTP/1.1" 200 -
+2023-12-11 18:08:06,745 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 18:08:06,896 -  * Restarting with stat
+2023-12-11 18:08:07,883 - Admin logged in
+2023-12-11 18:08:07,908 -  * Debugger is active!
+2023-12-11 18:08:07,914 -  * Debugger PIN: 593-384-150
+2023-12-11 18:08:11,176 - Error - MariaDB : Data type 'tuple' in column 1 not supported in MariaDB Connector/Python
+2023-12-11 18:08:11,177 - 127.0.0.1 - - [11/Dec/2023 18:08:11] "POST /product HTTP/1.1" 200 -
+2023-12-11 18:09:47,175 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 18:09:47,327 -  * Restarting with stat
+2023-12-11 18:09:48,313 - Admin logged in
+2023-12-11 18:09:48,336 -  * Debugger is active!
+2023-12-11 18:09:48,341 -  * Debugger PIN: 593-384-150
+2023-12-11 18:09:51,055 - Error - MariaDB : Data type 'tuple' in column 1 not supported in MariaDB Connector/Python
+2023-12-11 18:09:51,056 - 127.0.0.1 - - [11/Dec/2023 18:09:51] "POST /product HTTP/1.1" 200 -
+2023-12-11 18:10:14,699 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 18:10:14,847 -  * Restarting with stat
+2023-12-11 18:10:15,746 - Admin logged in
+2023-12-11 18:10:15,772 -  * Debugger is active!
+2023-12-11 18:10:15,778 -  * Debugger PIN: 593-384-150
+2023-12-11 18:10:20,433 - 127.0.0.1 - - [11/Dec/2023 18:10:20] "POST /product HTTP/1.1" 200 -
+2023-12-11 18:11:15,422 - 127.0.0.1 - - [11/Dec/2023 18:11:15] "POST /product HTTP/1.1" 200 -
+2023-12-11 18:11:36,969 - 127.0.0.1 - - [11/Dec/2023 18:11:36] "POST /product HTTP/1.1" 200 -
+2023-12-11 18:12:19,013 - 127.0.0.1 - - [11/Dec/2023 18:12:19] "PUT /product/72 HTTP/1.1" 200 -
+2023-12-11 18:12:44,316 - 127.0.0.1 - - [11/Dec/2023 18:12:44] "PUT /product/72 HTTP/1.1" 200 -
+2023-12-11 18:13:06,271 - 127.0.0.1 - - [11/Dec/2023 18:13:06] "PUT /product/72 HTTP/1.1" 200 -
+2023-12-11 18:13:51,341 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 18:13:51,477 -  * Restarting with stat

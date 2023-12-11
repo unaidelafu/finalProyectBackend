@@ -397,7 +397,7 @@ def API_update_master_product(id):
 
     return API_json_resp(message,updt_product)
 
-## Delete one product
+## Delete one master product
 @app.route("/master-product/<id>", methods=["DELETE"])
 def API_delete_master_product(id):
 
@@ -433,21 +433,27 @@ def API_add_product():
     retval = None
     message = ""
 
-    code = request.json['code'].upper()
-    name = request.json['name']
-    description = request.json['description']
-    b_id = request.json['b_id']
-    b_type_id = request.json['b_type_id']
-    img_url = request.json['img_url']
+    #code = request.json['code'].upper()
+    #name = request.json['name']
+    mp_id = request.json['mp_id']
+    description = request.json['description']    
+    #b_type_id = request.json['b_type_id']
+    #img_url = request.json['img_url']
     size = request.json['size'].upper()
-    price = request.json['price']
+    if (size == "NO SIZE"):
+        size = None
+    #price = request.json['price']
+    wharehouse = request.json['wharehouse_id']
+    qty = request.json['qty']
 
-    new_product = p.product(None, None, code, name, description, size, b_id, None, b_type_id, None, price, img_url)
+    new_product = p.product(None, mp_id, None, None, description, size, None, None, None, None, None, None)
+    message = db.create_edit_product(new_product)
 
-    message = db.create_edit_product(new_product,0)
     if("Error" not in str(message)): 
         new_product.id = message
-        new_product.status = 'ACTIVE'
+        new_product_stock = s.stock(new_product,wharehouse,None,qty)
+        message = db.create_edit_stock(new_product_stock,message)        
+
     return API_json_resp(message,new_product)
 
 ## Update a product:
@@ -458,21 +464,27 @@ def API_update_product(id):
     retval = None
     message = ""
 
-    code = request.json['code'].upper()
-    name = request.json['name']
-    description = request.json['description']
-    b_id = request.json['b_id']
-    b_type_id = request.json['b_type_id']
-    img_url = request.json['img_url']
+    #code = request.json['code'].upper()
+    #name = request.json['name']
+    mp_id = request.json['mp_id']
+    description = request.json['description']    
+    #b_type_id = request.json['b_type_id']
+    #img_url = request.json['img_url']
     size = request.json['size'].upper()
-    price = request.json['price']
+    if (size == "NO SIZE"):
+        size = None
+    #price = request.json['price']
+    wharehouse = request.json['wharehouse_id']
+    qty = request.json['qty']
 
-    upd_product = p.product(None, None, code, name, description, size, b_id, None, b_type_id, None, price, img_url)
+    upd_product = p.product(int(id), int(mp_id), None, None, description, size, None, None, None, None, None, None)
 
-    message = db.create_edit_product(upd_product, int(id))
+    message = db.create_edit_product(upd_product)
     if("Error" not in str(message)): 
         upd_product.id = message
-        upd_product.status = 'ACTIVE'
+        upd_product_stock = s.stock(upd_product,wharehouse,None,qty)
+        message = db.create_edit_stock(upd_product_stock,int(id))    
+        
     return API_json_resp(message,upd_product)
 
 ## Delete one product
