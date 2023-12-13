@@ -440,8 +440,6 @@ def API_add_product():
     #b_type_id = request.json['b_type_id']
     #img_url = request.json['img_url']
     size = request.json['size'].upper()
-    if (size == "NO SIZE"):
-        size = None
     #price = request.json['price']
     wharehouse = request.json['wharehouse_id']
     qty = request.json['qty']
@@ -471,8 +469,6 @@ def API_update_product(id):
     #b_type_id = request.json['b_type_id']
     #img_url = request.json['img_url']
     size = request.json['size'].upper()
-    if (size == "NO SIZE"):
-        size = None
     #price = request.json['price']
     wharehouse = request.json['wharehouse_id']
     qty = request.json['qty']
@@ -505,6 +501,12 @@ def API_get_product_stock(id):
     products_list=[productStock.serialize() for productStock in productsStock]  #serialize to prepare for json
     return jsonify(products_list)
 
+@app.route('/stock/<id>/<w_id>', methods=["DELETE"])
+def API_delete_stock_product(id,w_id):
+    #wharehouse = request.json['wharehouse_id']    
+    product_stock = s.stock(None,w_id,None,None)
+    message = db.delete_stock_product(id, product_stock)
+    return API_json_resp(message,None)
 
 if __name__ == '__main__':
 

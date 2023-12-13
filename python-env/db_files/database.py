@@ -248,7 +248,7 @@ class DbLoader:
         values = (employee.sid, employee.name_1, employee.name_2, employee.mail, employee.phone_num, employee.job,
                   employee.status,employee.img_url,employee.id)
         #id = 0
-        print(f"Query : {query}")
+        #print(f"Query : {query}")
         try:
             self.connect()
             cur = self.conn.cursor()
@@ -552,18 +552,20 @@ class DbLoader:
     def get_product_id(self, product):
         cur1 = None
         checkedId = None
-        wherecon = ""
-        if product.size is not None:
-            wherecon = f" and p.size = '{product.size}'"
-
-            
+        wherecon = ""            
         try:
             self.connect()
             cur1 = self.conn.cursor()
+            query = f""" Select p_id, p_mp_id 
+                    from product 
+                    WHERE p_mp_id = {product.mp_id} and p_description = '{product.description}'
+                    and p_size = '{product.size}'"""
+            #print(f"Query : {query}")
             cur1.execute(
                 f""" Select p_id, p_mp_id 
                     from product 
-                    WHERE p_mp_id = {product.mp_id} and p_description = '{product.description}' {wherecon}""")
+                    WHERE p_mp_id = {product.mp_id} and p_description = '{product.description}'
+                    and p_size = '{product.size}'""")
             # Print Result-set  Resultado
             for (p_id,p_mp_id) in cur1:
                 checkedId = p_id
@@ -585,23 +587,14 @@ class DbLoader:
             idCheck = self.get_product_id(product)
             if(idCheck != None):
                 product.id = idCheck
-            if(product.size == None):
-                query = """INSERT INTO bike_workshop.product (p_mp_id, p_description)
-                    VALUES (%s,%s) ON DUPLICATE KEY UPDATE p_mp_id = p_mp_id"""
-                values = (product.mp_id, product.description)
-            else:
-                query = """INSERT INTO bike_workshop.product (p_mp_id, p_description, p_size)
-                    VALUES (%s,%s,%s) ON DUPLICATE KEY UPDATE p_mp_id = p_mp_id"""
-                values = (product.mp_id, product.description, product.size)              
+
+            query = """INSERT INTO bike_workshop.product (p_mp_id, p_description, p_size)
+                VALUES (%s,%s,%s) ON DUPLICATE KEY UPDATE p_mp_id = p_mp_id"""
+            values = (product.mp_id, product.description, product.size)              
         else:
-            if(product.size == None):
-                query = """UPDATE bike_workshop.product SET p_mp_id = %s, p_description = %s,
-                        p_size = %s WHERE p_id = %s"""
-                values = (product.mp_id, product.description, product.size, product.id)           
-            else:
-                query = """UPDATE bike_workshop.product SET p_mp_id = %s, p_description = %s
-                        WHERE p_id = %s"""
-                values = (product.mp_id, product.description, product.id)                  
+            query = """UPDATE bike_workshop.product SET p_mp_id = %s, p_description = %s,
+                    p_size = %s WHERE p_id = %s"""
+            values = (product.mp_id, product.description, product.size, product.id)                        
         #id = 0
         try:
             self.connect()
@@ -663,7 +656,7 @@ class DbLoader:
         mp_id = 0
         #check if master product exists.
 
-        query = f"SELECT mp_id,mp_product_code from master_product where mp_product_code = '{product.code}' LIMIT 1"
+        query = f"SELECT mp_id, mp_product_code from master_product where mp_product_code = '{product.code}' LIMIT 1"
         try:
             self.connect()
             cur = self.conn.cursor()
@@ -759,7 +752,31 @@ class DbLoader:
         
         cur = None
         retval = ""
-        query = f"DELETE FROM product WHERE p_id= {id} "
+        query = f"DELETE FROM stock WHERE s_p_id= {id} "
+        query2 = f"DELETE FROM product WHERE p_id= {id} "
+        #values = (id)
+        try:
+            self.connect()
+            cur = self.conn.cursor()
+            cur.execute(query)
+            cur.execute(query2)
+            self.conn.commit() 
+            
+        except mariadb.Error as e:
+            self.conn.rollback()
+            print(f"Error - MariaDB : {e}")
+            retval = f"Error - MariaDB : {e}"
+        finally:
+            if cur is not None:
+                cur.close()  
+            self.disconnect()
+        return retval  
+
+    def delete_stock_product(self,id,stock):
+        
+        cur = None
+        retval = ""
+        query = f"DELETE FROM stock WHERE s_p_id= {id} and s_w_id = {stock.w_id}"
         #values = (id)
         try:
             self.connect()
@@ -775,4 +792,4 @@ class DbLoader:
             if cur is not None:
                 cur.close()  
             self.disconnect()
-        return retval  
+        return retval      

@@ -156,3 +156,177 @@
 2023-12-11 18:13:06,271 - 127.0.0.1 - - [11/Dec/2023 18:13:06] "PUT /product/72 HTTP/1.1" 200 -
 2023-12-11 18:13:51,341 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
 2023-12-11 18:13:51,477 -  * Restarting with stat
+2023-12-11 18:54:41,665 - Admin logged in
+2023-12-11 18:54:41,708 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-12-11 18:54:41,708 - [33mPress CTRL+C to quit[0m
+2023-12-11 18:54:41,711 -  * Restarting with stat
+2023-12-11 18:54:42,592 - Admin logged in
+2023-12-11 18:54:42,615 -  * Debugger is active!
+2023-12-11 18:54:42,620 -  * Debugger PIN: 593-384-150
+2023-12-11 18:58:39,512 - 127.0.0.1 - - [11/Dec/2023 18:58:39] "GET /stock/30 HTTP/1.1" 200 -
+2023-12-11 19:01:18,393 - 127.0.0.1 - - [11/Dec/2023 19:01:18] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 19:02:59,119 - 127.0.0.1 - - [11/Dec/2023 19:02:59] "GET /stock/30 HTTP/1.1" 200 -
+2023-12-11 19:03:05,754 - 127.0.0.1 - - [11/Dec/2023 19:03:05] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 19:08:30,627 - 127.0.0.1 - - [11/Dec/2023 19:08:30] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 19:11:26,634 - 127.0.0.1 - - [11/Dec/2023 19:11:26] "GET /stock/30 HTTP/1.1" 200 -
+2023-12-11 19:12:12,987 - 127.0.0.1 - - [11/Dec/2023 19:12:12] "GET /stock/30 HTTP/1.1" 200 -
+2023-12-11 19:12:25,293 - 127.0.0.1 - - [11/Dec/2023 19:12:25] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 19:14:13,915 - 127.0.0.1 - - [11/Dec/2023 19:14:13] "GET /stock/30 HTTP/1.1" 200 -
+2023-12-11 19:14:15,402 - 127.0.0.1 - - [11/Dec/2023 19:14:15] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 19:14:44,500 - 127.0.0.1 - - [11/Dec/2023 19:14:44] "GET /stock/30 HTTP/1.1" 200 -
+2023-12-11 19:14:45,781 - 127.0.0.1 - - [11/Dec/2023 19:14:45] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 19:17:42,362 - 127.0.0.1 - - [11/Dec/2023 19:17:42] "GET /stock/30 HTTP/1.1" 200 -
+2023-12-11 19:17:45,031 - 127.0.0.1 - - [11/Dec/2023 19:17:45] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 19:19:27,647 - 127.0.0.1 - - [11/Dec/2023 19:19:27] "GET /stock/30 HTTP/1.1" 200 -
+2023-12-11 19:21:26,111 - 127.0.0.1 - - [11/Dec/2023 19:21:26] "GET /stock/30 HTTP/1.1" 200 -
+2023-12-11 19:21:40,368 - 127.0.0.1 - - [11/Dec/2023 19:21:40] "GET /stock/30 HTTP/1.1" 200 -
+2023-12-11 19:21:42,514 - 127.0.0.1 - - [11/Dec/2023 19:21:42] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 19:23:31,418 - 127.0.0.1 - - [11/Dec/2023 19:23:31] "GET /stock/30 HTTP/1.1" 200 -
+2023-12-11 19:23:33,836 - 127.0.0.1 - - [11/Dec/2023 19:23:33] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 19:26:20,294 - 127.0.0.1 - - [11/Dec/2023 19:26:20] "GET /stock/30 HTTP/1.1" 200 -
+2023-12-11 19:26:31,928 - 127.0.0.1 - - [11/Dec/2023 19:26:31] "GET /stock/30 HTTP/1.1" 200 -
+2023-12-11 19:27:02,465 - 127.0.0.1 - - [11/Dec/2023 19:27:02] "GET /stock/30 HTTP/1.1" 200 -
+2023-12-11 19:27:05,180 - 127.0.0.1 - - [11/Dec/2023 19:27:05] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 19:30:30,050 - 127.0.0.1 - - [11/Dec/2023 19:30:30] "GET /stock/30 HTTP/1.1" 200 -
+2023-12-11 19:34:38,400 - 127.0.0.1 - - [11/Dec/2023 19:34:38] "GET /stock/30 HTTP/1.1" 200 -
+2023-12-11 19:35:04,493 - 127.0.0.1 - - [11/Dec/2023 19:35:04] "GET /stock/30 HTTP/1.1" 200 -
+2023-12-11 19:36:04,185 - 127.0.0.1 - - [11/Dec/2023 19:36:04] "GET /stock/30 HTTP/1.1" 200 -
+2023-12-11 19:36:14,619 - 127.0.0.1 - - [11/Dec/2023 19:36:14] "GET /stock/30 HTTP/1.1" 200 -
+2023-12-11 19:36:50,451 - 127.0.0.1 - - [11/Dec/2023 19:36:50] "GET /stock/30 HTTP/1.1" 200 -
+2023-12-11 19:37:34,049 - 127.0.0.1 - - [11/Dec/2023 19:37:34] "GET /stock/30 HTTP/1.1" 200 -
+2023-12-11 19:37:35,727 - 127.0.0.1 - - [11/Dec/2023 19:37:35] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 19:38:15,955 - 127.0.0.1 - - [11/Dec/2023 19:38:15] "GET /stock/30 HTTP/1.1" 200 -
+2023-12-11 19:38:16,872 - 127.0.0.1 - - [11/Dec/2023 19:38:16] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 19:40:07,226 - 127.0.0.1 - - [11/Dec/2023 19:40:07] "GET /stock/30 HTTP/1.1" 200 -
+2023-12-11 19:40:13,272 - 127.0.0.1 - - [11/Dec/2023 19:40:13] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 19:40:33,552 - 127.0.0.1 - - [11/Dec/2023 19:40:33] "GET /stock/20 HTTP/1.1" 200 -
+2023-12-11 19:40:36,384 - 127.0.0.1 - - [11/Dec/2023 19:40:36] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 19:41:03,329 - 127.0.0.1 - - [11/Dec/2023 19:41:03] "GET /stock/20 HTTP/1.1" 200 -
+2023-12-11 19:44:02,282 - 127.0.0.1 - - [11/Dec/2023 19:44:02] "GET /stock/20 HTTP/1.1" 200 -
+2023-12-11 19:44:23,298 - 127.0.0.1 - - [11/Dec/2023 19:44:23] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 19:44:50,433 - 127.0.0.1 - - [11/Dec/2023 19:44:50] "OPTIONS /master-product HTTP/1.1" 200 -
+2023-12-11 19:44:50,539 - 127.0.0.1 - - [11/Dec/2023 19:44:50] "[35m[1mPOST /master-product HTTP/1.1[0m" 500 -
+2023-12-11 19:45:22,682 - 127.0.0.1 - - [11/Dec/2023 19:45:22] "GET /stock/20 HTTP/1.1" 200 -
+2023-12-11 19:45:24,332 - 127.0.0.1 - - [11/Dec/2023 19:45:24] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 19:45:38,964 - 127.0.0.1 - - [11/Dec/2023 19:45:38] "OPTIONS /product HTTP/1.1" 200 -
+2023-12-11 19:45:39,070 - 127.0.0.1 - - [11/Dec/2023 19:45:39] "POST /product HTTP/1.1" 200 -
+2023-12-11 19:50:48,102 - 127.0.0.1 - - [11/Dec/2023 19:50:48] "GET /stock/20 HTTP/1.1" 200 -
+2023-12-11 19:51:33,824 - 127.0.0.1 - - [11/Dec/2023 19:51:33] "GET /stock/20 HTTP/1.1" 200 -
+2023-12-11 19:51:44,565 - 127.0.0.1 - - [11/Dec/2023 19:51:44] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 19:51:57,120 - 127.0.0.1 - - [11/Dec/2023 19:51:57] "OPTIONS /product HTTP/1.1" 200 -
+2023-12-11 19:51:57,233 - 127.0.0.1 - - [11/Dec/2023 19:51:57] "POST /product HTTP/1.1" 200 -
+2023-12-11 19:54:04,193 - 127.0.0.1 - - [11/Dec/2023 19:54:04] "GET /stock/20 HTTP/1.1" 200 -
+2023-12-11 19:54:20,113 - 127.0.0.1 - - [11/Dec/2023 19:54:20] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 19:55:17,914 - 127.0.0.1 - - [11/Dec/2023 19:55:17] "OPTIONS /product HTTP/1.1" 200 -
+2023-12-11 19:55:18,048 - 127.0.0.1 - - [11/Dec/2023 19:55:18] "POST /product HTTP/1.1" 200 -
+2023-12-11 19:59:51,567 - 127.0.0.1 - - [11/Dec/2023 19:59:51] "GET /stock/20 HTTP/1.1" 200 -
+2023-12-11 20:00:06,173 - 127.0.0.1 - - [11/Dec/2023 20:00:06] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 20:00:17,729 - 127.0.0.1 - - [11/Dec/2023 20:00:17] "OPTIONS /product HTTP/1.1" 200 -
+2023-12-11 20:00:17,920 - 127.0.0.1 - - [11/Dec/2023 20:00:17] "POST /product HTTP/1.1" 200 -
+2023-12-11 20:06:05,995 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 20:06:06,235 -  * Restarting with stat
+2023-12-11 20:06:08,021 - Admin logged in
+2023-12-11 20:06:08,045 -  * Debugger is active!
+2023-12-11 20:06:08,051 -  * Debugger PIN: 593-384-150
+2023-12-11 20:08:49,450 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 20:08:49,641 -  * Restarting with stat
+2023-12-11 20:08:50,742 - Admin logged in
+2023-12-11 20:08:50,769 -  * Debugger is active!
+2023-12-11 20:08:50,776 -  * Debugger PIN: 593-384-150
+2023-12-11 20:10:30,069 - 127.0.0.1 - - [11/Dec/2023 20:10:30] "GET /stock/20 HTTP/1.1" 200 -
+2023-12-11 20:10:32,248 - 127.0.0.1 - - [11/Dec/2023 20:10:32] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 20:10:55,574 - 127.0.0.1 - - [11/Dec/2023 20:10:55] "OPTIONS /product HTTP/1.1" 200 -
+2023-12-11 20:10:55,645 - 127.0.0.1 - - [11/Dec/2023 20:10:55] "[35m[1mPOST /product HTTP/1.1[0m" 500 -
+2023-12-11 20:13:30,743 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 20:13:30,915 -  * Restarting with stat
+2023-12-11 20:13:32,895 - Admin logged in
+2023-12-11 20:13:32,981 -  * Debugger is active!
+2023-12-11 20:13:32,999 -  * Debugger PIN: 593-384-150
+2023-12-11 20:13:46,697 - 127.0.0.1 - - [11/Dec/2023 20:13:46] "GET /stock/20 HTTP/1.1" 200 -
+2023-12-11 20:13:48,279 - 127.0.0.1 - - [11/Dec/2023 20:13:48] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 20:13:56,681 - 127.0.0.1 - - [11/Dec/2023 20:13:56] "OPTIONS /product HTTP/1.1" 200 -
+2023-12-11 20:13:56,904 - 127.0.0.1 - - [11/Dec/2023 20:13:56] "POST /product HTTP/1.1" 200 -
+2023-12-11 20:13:56,961 - 127.0.0.1 - - [11/Dec/2023 20:13:56] "GET /stock/20 HTTP/1.1" 200 -
+2023-12-11 20:17:20,317 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-11 20:17:20,457 -  * Restarting with stat
+2023-12-11 20:17:21,632 - Admin logged in
+2023-12-11 20:17:21,667 -  * Debugger is active!
+2023-12-11 20:17:21,672 -  * Debugger PIN: 593-384-150
+2023-12-11 20:17:37,552 - 127.0.0.1 - - [11/Dec/2023 20:17:37] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 20:17:48,605 - 127.0.0.1 - - [11/Dec/2023 20:17:48] "OPTIONS /product HTTP/1.1" 200 -
+2023-12-11 20:17:48,669 - Error - MariaDB : Column 's_p_id' cannot be null
+2023-12-11 20:17:48,670 - 127.0.0.1 - - [11/Dec/2023 20:17:48] "POST /product HTTP/1.1" 200 -
+2023-12-11 20:22:42,190 - 127.0.0.1 - - [11/Dec/2023 20:22:42] "[31m[1mPOST /product/72 HTTP/1.1[0m" 405 -
+2023-12-11 20:22:50,131 - Error - MariaDB : Column 's_p_id' cannot be null
+2023-12-11 20:22:50,132 - 127.0.0.1 - - [11/Dec/2023 20:22:50] "POST /product HTTP/1.1" 200 -
+2023-12-11 20:23:49,296 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 20:23:49,510 -  * Restarting with stat
+2023-12-11 20:23:51,061 - Admin logged in
+2023-12-11 20:23:51,086 -  * Debugger is active!
+2023-12-11 20:23:51,097 -  * Debugger PIN: 593-384-150
+2023-12-11 20:23:59,097 - Error - MariaDB : Column 's_p_id' cannot be null
+2023-12-11 20:23:59,098 - 127.0.0.1 - - [11/Dec/2023 20:23:59] "POST /product HTTP/1.1" 200 -
+2023-12-11 20:24:13,445 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 20:24:13,598 -  * Restarting with stat
+2023-12-11 20:24:14,985 - Admin logged in
+2023-12-11 20:24:15,019 -  * Debugger is active!
+2023-12-11 20:24:15,027 -  * Debugger PIN: 593-384-150
+2023-12-11 20:24:19,108 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 20:24:19,305 -  * Restarting with stat
+2023-12-11 20:24:20,186 - Admin logged in
+2023-12-11 20:24:20,208 -  * Debugger is active!
+2023-12-11 20:24:20,213 -  * Debugger PIN: 593-384-150
+2023-12-11 20:24:26,624 - Error - MariaDB : Column 's_p_id' cannot be null
+2023-12-11 20:24:26,626 - 127.0.0.1 - - [11/Dec/2023 20:24:26] "POST /product HTTP/1.1" 200 -
+2023-12-11 20:24:55,755 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-11 20:24:55,906 -  * Restarting with stat
+2023-12-11 20:24:56,905 - Admin logged in
+2023-12-11 20:24:56,935 -  * Debugger is active!
+2023-12-11 20:24:56,940 -  * Debugger PIN: 593-384-150
+2023-12-11 20:25:05,685 - 127.0.0.1 - - [11/Dec/2023 20:25:05] "POST /product HTTP/1.1" 200 -
+2023-12-11 20:26:05,064 - 127.0.0.1 - - [11/Dec/2023 20:26:05] "POST /product HTTP/1.1" 200 -
+2023-12-11 20:26:19,864 - 127.0.0.1 - - [11/Dec/2023 20:26:19] "POST /product HTTP/1.1" 200 -
+2023-12-11 20:26:48,903 - 127.0.0.1 - - [11/Dec/2023 20:26:48] "OPTIONS /product HTTP/1.1" 200 -
+2023-12-11 20:26:49,065 - 127.0.0.1 - - [11/Dec/2023 20:26:49] "POST /product HTTP/1.1" 200 -
+2023-12-11 20:26:49,126 - 127.0.0.1 - - [11/Dec/2023 20:26:49] "GET /stock/20 HTTP/1.1" 200 -
+2023-12-11 20:29:02,887 - 127.0.0.1 - - [11/Dec/2023 20:29:02] "GET /stock/20 HTTP/1.1" 200 -
+2023-12-11 20:29:23,572 - 127.0.0.1 - - [11/Dec/2023 20:29:23] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 20:29:34,235 - 127.0.0.1 - - [11/Dec/2023 20:29:34] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 20:29:46,098 - 127.0.0.1 - - [11/Dec/2023 20:29:46] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 20:32:28,319 - 127.0.0.1 - - [11/Dec/2023 20:32:28] "GET /stock/20 HTTP/1.1" 200 -
+2023-12-11 20:32:30,051 - 127.0.0.1 - - [11/Dec/2023 20:32:30] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 20:32:37,444 - 127.0.0.1 - - [11/Dec/2023 20:32:37] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 20:32:43,382 - 127.0.0.1 - - [11/Dec/2023 20:32:43] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 20:32:48,523 - 127.0.0.1 - - [11/Dec/2023 20:32:48] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 20:34:26,980 - 127.0.0.1 - - [11/Dec/2023 20:34:26] "GET /stock/20 HTTP/1.1" 200 -
+2023-12-11 20:36:38,274 - 127.0.0.1 - - [11/Dec/2023 20:36:38] "GET /stock/20 HTTP/1.1" 200 -
+2023-12-11 20:36:45,724 - 127.0.0.1 - - [11/Dec/2023 20:36:45] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 20:36:51,420 - 127.0.0.1 - - [11/Dec/2023 20:36:51] "OPTIONS /product/20 HTTP/1.1" 200 -
+2023-12-11 20:36:51,489 - Error - MariaDB : Duplicate entry '20-frenos txulis-XL' for key 'product_un'
+2023-12-11 20:36:51,490 - 127.0.0.1 - - [11/Dec/2023 20:36:51] "PUT /product/20 HTTP/1.1" 200 -
+2023-12-11 20:40:35,651 - 127.0.0.1 - - [11/Dec/2023 20:40:35] "GET /stock/20 HTTP/1.1" 200 -
+2023-12-11 20:40:39,001 - 127.0.0.1 - - [11/Dec/2023 20:40:39] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 20:40:45,044 - 127.0.0.1 - - [11/Dec/2023 20:40:45] "OPTIONS /product/74 HTTP/1.1" 200 -
+2023-12-11 20:40:45,105 - 127.0.0.1 - - [11/Dec/2023 20:40:45] "PUT /product/74 HTTP/1.1" 200 -
+2023-12-11 20:40:45,173 - 127.0.0.1 - - [11/Dec/2023 20:40:45] "GET /stock/20 HTTP/1.1" 200 -
+2023-12-11 20:41:06,677 - 127.0.0.1 - - [11/Dec/2023 20:41:06] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 20:41:14,314 - 127.0.0.1 - - [11/Dec/2023 20:41:14] "OPTIONS /product/74 HTTP/1.1" 200 -
+2023-12-11 20:41:14,439 - 127.0.0.1 - - [11/Dec/2023 20:41:14] "PUT /product/74 HTTP/1.1" 200 -
+2023-12-11 20:41:14,465 - 127.0.0.1 - - [11/Dec/2023 20:41:14] "GET /stock/20 HTTP/1.1" 200 -
+2023-12-11 20:42:54,354 - 127.0.0.1 - - [11/Dec/2023 20:42:54] "GET /stock/20 HTTP/1.1" 200 -
+2023-12-11 20:43:34,857 - 127.0.0.1 - - [11/Dec/2023 20:43:34] "GET /stock/20 HTTP/1.1" 200 -
+2023-12-11 20:43:40,228 - 127.0.0.1 - - [11/Dec/2023 20:43:40] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-11 20:43:45,135 - 127.0.0.1 - - [11/Dec/2023 20:43:45] "GET /wharehouses HTTP/1.1" 200 -
+2023-12-12 18:32:29,854 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-12 18:32:29,994 -  * Restarting with stat
+2023-12-12 18:47:49,588 -  * Restarting with stat
+2023-12-12 18:51:15,467 -  * Restarting with stat
+2023-12-12 18:53:19,132 -  * Restarting with stat
+2023-12-12 18:57:26,808 -  * Restarting with stat
+2023-12-12 18:58:14,814 -  * Restarting with stat
+2023-12-12 18:59:23,958 -  * Restarting with stat
+2023-12-12 19:00:11,170 -  * Restarting with stat
+2023-12-12 19:00:58,868 -  * Restarting with stat
+2023-12-12 19:42:44,015 -  * Restarting with stat
+2023-12-13 21:42:47,997 -  * Restarting with stat
