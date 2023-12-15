@@ -24,11 +24,18 @@ from classes import stock as s
 # **********
 
 # ---- Database values and connection
-host = "127.0.0.1"
+## host = "127.0.0.1"
+## port = 3306
+## user = "root"
+## password = "2bEvImI2"
+## db_name = "bike_workshop"
+
+host = "f80b6byii2vwv8cx.chr7pe7iynqr.eu-west-1.rds.amazonaws.com"
 port = 3306
-user = "root"
-password = "2bEvImI2"
-db_name = "bike_workshop"
+user = "u7l4ee66qbm07jcv"
+password = "aplc9ipz6oihonph"
+db_name = "upewp1i7wez74gbs"
+
 #db_name = "devcamp_university_course"
 conn_ok = False
 
