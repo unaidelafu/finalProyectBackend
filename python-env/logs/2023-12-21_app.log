@@ -1,0 +1,16 @@
+2023-12-21 20:02:35,618 - Admin logged in
+2023-12-21 20:02:35,864 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-12-21 20:02:35,864 - [33mPress CTRL+C to quit[0m
+2023-12-21 20:02:35,877 -  * Restarting with stat
+2023-12-21 20:02:36,700 - Admin logged in
+2023-12-21 20:02:36,727 -  * Debugger is active!
+2023-12-21 20:02:36,776 -  * Debugger PIN: 593-384-150
+2023-12-21 20:03:05,162 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-21 20:03:05,402 -  * Restarting with stat
+2023-12-21 20:03:06,359 - Admin logged in
+2023-12-21 20:03:06,387 -  * Debugger is active!
+2023-12-21 20:03:06,393 -  * Debugger PIN: 593-384-150
+2023-12-21 20:03:31,814 - 127.0.0.1 - - [21/Dec/2023 20:03:31] "GET /employee-types HTTP/1.1" 200 -
+2023-12-21 20:05:13,928 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2023-12-21 20:05:14,073 -  * Restarting with stat

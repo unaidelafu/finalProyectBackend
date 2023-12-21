@@ -187,7 +187,7 @@ class DbLoader:
         cur = None
         retval = None
         #Asumiendo que de la app se envia el id del job_type
-        query = """INSERT INTO bike_workshop.employees (e_sid,e_name, e_surname, e_mail, e_phone_num, e_pswrd,e_type_id,e_img_url)
+        query = """INSERT INTO  employees (e_sid,e_name, e_surname, e_mail, e_phone_num, e_pswrd,e_type_id,e_img_url)
             VALUES (%s,%s,%s,%s,%s, password(%s),%s,%s);"""
         #query = f"INSERT INTO customers (c_sid,c_name_1,c_name_2) VALUES ('{sid}', '{name1}', '{name2}')"
         #job, admin,img_url
@@ -241,7 +241,7 @@ class DbLoader:
         if(employee.pswrd!= None):
             passQuery = f" e_pswrd = password('{employee.pswrd}'),"
         
-        query = """UPDATE bike_workshop.employees
+        query = """UPDATE employees
 	                SET e_sid= %s, e_name= %s, e_surname= %s, e_mail = %s, e_phone_num = %s,""" + passQuery + """ e_type_id= %s,
                      e_status= %s, e_img_url= %s
 	                WHERE e_id= %s;"""
@@ -302,7 +302,7 @@ class DbLoader:
         cur = None
         retval = ""
 
-        query = """UPDATE bike_workshop.employees
+        query = """UPDATE employees
 	                SET e_pswrd = password(%s)
 	                WHERE e_id= %s;"""
         values = (employee.pswrd, employee.id)
@@ -466,11 +466,11 @@ class DbLoader:
         retval = None
 
         if(product.mp_id == None):
-            query = """INSERT INTO bike_workshop.master_product (mp_product_code, mp_product_name, mp_brand_id, mp_bt_id, mp_price, mp_img_url)
+            query = """INSERT INTO master_product (mp_product_code, mp_product_name, mp_brand_id, mp_bt_id, mp_price, mp_img_url)
                 VALUES (%s,%s,%s,%s,%s,%s);"""
             values = (product.code, product.name, product.b_id, product.b_type_id, product.price, product.img_url)
         else:
-            query = """UPDATE bike_workshop.master_product SET mp_product_code = %s, mp_product_name = %s,
+            query = """UPDATE  master_product SET mp_product_code = %s, mp_product_name = %s,
                     mp_brand_id = %s, mp_bt_id = %s, mp_price = %s, mp_img_url = %s
                     WHERE mp_id = %s"""
             values = (product.code, product.name, product.b_id, product.b_type_id, product.price, product.img_url, product.mp_id)           
@@ -588,11 +588,11 @@ class DbLoader:
             if(idCheck != None):
                 product.id = idCheck
 
-            query = """INSERT INTO bike_workshop.product (p_mp_id, p_description, p_size)
+            query = """INSERT INTO  product (p_mp_id, p_description, p_size)
                 VALUES (%s,%s,%s) ON DUPLICATE KEY UPDATE p_mp_id = p_mp_id"""
             values = (product.mp_id, product.description, product.size)              
         else:
-            query = """UPDATE bike_workshop.product SET p_mp_id = %s, p_description = %s,
+            query = """UPDATE  product SET p_mp_id = %s, p_description = %s,
                     p_size = %s WHERE p_id = %s"""
             values = (product.mp_id, product.description, product.size, product.id)                        
         #id = 0
@@ -666,7 +666,7 @@ class DbLoader:
             print(f"mp ID: {mp_id}")
             if mp_id > 0:
                 #Update changes
-                query = """UPDATE bike_workshop.master_product 
+                query = """UPDATE  master_product 
                     SET mp_product_name = %s, mp_brand_id = %s,
                     mp_bt_id = %s, mp_price = %s, mp_img_url = %s
                     WHERE mp_product_code = %s"""
@@ -675,7 +675,7 @@ class DbLoader:
                 #---self.conn.commit()  
             else:
                 #Create master product, get mp_id,
-                query = """INSERT INTO bike_workshop.master_product (mp_product_code, mp_product_name, mp_brand_id,
+                query = """INSERT INTO  master_product (mp_product_code, mp_product_name, mp_brand_id,
                 mp_bt_id, mp_price, mp_img_url)
                 VALUES (%s,%s,%s,%s,%s,%s);"""
                 values = (product.code, product.name, product.b_id, product.b_type_id, product.price, product.img_url)
@@ -684,7 +684,7 @@ class DbLoader:
                 mp_id = cur.lastrowid
             if p_id < 1:                
                 # insert product
-                query = """INSERT INTO bike_workshop.product (p_mp_id, p_description, p_size)
+                query = """INSERT INTO  product (p_mp_id, p_description, p_size)
                 VALUES (%s,%s,%s);"""
                 values = (mp_id, product.description, product.size)   
                 cur.execute(query,values)
@@ -692,7 +692,7 @@ class DbLoader:
                 #id = cur.lastrowid
                 retval = cur.lastrowid    
             else:
-                query = """UPDATE bike_workshop.product SET p_mp_id = %s, p_description = %s, p_size = %s
+                query = """UPDATE  product SET p_mp_id = %s, p_description = %s, p_size = %s
                 WHERE p_id = %s"""
                 values = (mp_id, product.description, product.size, p_id) 
                 cur.execute(query,values)
