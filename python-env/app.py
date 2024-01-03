@@ -508,12 +508,122 @@ def API_get_product_stock(id):
     products_list=[productStock.serialize() for productStock in productsStock]  #serialize to prepare for json
     return jsonify(products_list)
 
+## Delete one stock of mp
 @app.route('/stock/<id>/<w_id>', methods=["DELETE"])
 def API_delete_stock_product(id,w_id):
     #wharehouse = request.json['wharehouse_id']    
     product_stock = s.stock(None,w_id,None,None)
     message = db.delete_stock_product(id, product_stock)
     return API_json_resp(message,None)
+
+
+## get status
+@app.route('/status', methods=["GET"])
+def API_get_status():
+    statuses = []
+
+    statuses = db.get_status()
+    status_list=[status.serialize() for status in statuses]  #serialize to prepare for json
+
+    return jsonify(status_list)
+
+## get bike_types
+@app.route('/bike_types', methods=["GET"])
+def API_get_bike_types():
+    bike_types = []
+
+    bike_types = db.get_bike_types()
+    bike_types_list=[bike_type.serialize() for bike_type in bike_types]  #serialize to prepare for json
+
+    return jsonify(bike_types_list)
+
+## get work_tasks
+@app.route('/work_tasks', methods=["GET"])
+def API_get_work_tasks():
+    work_tasks = []
+
+    work_tasks = db.get_work_tasks()
+    work_tasks_list=[work_task.serialize() for work_task in work_tasks]  #serialize to prepare for json
+
+    return jsonify(work_tasks_list)
+
+## get all customers_bikes
+@app.route('/customers_bikes', methods=["GET"])
+def API_get_customers_bikes():
+    customers_bikes = []
+
+    customers_bikes = db.get_customers_bikes(None, None)
+    customers_bikes_list=[customer_bike.serialize() for customer_bike in customers_bikes]  #serialize to prepare for json
+
+    return jsonify(customers_bikes_list)
+
+## get customer_bike    cb_id
+@app.route('/customer_bike/<id>', methods=["GET"])
+def API_get_customer_bike(id):
+    customer_bike = []
+
+    customer_bike = db.get_customers_bikes(id, None)
+    customer_bike_list=[bike.serialize() for bike in customer_bike]  #serialize to prepare for json
+
+    return jsonify(customer_bike_list)
+
+## get customer_bikes    cb_c_id
+@app.route('/customer_bikes/<id>', methods=["GET"])
+def API_get_customer_bikes(id):
+    customer_bikes = []
+
+    customer_bikes = db.get_customers_bikes(None, id)
+    customer_bikes_list=[bike.serialize() for bike in customer_bikes]  #serialize to prepare for json
+
+    return jsonify(customer_bikes_list)
+
+## get incoming Header  
+@app.route('/incoming_header/<id>', methods=["GET"])
+def API_get_incoming_header(id):
+    incoming_headers = []
+
+    incoming_headers = db.get_incoming_headers(id, None)
+    incoming_headers_list=[incoming_header.serialize() for incoming_header in incoming_headers]  #serialize to prepare for json
+
+    return jsonify(incoming_headers_list)
+## get incoming headers status
+@app.route('/incoming_headers/<status>', methods=["GET"])
+def API_get_incoming_headers(status):
+    incoming_headers = []
+
+    incoming_headers = db.get_incoming_headers(None, status)
+    incoming_headers_list=[incoming_header.serialize() for incoming_header in incoming_headers]  #serialize to prepare for json
+
+    return jsonify(incoming_headers_list)
+
+## get incoming line  
+@app.route('/incoming_line/<id>', methods=["GET"])
+def API_get_incoming_line(id):
+    incoming_lines = []
+
+    incoming_lines = db.get_incoming_lines(id, None, None)
+    incoming_line_list=[incoming_line.serialize() for incoming_line in incoming_lines]  #serialize to prepare for json
+
+    return jsonify(incoming_line_list)
+## get incoming lines status
+@app.route('/incoming_lines/<status>', methods=["GET"])
+def API_get_incoming_lines(status):
+    incoming_lines = []
+
+    incoming_lines = db.get_incoming_lines(None, None, status)
+    incoming_line_list=[incoming_line.serialize() for incoming_line in incoming_lines]  #serialize to prepare for json
+
+    return jsonify(incoming_line_list)
+
+## get incoming lines h_id
+@app.route('/incoming_lines_header/<id>', methods=["GET"])
+def API_get_incoming_lines_header(id):
+    incoming_lines = []
+
+    incoming_lines = db.get_incoming_lines(None, id, None)
+    incoming_line_list=[incoming_line.serialize() for incoming_line in incoming_lines]  #serialize to prepare for json
+
+    return jsonify(incoming_line_list)
 
 if __name__ == '__main__':
 

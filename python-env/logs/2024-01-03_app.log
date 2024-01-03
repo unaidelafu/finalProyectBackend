@@ -1,0 +1,137 @@
+2024-01-03 10:02:58,200 - Admin logged in
+2024-01-03 10:02:58,223 -  * Debugger is active!
+2024-01-03 10:02:58,228 -  * Debugger PIN: 593-384-150
+2024-01-03 18:40:31,251 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2024-01-03 18:40:32,922 - Admin logged in
+2024-01-03 18:40:32,957 -  * Debugger is active!
+2024-01-03 18:40:32,962 -  * Debugger PIN: 593-384-150
+2024-01-03 19:05:18,168 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2024-01-03 19:05:19,345 - Admin logged in
+2024-01-03 19:05:19,376 -  * Debugger is active!
+2024-01-03 19:05:19,383 -  * Debugger PIN: 593-384-150
+2024-01-03 19:21:26,894 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\classes\\incoming_lines.py', reloading
+2024-01-03 19:21:27,839 - Admin logged in
+2024-01-03 19:21:27,865 -  * Debugger is active!
+2024-01-03 19:21:27,870 -  * Debugger PIN: 593-384-150
+2024-01-03 19:33:50,854 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2024-01-03 19:33:52,013 - Admin logged in
+2024-01-03 19:33:52,053 -  * Debugger is active!
+2024-01-03 19:33:52,058 -  * Debugger PIN: 593-384-150
+2024-01-03 19:55:08,554 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2024-01-03 19:55:09,755 - Admin logged in
+2024-01-03 19:55:09,789 -  * Debugger is active!
+2024-01-03 19:55:09,798 -  * Debugger PIN: 593-384-150
+2024-01-03 19:58:01,637 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\classes\\status.py', reloading
+2024-01-03 19:58:02,675 - Admin logged in
+2024-01-03 19:58:02,701 -  * Debugger is active!
+2024-01-03 19:58:02,706 -  * Debugger PIN: 593-384-150
+2024-01-03 20:00:11,836 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2024-01-03 20:00:12,910 - Admin logged in
+2024-01-03 20:00:12,937 -  * Debugger is active!
+2024-01-03 20:00:12,942 -  * Debugger PIN: 593-384-150
+2024-01-03 20:09:43,547 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2024-01-03 20:09:44,596 - Admin logged in
+2024-01-03 20:09:44,622 -  * Debugger is active!
+2024-01-03 20:09:44,627 -  * Debugger PIN: 593-384-150
+2024-01-03 20:10:46,689 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2024-01-03 20:10:47,734 - Admin logged in
+2024-01-03 20:10:47,813 -  * Debugger is active!
+2024-01-03 20:10:47,834 -  * Debugger PIN: 593-384-150
+2024-01-03 20:13:09,216 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2024-01-03 20:13:10,257 - Admin logged in
+2024-01-03 20:13:10,284 -  * Debugger is active!
+2024-01-03 20:13:10,284 -  * Debugger PIN: 593-384-150
+2024-01-03 20:13:31,984 - Admin logged in
+2024-01-03 20:13:32,063 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-01-03 20:13:32,063 - [33mPress CTRL+C to quit[0m
+2024-01-03 20:13:32,072 -  * Restarting with stat
+2024-01-03 20:13:33,076 - Admin logged in
+2024-01-03 20:13:33,106 -  * Debugger is active!
+2024-01-03 20:13:33,112 -  * Debugger PIN: 593-384-150
+2024-01-03 20:13:46,208 - 127.0.0.1 - - [03/Jan/2024 20:13:46] "GET /status HTTP/1.1" 200 -
+2024-01-03 20:16:37,141 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2024-01-03 20:16:37,304 -  * Restarting with stat
+2024-01-03 20:16:38,188 - Admin logged in
+2024-01-03 20:17:00,205 - Admin logged in
+2024-01-03 20:17:00,247 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-01-03 20:17:00,247 - [33mPress CTRL+C to quit[0m
+2024-01-03 20:17:00,248 -  * Restarting with stat
+2024-01-03 20:17:01,050 - Admin logged in
+2024-01-03 20:17:01,075 -  * Debugger is active!
+2024-01-03 20:17:01,080 -  * Debugger PIN: 593-384-150
+2024-01-03 20:17:11,678 - 127.0.0.1 - - [03/Jan/2024 20:17:11] "GET /bike_types HTTP/1.1" 200 -
+2024-01-03 20:20:55,552 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2024-01-03 20:20:55,691 -  * Restarting with stat
+2024-01-03 20:20:56,512 - Admin logged in
+2024-01-03 20:20:56,544 -  * Debugger is active!
+2024-01-03 20:20:56,549 -  * Debugger PIN: 593-384-150
+2024-01-03 20:21:07,550 - 127.0.0.1 - - [03/Jan/2024 20:21:07] "GET /work_tasks HTTP/1.1" 200 -
+2024-01-03 20:29:24,659 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2024-01-03 20:29:24,789 -  * Restarting with stat
+2024-01-03 20:29:25,669 - Admin logged in
+2024-01-03 20:29:25,698 -  * Debugger is active!
+2024-01-03 20:29:25,703 -  * Debugger PIN: 593-384-150
+2024-01-03 20:29:38,680 - 127.0.0.1 - - [03/Jan/2024 20:29:38] "GET /customers_bikes HTTP/1.1" 200 -
+2024-01-03 20:30:04,244 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2024-01-03 20:30:04,371 -  * Restarting with stat
+2024-01-03 20:30:05,276 - Admin logged in
+2024-01-03 20:30:05,302 -  * Debugger is active!
+2024-01-03 20:30:05,307 -  * Debugger PIN: 593-384-150
+2024-01-03 20:30:18,915 - 127.0.0.1 - - [03/Jan/2024 20:30:18] "GET /customers_bikes HTTP/1.1" 200 -
+2024-01-03 20:31:05,582 - 127.0.0.1 - - [03/Jan/2024 20:31:05] "GET /customer_bike/2 HTTP/1.1" 200 -
+2024-01-03 20:31:16,166 - 127.0.0.1 - - [03/Jan/2024 20:31:16] "GET /customer_bikes/2 HTTP/1.1" 200 -
+2024-01-03 20:31:28,116 - 127.0.0.1 - - [03/Jan/2024 20:31:28] "GET /customer_bikes/3 HTTP/1.1" 200 -
+2024-01-03 20:34:42,230 - 127.0.0.1 - - [03/Jan/2024 20:34:42] "GET /customer_bikes/1 HTTP/1.1" 200 -
+2024-01-03 20:50:17,043 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2024-01-03 20:50:17,185 -  * Restarting with stat
+2024-01-03 20:50:18,146 - Admin logged in
+2024-01-03 20:50:18,177 -  * Debugger is active!
+2024-01-03 20:50:18,183 -  * Debugger PIN: 593-384-150
+2024-01-03 20:50:32,476 - 127.0.0.1 - - [03/Jan/2024 20:50:32] "GET /incoming_header/1 HTTP/1.1" 200 -
+2024-01-03 20:54:35,424 - 127.0.0.1 - - [03/Jan/2024 20:54:35] "GET /incoming_headers/Processing HTTP/1.1" 200 -
+2024-01-03 20:55:09,512 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2024-01-03 20:55:09,651 -  * Restarting with stat
+2024-01-03 20:55:10,568 - Admin logged in
+2024-01-03 20:55:10,605 -  * Debugger is active!
+2024-01-03 20:55:10,610 -  * Debugger PIN: 593-384-150
+2024-01-03 20:55:15,489 - 127.0.0.1 - - [03/Jan/2024 20:55:15] "GET /incoming_headers/Processing HTTP/1.1" 200 -
+2024-01-03 20:55:29,000 - 127.0.0.1 - - [03/Jan/2024 20:55:29] "GET /incoming_headers/Pending HTTP/1.1" 200 -
+2024-01-03 20:55:37,500 - 127.0.0.1 - - [03/Jan/2024 20:55:37] "GET /incoming_headers/Stopped HTTP/1.1" 200 -
+2024-01-03 20:55:59,714 - 127.0.0.1 - - [03/Jan/2024 20:55:59] "GET /incoming_headers/Finished HTTP/1.1" 200 -
+2024-01-03 20:56:49,800 - 127.0.0.1 - - [03/Jan/2024 20:56:49] "GET /incoming_headers/Finished HTTP/1.1" 200 -
+2024-01-03 21:05:28,593 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\app.py', reloading
+2024-01-03 21:05:28,725 -  * Restarting with stat
+2024-01-03 21:05:29,519 - Admin logged in
+2024-01-03 21:05:29,551 -  * Debugger is active!
+2024-01-03 21:05:29,556 -  * Debugger PIN: 593-384-150
+2024-01-03 21:08:10,816 - 127.0.0.1 - - [03/Jan/2024 21:08:10] "GET /incoming_line/1 HTTP/1.1" 200 -
+2024-01-03 21:08:46,385 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2024-01-03 21:08:46,532 -  * Restarting with stat
+2024-01-03 21:08:47,378 - Admin logged in
+2024-01-03 21:08:47,410 -  * Debugger is active!
+2024-01-03 21:08:47,415 -  * Debugger PIN: 593-384-150
+2024-01-03 21:08:52,373 - 127.0.0.1 - - [03/Jan/2024 21:08:52] "GET /incoming_line/1 HTTP/1.1" 200 -
+2024-01-03 21:09:05,132 - 127.0.0.1 - - [03/Jan/2024 21:09:05] "GET /incoming_line/1 HTTP/1.1" 200 -
+2024-01-03 21:21:28,763 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2024-01-03 21:21:28,911 -  * Restarting with stat
+2024-01-03 21:21:30,278 - Admin logged in
+2024-01-03 21:21:30,320 -  * Debugger is active!
+2024-01-03 21:21:30,325 -  * Debugger PIN: 593-384-150
+2024-01-03 21:21:34,061 - 127.0.0.1 - - [03/Jan/2024 21:21:34] "[35m[1mGET /incoming_line/1 HTTP/1.1[0m" 500 -
+2024-01-03 21:23:06,951 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\classes\\incoming_lines.py', reloading
+2024-01-03 21:23:07,118 -  * Restarting with stat
+2024-01-03 21:23:08,105 - Admin logged in
+2024-01-03 21:23:08,170 -  * Debugger is active!
+2024-01-03 21:23:08,179 -  * Debugger PIN: 593-384-150
+2024-01-03 21:23:13,253 - 127.0.0.1 - - [03/Jan/2024 21:23:13] "GET /incoming_line/1 HTTP/1.1" 200 -
+2024-01-03 21:23:49,612 - 127.0.0.1 - - [03/Jan/2024 21:23:49] "GET /incoming_lines_header/1 HTTP/1.1" 200 -
+2024-01-03 21:24:05,521 - 127.0.0.1 - - [03/Jan/2024 21:24:05] "GET /incoming_lines_header/2 HTTP/1.1" 200 -
+2024-01-03 21:26:24,193 - 127.0.0.1 - - [03/Jan/2024 21:26:24] "GET /incoming_lines/Pending HTTP/1.1" 200 -
+2024-01-03 21:27:04,128 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2024-01-03 21:27:04,349 -  * Restarting with stat
+2024-01-03 21:27:05,617 - Admin logged in
+2024-01-03 21:27:05,652 -  * Debugger is active!
+2024-01-03 21:27:05,669 -  * Debugger PIN: 593-384-150
+2024-01-03 21:27:07,855 - 127.0.0.1 - - [03/Jan/2024 21:27:07] "GET /incoming_lines/Pending HTTP/1.1" 200 -

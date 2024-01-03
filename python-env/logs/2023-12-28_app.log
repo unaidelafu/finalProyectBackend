@@ -1,0 +1,13 @@
+2023-12-28 08:19:38,995 - Admin logged in
+2023-12-28 08:19:39,116 -  * Debugger is active!
+2023-12-28 08:19:39,124 -  * Debugger PIN: 593-384-150
+2023-12-28 08:30:42,850 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
+2023-12-28 08:30:43,948 - Admin logged in
+2023-12-28 08:30:43,995 -  * Debugger is active!
+2023-12-28 08:30:44,004 -  * Debugger PIN: 593-384-150
+2023-12-30 14:41:55,735 - 127.0.0.1 - - [30/Dec/2023 14:41:55] "GET /brand-types HTTP/1.1" 200 -
+2023-12-30 14:41:55,655 - 127.0.0.1 - - [30/Dec/2023 14:41:55] "GET /brands HTTP/1.1" 200 -
+2023-12-30 14:43:08,580 - 127.0.0.1 - - [30/Dec/2023 14:43:08] "GET /master-products HTTP/1.1" 200 -
+2023-12-30 14:43:13,671 - 127.0.0.1 - - [30/Dec/2023 14:43:13] "GET /customers HTTP/1.1" 200 -
+2023-12-30 14:43:38,681 - 127.0.0.1 - - [30/Dec/2023 14:43:38] "GET /employees HTTP/1.1" 200 -
+2024-01-01 19:51:09,905 -  * Detected change in 'c:\\Users\\user\\Desktop\\Proyectos\\Developers from Euskadi\\0. FullStack\\0. Final Proyect\\Backend\\python-env\\db_files\\database.py', reloading
